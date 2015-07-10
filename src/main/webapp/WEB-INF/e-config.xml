@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<e-config>
+	<!-- FTP主机名 -->
+	<host>10.10.5.16</host>
+	<!-- FTP主机端口 -->
+	<port>21</port>
+	<!-- FTP用户名 -->
+	<user>xiedx</user>
+	<!-- FTP密码 -->
+	<pwd>hello</pwd>
+	<!-- FTP工作目录 -->
+	<workdir>/oracle/test/</workdir>
+	<!-- 数据库中的用户密码是否加密  默认为不加密"N"可以配置为加密"Y" -->
+	<encrypt>N</encrypt>
+	<!-- 数据密码盐  -->
+	<salt>e7a0f54224a1814b</salt>
+    <!-- 是否启用缓存 -->
+	<cacheEnable>false</cacheEnable>
+</e-config>

@@ -1,0 +1,39 @@
+/*********公共属性************/
+*{ border:0; margin:0; padding:0;}
+body{ color: #000; font:12px "宋体", Geneva, sans-serif; text-align: center; background:#fff;}
+li{ list-style:none;}
+a:link, a:visited { color: #666666; text-decoration: none}
+a:hover { color: #EA5822; }
+.clear{ clear:both; font-size:0; line-height:0; margin:0; padding:0; text-align:0;}
+.show_pic{ border:1px #b4d9eb solid; padding:2px}
+.show_pic_cur{ border:1px #ff9700 solid;padding:2px}
+.red{ color:#ff0000;}
+
+/*顶部与导航*/
+.header{ width:950px;font-family:微软雅黑; font-size:10pt;font-family:微软雅黑; font-size:10pt height:120px;}
+.logo{ width:200px; height:88px; float:left;}
+.logo img{ margin-top:2px; margin-left:10px;}
+.heRight_info{ width:730px; height:88px; float:right;}
+.adMove{ width:485px; height:88px; float:left;}
+.adMove img{ margin-left:0; margin-top:8px;}
+.adHelp{ width:220px; height:88px; float:right;}
+.adHelp .up{ height:20px; text-align: right; line-height:19px;}
+.adHelp .down{ height:66px; background:url(../img/no-repeat.gif) no-repeat 5px -94px;}
+
+.vertical-channel{ border-bottom:1px solid #1C4CB1;}
+.vertical-channel ul {/*background-image:-moz-linear-gradient(center top , #FFFFFF, #F5F5F5);*/ border-bottom:1px solid #1C4CB1; height:30px;}
+.vertical-channel li.current {margin-top:3px; position:relative;}
+.vertical-channel li {display:inline; float:left; margin-top:3px; margin-right:10px;}
+.vertical-channel .current{ background:url(../img/nav.gif) no-repeat left top;}
+.vertical-channel .current a:hover span{background:url(../img/nav.gif) no-repeat left -top;}
+.vertical-channel .current a span {background:url(../img/nav.gif) no-repeat right -34px; color:#FFFFFF; height:27px; line-height:27px; padding:0 15px 0 20px; display:inline-block;}
+.vertical-channel .have a span {color: #ea5620; height:27px; line-height:27px; padding:0 25px 0 20px;}
+.vertical-channel a span {cursor:pointer; display:inline-block; font-size:14px; font-weight:bold; height:27px; line-height:27px; padding:0 15px 0 12px; }
+.vertical-channel a:hover span{background:url(../img/nav.gif) no-repeat right -101px; height:27px; display:block; -display:inline-block; color:#F60;}
+.vertical-channel a:hover{background:url(../img/nav.gif) no-repeat left -67px; height:27px; display:block; -display:inline-block;}
+
+/*版权*/
+.footer{ width:950px;font-family:微软雅黑; font-size:10pt;font-family:微软雅黑; font-size:10pt height:100px; margin-top:10px; text-align:center; line-height:25px; background:url(../img/repeat.gif) repeat-x left -95px; color:#0055AA;}
+.footer a:link, #footer a:visited { color: #0055AA; text-decoration: none}
+.footer a:hover { color: #EA5822; }
+

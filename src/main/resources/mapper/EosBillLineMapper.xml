@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.whale.eos.repository.bill.EosBillLineDAO" >
+  <resultMap id="BaseResultMap" type="com.whale.eos.entity.bill.EosBillLine" >
+    <result column="id" property="id" jdbcType="BIGINT" />
+    <result column="bno" property="bno" jdbcType="VARCHAR" />
+    <result column="bno_user" property="bnoUser" jdbcType="VARCHAR" />
+    <result column="rbno" property="rbno" jdbcType="VARCHAR" />
+    <result column="item_id" property="itemId" jdbcType="VARCHAR" />
+    <result column="store_id" property="storeId" jdbcType="DOUBLE" />
+    <result column="cost" property="cost" jdbcType="DOUBLE" />
+    <result column="lastpricein" property="lastpricein" jdbcType="DOUBLE" />
+    <result column="price" property="price" jdbcType="DOUBLE" />
+    <result column="price2" property="price2" jdbcType="DOUBLE" />
+    <result column="qty" property="qty" jdbcType="DOUBLE" />
+    <result column="qty2" property="qty2" jdbcType="DOUBLE" />
+    <result column="tot" property="tot" jdbcType="DOUBLE" />
+    <result column="tot2" property="tot2" jdbcType="DOUBLE" />
+    <result column="rtqty" property="rtqty" jdbcType="DOUBLE" />
+    <result column="rttot" property="rttot" jdbcType="DOUBLE" />
+    <result column="lostqty" property="lostqty" jdbcType="DOUBLE" />
+    <result column="losttot" property="losttot" jdbcType="DOUBLE" />
+    <result column="jsdisplay" property="jsdisplay" jdbcType="VARCHAR" />
+    <result column="jsqty" property="jsqty" jdbcType="DOUBLE" />
+    <result column="js" property="js" jdbcType="VARCHAR" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="updated_datetime" property="updatedDatetime" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, bno, bno_user, rbno, item_id, store_id, cost, lastpricein, price, price2, qty, 
+    qty2, tot, tot2, rtqty, rttot, lostqty, losttot, jsdisplay, jsqty, js, remark, updated_datetime
+  </sql>
+  <!--
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.whale.eos.entity.bill.EosBillLineInfo" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from eos_bill_line
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExampleAndPage" resultMap="BaseResultMap" parameterType="com.whale.eos.entity.bill.EosBillLineInfo" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from eos_bill_line
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <delete id="deleteByExample" parameterType="com.whale.eos.entity.bill.EosBillLineInfo" >
+    delete from eos_bill_line
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <select id="countByExample" parameterType="com.whale.eos.entity.bill.EosBillLineInfo" resultType="java.lang.Integer" >
+    select count(*) from eos_bill_line
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update eos_bill_line
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.bno != null" >
+        bno = #{record.bno,jdbcType=VARCHAR},
+      </if>
+      <if test="record.bnoUser != null" >
+        bno_user = #{record.bnoUser,jdbcType=VARCHAR},
+      </if>
+      <if test="record.rbno != null" >
+        rbno = #{record.rbno,jdbcType=VARCHAR},
+      </if>
+      <if test="record.itemId != null" >
+        item_id = #{record.itemId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.storeId != null" >
+        store_id = #{record.storeId,jdbcType=DOUBLE},
+      </if>
+      <if test="record.cost != null" >
+        cost = #{record.cost,jdbcType=DOUBLE},
+      </if>
+      <if test="record.lastpricein != null" >
+        lastpricein = #{record.lastpricein,jdbcType=DOUBLE},
+      </if>
+      <if test="record.price != null" >
+        price = #{record.price,jdbcType=DOUBLE},
+      </if>
+      <if test="record.price2 != null" >
+        price2 = #{record.price2,jdbcType=DOUBLE},
+      </if>
+      <if test="record.qty != null" >
+        qty = #{record.qty,jdbcType=DOUBLE},
+      </if>
+      <if test="record.qty2 != null" >
+        qty2 = #{record.qty2,jdbcType=DOUBLE},
+      </if>
+      <if test="record.tot != null" >
+        tot = #{record.tot,jdbcType=DOUBLE},
+      </if>
+      <if test="record.tot2 != null" >
+        tot2 = #{record.tot2,jdbcType=DOUBLE},
+      </if>
+      <if test="record.rtqty != null" >
+        rtqty = #{record.rtqty,jdbcType=DOUBLE},
+      </if>
+      <if test="record.rttot != null" >
+        rttot = #{record.rttot,jdbcType=DOUBLE},
+      </if>
+      <if test="record.lostqty != null" >
+        lostqty = #{record.lostqty,jdbcType=DOUBLE},
+      </if>
+      <if test="record.losttot != null" >
+        losttot = #{record.losttot,jdbcType=DOUBLE},
+      </if>
+      <if test="record.jsdisplay != null" >
+        jsdisplay = #{record.jsdisplay,jdbcType=VARCHAR},
+      </if>
+      <if test="record.jsqty != null" >
+        jsqty = #{record.jsqty,jdbcType=DOUBLE},
+      </if>
+      <if test="record.js != null" >
+        js = #{record.js,jdbcType=VARCHAR},
+      </if>
+      <if test="record.remark != null" >
+        remark = #{record.remark,jdbcType=VARCHAR},
+      </if>
+      <if test="record.updatedDatetime != null" >
+        updated_datetime = #{record.updatedDatetime,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update eos_bill_line
+    set id = #{record.id,jdbcType=BIGINT},
+      bno = #{record.bno,jdbcType=VARCHAR},
+      bno_user = #{record.bnoUser,jdbcType=VARCHAR},
+      rbno = #{record.rbno,jdbcType=VARCHAR},
+      item_id = #{record.itemId,jdbcType=VARCHAR},
+      store_id = #{record.storeId,jdbcType=DOUBLE},
+      cost = #{record.cost,jdbcType=DOUBLE},
+      lastpricein = #{record.lastpricein,jdbcType=DOUBLE},
+      price = #{record.price,jdbcType=DOUBLE},
+      price2 = #{record.price2,jdbcType=DOUBLE},
+      qty = #{record.qty,jdbcType=DOUBLE},
+      qty2 = #{record.qty2,jdbcType=DOUBLE},
+      tot = #{record.tot,jdbcType=DOUBLE},
+      tot2 = #{record.tot2,jdbcType=DOUBLE},
+      rtqty = #{record.rtqty,jdbcType=DOUBLE},
+      rttot = #{record.rttot,jdbcType=DOUBLE},
+      lostqty = #{record.lostqty,jdbcType=DOUBLE},
+      losttot = #{record.losttot,jdbcType=DOUBLE},
+      jsdisplay = #{record.jsdisplay,jdbcType=VARCHAR},
+      jsqty = #{record.jsqty,jdbcType=DOUBLE},
+      js = #{record.js,jdbcType=VARCHAR},
+      remark = #{record.remark,jdbcType=VARCHAR},
+      updated_datetime = #{record.updatedDatetime,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <insert id="insert" parameterType="com.whale.eos.entity.bill.EosBillLine" >
+    insert into eos_bill_line (id, bno, bno_user, 
+      rbno, item_id, store_id, 
+      cost, lastpricein, price, 
+      price2, qty, qty2, tot, 
+      tot2, rtqty, rttot, lostqty, 
+      losttot, jsdisplay, jsqty, 
+      js, remark, updated_datetime
+      )
+    values (#{id,jdbcType=BIGINT}, #{bno,jdbcType=VARCHAR}, #{bnoUser,jdbcType=VARCHAR}, 
+      #{rbno,jdbcType=VARCHAR}, #{itemId,jdbcType=VARCHAR}, #{storeId,jdbcType=DOUBLE}, 
+      #{cost,jdbcType=DOUBLE}, #{lastpricein,jdbcType=DOUBLE}, #{price,jdbcType=DOUBLE}, 
+      #{price2,jdbcType=DOUBLE}, #{qty,jdbcType=DOUBLE}, #{qty2,jdbcType=DOUBLE}, #{tot,jdbcType=DOUBLE}, 
+      #{tot2,jdbcType=DOUBLE}, #{rtqty,jdbcType=DOUBLE}, #{rttot,jdbcType=DOUBLE}, #{lostqty,jdbcType=DOUBLE}, 
+      #{losttot,jdbcType=DOUBLE}, #{jsdisplay,jdbcType=VARCHAR}, #{jsqty,jdbcType=DOUBLE}, 
+      #{js,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR}, #{updatedDatetime,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.whale.eos.entity.bill.EosBillLine" >
+    insert into eos_bill_line
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      id,
+      bno,
+      bno_user,
+      rbno,
+      item_id,
+      store_id,
+      cost,
+      lastpricein,
+      price,
+      price2,
+      qty,
+      qty2,
+      tot,
+      tot2,
+      rtqty,
+      rttot,
+      lostqty,
+      losttot,
+      jsdisplay,
+      jsqty,
+      js,
+      remark,
+      updated_datetime,
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      #{id,jdbcType=BIGINT},
+      #{bno,jdbcType=VARCHAR},
+      #{bnoUser,jdbcType=VARCHAR},
+      #{rbno,jdbcType=VARCHAR},
+      #{itemId,jdbcType=VARCHAR},
+      #{storeId,jdbcType=DOUBLE},
+      #{cost,jdbcType=DOUBLE},
+      #{lastpricein,jdbcType=DOUBLE},
+      #{price,jdbcType=DOUBLE},
+      #{price2,jdbcType=DOUBLE},
+      #{qty,jdbcType=DOUBLE},
+      #{qty2,jdbcType=DOUBLE},
+      #{tot,jdbcType=DOUBLE},
+      #{tot2,jdbcType=DOUBLE},
+      #{rtqty,jdbcType=DOUBLE},
+      #{rttot,jdbcType=DOUBLE},
+      #{lostqty,jdbcType=DOUBLE},
+      #{losttot,jdbcType=DOUBLE},
+      #{jsdisplay,jdbcType=VARCHAR},
+      #{jsqty,jdbcType=DOUBLE},
+      #{js,jdbcType=VARCHAR},
+      #{remark,jdbcType=VARCHAR},
+      #{updatedDatetime,jdbcType=VARCHAR},
+    </trim>
+  </insert>
+  -->
+</mapper>

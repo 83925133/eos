@@ -1,0 +1,46 @@
+@charset "utf-8";
+@import url(public.css);
+
+.box{ width:950px;font-family:Î¢ÈíÑÅºÚ; font-size:10pt;font-family:Î¢ÈíÑÅºÚ; font-size:10pt margin:0 auto; text-align:left;}
+.header{ width:950px;font-family:Î¢ÈíÑÅºÚ; font-size:10pt;font-family:Î¢ÈíÑÅºÚ; font-size:10pt height:120px;}
+.logo{ width:200px; height:88px; float:left;}
+.logo img{ margin-top:2px; margin-left:10px;}
+.heRight_info{ width:730px; height:88px; float:right;}
+.adMove{ width:485px; height:88px; float:left;}
+.adMove img{ margin-left:0; margin-top:8px;}
+.adHelp{ width:220px; height:88px; float:right;}
+.adHelp .up{ height:20px; text-align: right; line-height:19px;}
+.adHelp .down{ height:66px; background:url(../img/no-repeat.gif) no-repeat 5px -94px;}
+
+.NList_content{ width:950px;font-family:Î¢ÈíÑÅºÚ; font-size:10pt;font-family:Î¢ÈíÑÅºÚ; font-size:10pt margin-top:8px; }
+.NList_position{ width:950px;font-family:Î¢ÈíÑÅºÚ; font-size:10pt;font-family:Î¢ÈíÑÅºÚ; font-size:10pt height:16px; margin-top:10px; margin-bottom:10px;}
+.NList_position .one{ width:60px; height:16px; background:url(../img/no-repeat.gif) no-repeat left -260px; overflow:hidden; float:left;}
+.NList_position .two{ height:11px; padding-left:5px; padding-top:5px; color:#2b2b2b; float:left;}
+.NList_main{width:928px; border:1px solid #afd2fa; padding:10px;}
+.NList_main dt{ width:820px; height:20px; padding-left:20px; float:left; padding-top:5px; background:url(../img/no-repeat.gif) no-repeat -448px -6px;}
+.NList_main dd{ width:80px; height:20px; float:left; text-align:right; color:#999; padding-top:5px;}
+
+.NInfo_main{width:928px; border:1px solid #afd2fa; padding:10px;}
+.NInfo_main .title{ text-align:center; padding:5px 0; font-size:24px; font-weight:bold;}
+.NInfo_main .author{text-align:center; padding:3px 0; color:#a7a7a7; border-bottom:1px dashed #a7a7a7;}
+.NInfo_main .conText{ font-size:14px; line-height:21px; margin:10px 0;}
+.NInfo_main .conText p{ text-indent:28px;}
+
+.main_search{border-left:1px solid #afd2fa; border-top:1px solid #afd2fa;}
+.main_search .red{ color:#F00;}
+.main_search th{ border-bottom:1px solid #afd2fa; border-right:1px solid #afd2fa; text-align:left; height:20px; white-space: nowrap; color:#15428b; background:url(../img/dd_search.png) repeat-x left -38px; padding:2px; line-height:18px;}
+.main_search td{ border-bottom:1px solid #afd2fa; border-right:1px solid #afd2fa; text-align:left; height:20px; white-space: nowrap; color:#000; padding:2px; line-height:18px;}
+.hbantu{ width:20px; height:20px; float:left; background:url(../img/dd_search.png) no-repeat left -78px;}
+
+/* åˆ†é¡µ */
+.pagination{ height:30px; padding-top:15px; font-size:12px}
+.pagination a{ float:left; border:1px solid #d9d9d9; margin-left:8px; text-decoration:none; color:#777; padding:2px 5px 2px 5px}
+.pagination a:hover{border:1px solid #ff7f40; color:#111;}
+.pagination span{color:#777; float:left; margin-left:12px; line-height:20px;}
+.pagination input{width:35px; border:1px solid #99b0bb}
+.pagination .pageprevious{ padding-left:15px; color:#297ce2; background-position:-68px -112px;}
+.pagination .pagenext{padding-right:15px; color:#297ce2; background-position:right -112px;}
+
+.footer{ width:950px;font-family:Î¢ÈíÑÅºÚ; font-size:10pt;font-family:Î¢ÈíÑÅºÚ; font-size:10pt height:100px; margin-top:10px; text-align:center; line-height:25px; background:url(../img/repeat.gif) repeat-x left -95px; color:#0055AA;}
+.footer a:link, .footer a:visited { color: #0055AA; text-decoration: none}
+.footer a:hover { color: #EA5822; }

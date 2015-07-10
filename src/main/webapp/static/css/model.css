@@ -1,0 +1,68 @@
+@charset "utf-8";
+/*********公共属性************/
+*{ border:0; margin:0; padding:0;}
+body{ color: #000; font:12px "宋体", Geneva, sans-serif; text-align: center; background:#fff;}
+li{ list-style-type: none}
+a:link, a:visited { color: #666666; text-decoration: none}
+a:hover { color: #EA5822; }
+#clear, .clear{ clear:both; font-size:0; line-height:0; margin:0; padding:0; text-align:0;}
+.show_pic{ border:1px #b4d9eb solid; padding:2px}
+.show_pic_cur{ border:1px #ff9700 solid;padding:2px}
+.red{ color:#ff0000;}
+
+#MD_box{ width:710px; margin:0 auto; text-align:left; padding:14px; border:1px solid #b7c3cf; background:#fafcfe url(../img/plane/rep.jpg) repeat-x left bottom;}
+#MD_search-bar{ border-width:1px 2px 2px 1px; border-style:solid; border-color:#B7C3CF; background:#E5F3FF; color:#404040; padding:10px;}
+#MD_search-bar a:link, #MD_search-bar a:visited { color: #3366cc; text-decoration: none}
+#MD_search-bar a:hover { color: #EA5822; }
+#MD_search-bar a{ margin-left:10px;}
+#MD_search-bar li{ height:18px;}
+.MD_planeInfo{ padding-top:25px;}
+#MD_hd{ height:20px; text-align:left;}
+#MD_hd h2 {color:#004480; display:inline; font-size:14px; font-weight:bold; height:18px; padding-bottom:10px;}
+#MD_hd em {color:#E26E23;font-size:14px;font-style:normal;font-weight:normal; height:18px; padding-bottom:10px;}
+#MD_fa-hr { background:#0066BF; height:3px; overflow:hidden; margin-top:3px; border-bottom:2px solid #c3c4c4; clear:both;}
+#MD_bd{ margin-top:6px;}
+#MD_bd .photo {float:left;height:200px;margin:0 10px 20px 0;overflow:hidden;width:300px;}
+#MD_bd .param-table {width:285px;}
+#MD_bd .param-table td span {background:none repeat scroll 0 0 #EDF1F5;margin-top:1px; color:#404040;}
+#MD_bd .param-table span {display:block;height:24px;line-height:24px;padding:0 10px;}
+#MD_bd .param-table th span {background:none repeat scroll 0 0 #E5F3FF;margin:1px 1px 0 0; color:#404040; font-weight:normal; text-align:left;}
+#MD_bd .param-table span {display:block;height:24px;line-height:24px;padding:0 10px;}
+#MD_bd .description p {text-indent:24px; color:#404040; line-height:18px;}
+
+#AP_box{ width:710px; margin:0 auto; text-align:left; padding:14px; border:1px solid #b7c3cf; background:#fafcfe url(../img/plane/rep.jpg) repeat-x left bottom;}
+#AP_search-bar select {border:1px solid #A6A6A6; height:20px; font:12px 宋体, Verdana, Geneva, sans-serif; line-height:0px;}
+#AP_search-bar{ border-width:1px 2px 2px 1px; border-style:solid; border-color:#B7C3CF; background:#F3F3F3; color:#404040; padding:10px;}
+#AP_search-bar .wrap {padding:10px;}
+#AP_search-bar .city {margin-left:20px;}
+#AP_search-bar .airport {margin-left:20px;}
+#AP_search-bar .fa-gray-btn span {margin-left:10px;padding-right:10px;}
+#AP_search-bar .fa-gray-btn, #AP_search-bar .fa-gray-btn span {color:#404040;cursor:pointer;display:inline-block;height:20px;}
+#AP_search-bar .fa-gray-btn{ background:url(../img/airport/btn.jpg) no-repeat left top; width:44px; height:17px; padding-top:3px; margin-left:20px;}
+.AP_planeInfo{ margin-top:25px;}
+#AP_hd h2 {color:#004480;display:inline;font-size:14px;font-weight:bold;margin:0 10px;}
+#AP_hd em {color:#E26E23;font-size:14px;font-style:normal;font-weight:normal;}
+.AP_hd h2 {color:#004480;display:inline;font-size:14px;font-weight:bold;margin:0 10px;}
+.AP_hd em {color:#E26E23;font-size:14px;font-style:normal;font-weight:normal;}
+#AP_fa-hr { background:#0066BF; height:3px; overflow:hidden; margin-top:3px; border-bottom:2px solid #c3c4c4;}
+#AP_bd{ padding-top:8px;}
+#AP_bd h3{ padding:10px 25px; _width:680px; background:url(../img/airport/fly_ico.gif) no-repeat left top; border-bottom:1px solid #CCC; margin-bottom:5px; font-size:14px; line-height:0px; overflow:hidden;}
+#AP_bd .photo {float:left; margin:0 10px 5px 0;overflow:hidden;width:300px;}
+#AP_bd p{line-height:18px; color:#3e4e4a;}
+
+#LG_box{ width:710px; margin:0 auto; text-align:left; padding:14px; border:1px solid #b7c3cf; background:#fafcfe url(../img/plane/rep.jpg) repeat-x left bottom;}
+#LG_box .block {clear:both;}
+#LG_box .fa-bar {background-position:0 -165px;background-repeat:repeat-x;height:25px;overflow:hidden;position:relative;}
+#LG_box .fa-bar h3{background:url(../img/airport/top_li.jpg) repeat-x left top; height:20px; padding-top:5px; padding-left:10px; color:#15436a;}
+#LG_box .fa-bar .tl {left:0;top:0 !important;}
+#LG_box .fa-bar .c {background-color:#FFFFFF;display:block;font-size:1px;height:1px;line-height:1px;position:absolute;width:1px;}
+#LG_box .fa-bar .tr {right:0;top:0 !important;}
+#LG_box .fa-bar .tr {right:0;top:0 !important;}
+#LG_box .fa-bar .br {bottom:0 !important;right:0;}
+#LG_box .block dl {overflow:hidden;padding:5px 0 10px 12px;}
+#LG_box .block dt {cursor:pointer;height:24px;line-height:26px;padding-left:15px;position:relative; background:url(../img/airport/top.gif) no-repeat 5px 10px;}
+#LG_box .block dt span.black-arrow {left:0;position:absolute;top:10px;}
+#LG_box .e .black-arrow {background-position:-16px -10px;}
+#LG_box .black-arrow {display:inline-block;height:7px;line-height:100px;overflow:hidden;width:7px;}
+element.style {display:none;}
+#LG_box .block dd {clear:both;color:#0066BF;padding-bottom:3px;text-indent:24px;}

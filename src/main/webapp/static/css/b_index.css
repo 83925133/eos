@@ -1,0 +1,72 @@
+@charset "utf-8";
+@import url("css.css");/*全局样式*/
+@import url('l-css.css');/*表格样式*/
+@import url('etc-css.css');/*航空公司图*/
+@import url('revise.css');/*微调样式*/
+
+/********** 整体框架样式 ************/
+.CM_mMeun .sdmenu div, .CM_mMeun .sdmenu div span, .CM_mMeun .sdmenu div.collapsed span, .CM_mMeun .sdmenu div a:hover, .CM_mMtop, .CM_cPl, .CM_cPr{background: url(../img/web_pic.gif) no-repeat;}
+.CM_nav, .CM_cPosition{background:url(../img/web_rep.gif) repeat-x}
+.CM_navL, .CM_navL .current{background:url(../img/web_rep.gif) no-repeat}
+
+.CM_box{ width:950px;font-family:微软雅黑; font-size:10pt;font-family:微软雅黑; font-size:10pt margin:0 auto; text-align:center; position:relative;margin-top:8px;}
+.CM_header{ width:950px;font-family:微软雅黑; font-size:10pt;font-family:微软雅黑; font-size:10pt height:82px; }
+.CM_headTop{ width:950px;font-family:微软雅黑; font-size:10pt;font-family:微软雅黑; font-size:10pt height:48px; overflow:hidden; background:url(../img/banner-时钟.jpg) no-repeat left top;}
+.CM_logo{ width:125px; height:48px; float:left; }
+.CM_snav{ width:360px; height:48px; float:right;}
+.CM_nhelp{ color:#6cc2ed;  float:right; padding:4px 5px 0 0;}
+.CM_nhelp a:link, .CM_nhelp a:visited { color: #3366cc; text-decoration: none}
+.CM_nhelp a:hover { color: #EA5822; }
+.CM_nav{ width:950px;font-family:微软雅黑; font-size:10pt;font-family:微软雅黑; font-size:10pt height:31px; background-position:center 0px; float:left; margin-top:3px;}
+.CM_nav a:link, .CM_nav a:visited { color: #404040; text-decoration: none}
+.CM_nav a:hover { color: #EA5822; }
+.CM_navL{ width:900px; height:31px; background-position:center 0px; float:left;}
+.CM_navL ul {height:31px;}
+.CM_navL li.current {margin-top:3px; position:relative;}
+.CM_navL li {display:inline; float:left; margin-top:3px; margin-right:5px;}
+.CM_navL .current{ background-position:left top;}
+.CM_navL .current a:hover span{color:#F60; background:url(../img/web_rep.gif) no-repeat left -top;}
+.CM_navL .current a span {background:url(../img/web_rep.gif) no-repeat right -39px; color:#FFFFFF; height:22px; padding:5px 10px 0 10px; display:inline-block;}
+.CM_navL a span {cursor:pointer; display:inline-block; font-size:12px; font-weight:bold; height:22px; padding:5px 10px 0 10px; }
+.CM_navL a:hover span{ background:url(../img/web_rep.gif) no-repeat right -199px; height:22px; display:block; -display:inline-block; color:#F60;}
+.CM_navL a:hover{ background:url(../img/web_rep.gif) no-repeat left -160px; height:22px; display:block; -display:inline-block;}
+.CM_navR{ width:30px; height:31px; background:url(../img/web_rep.gif) no-repeat right -279px; float:right;}
+.CM_main{ width:950px;font-family:微软雅黑; font-size:10pt;font-family:微软雅黑; font-size:10pt margin-top:8px;}
+.CM_mMeun{ width:150px; float:left; border:1px solid #C4D5DF;}
+.CM_mMeun .sdmenu {width: 150px;}
+.CM_mMeun .sdmenu div { background-position:-273px -56px; overflow: hidden;}
+.CM_mMeun .sdmenu div span {height: 16px; display: block; padding: 5px 25px; font-weight: bold; color: #414141; background-position:-823px -191px; cursor: default; overflow:hidden;}
+.CM_mMeun .sdmenu div.collapsed span { background-position:-823px -215px;}
+.CM_mMeun .sdmenu div a {height: 17px; display: block; padding:3px 25px; overflow:hidden; display: block; color: #414141;}
+.CM_mMeun .sdmenu div a.current {background : #498cd0; color:#fff;}
+.CM_mMeun .sdmenu div a:hover { background-position:right -236px; background-color:#f96f37; color: #fff;text-decoration: none;}
+.CM_mMtop{ width:122px; height:17px; padding-top:3px; color:#3366CC; padding-left:28px; background-position:-492px -55px;}
+.CM_content{ width:790px; float:right;}
+.CM_contact{ height:18px; border:1px solid #fae2b9; background:#ffffe3; color:#ff6600; padding-left:10px; padding-top:6px;}
+.CM_contact span{ color:#404040;}
+.CM_cPosition{ width:790px; height:28px; background-position:left -79px; line-height:27px; color:#787878;}
+.CM_cPl{ width:680px; height:28px; padding-left:35px; float:left; background-position:-810px -54px; }
+.CM_cPr{ width:190px; height:28px; padding-left:20px; float:right; background-position:-825px -124px; white-space:normal; overflow:hidden;}
+
+.CM_fram{ width:788px; padding-bottom:20px; 
+	 overFlow-y: hidden ;
+     overFlow-x:atuo ;     
+    /*   滚动条相关的颜色属性 */
+     scrollBar-face-color: #7abae9;        /* 滑块 */
+     scrollBar-hightLight-color: #fff;    /* 高亮 */
+     scrollBar-3dLight-color: #e8f3f8;    /* 3维光线 */
+     scrollBar-darkshadow-color:#fff;    /* 暗影    */
+     scrollBar-shadow-color:#e8f3f8;      /* 阴影   */
+     scrollBar-arrow-color:#fff;       /* 箭头 */
+     scrollBar-track-color:#e8f3f8;         /* 滑道颜色 */
+     scrollBar-base-color:#e8f3f8;          /* 主要颜色 */
+}
+.popinfo{ border:1px solid #c4d4e1;}
+.popinfo .title {height:20px; overflow:hidden;background:#E9F1F4; font-weight:bold; font-size:12px; color:#155e9a; border:1px solid #fff;}
+.popinfo .title .two{ width:185px; padding:3px 0; text-indent:10px; float:left; height:16px;}
+.popinfo .title .three{ width:30px; padding:3px 0; height:16px; float:right; font-weight:normal;}
+.popinfo_con{ padding:5px 10px;}
+.footer{width:950px;font-family:微软雅黑; font-size:10pt;font-family:微软雅黑; font-size:10pt height:50px; margin-top:10px; text-align:center; line-height:25px; background:url(../img/repeat.gif) repeat-x left -95px; color:#0055AA;}
+.footer a:link, #footer a:visited { color: #0055AA; text-decoration: none}
+.footer a:hover { color: #EA5822; }
+.PageBreak{ page-break-after:   always; }

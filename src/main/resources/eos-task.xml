@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<!-- 定义:调度对象 -->
+	<bean id="taskDemo" class="com.whale.eos.frame.task.TaskDemo"></bean>
+	
+	<!--  ++++++++++++++++++++++++++++++++我是华丽的分割线++++++++++++++++++++++++++++++++++++  -->
+	
+	<!-- MethodInvokingJobDetailFactoryBean能够定义一个执行特定对象的单个方法的任务-->
+	<bean id="springTask1" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="taskDemo" /><!--调度对象 -->
+		<property name="targetMethod" value="excuteTask1" /><!--要执行的方法 -->
+	</bean>
+	<!-- 通过CronTriggerBean在Bean配置文件中配置Quartz的cronTrigger对象。jobDetail是sprintTask这个bean,-->
+	<bean id="cronTrigger1" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="springTask1" />
+		<!-- run every morning at 6 AM -->
+		<!-- <property name="cronExpression" value="59 * * * * ?" /> -->
+		<!-- 每20秒执行 -->
+		<property name="cronExpression">
+			<value>0/20 * * * * ?</value>
+		</property>
+	</bean>
+	
+	<bean id="springTask2" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="taskDemo" /><!--调度对象 -->
+		<property name="targetMethod" value="excuteTask2" /><!--要执行的方法 -->
+	</bean>
+	<!-- 通过CronTriggerBean在Bean配置文件中配置Quartz的cronTrigger对象。jobDetail是sprintTask这个bean,-->
+	<bean id="cronTrigger2" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="springTask2" />
+		<!-- run every morning at 6 AM -->
+		<!-- <property name="cronExpression" value="59 * * * * ?" /> -->
+		<!-- 每5秒执行 -->
+		<property name="cronExpression">
+			<value>*/5 * * * * ?</value>
+		</property>
+	</bean>
+	
+	<!--  ++++++++++++++++++++++++++++++++我是华丽的分割线++++++++++++++++++++++++++++++++++++  -->
+	
+	<!--管理触发器的总设置,配置SchedulerFactoryBean实例来创建Scheduler对象,用于允许触发,可以在这个工厂Bean中指定多个触发器。 -->
+	<bean autowire="no" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list><!--list中可指定多个触发器-->
+				<ref local="cronTrigger1" />
+				<ref local="cronTrigger2" />
+			</list>
+		</property>
+	</bean>
+</beans>

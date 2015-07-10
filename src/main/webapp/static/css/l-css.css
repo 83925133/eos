@@ -1,0 +1,348 @@
+/* 表格基础样式 */
+table.basetable{width:100%;}
+table.basetable th{height:28px; line-height:18px; background: url(../img/tab_h.jpg) repeat-x left top; background-color:#ebecee; border-right:1px solid #d0d0d0;  border-bottom:1px solid #c6d5f5; font-weight:normal; padding-left:4px; padding-right:3px; text-align:left; white-space:nowrap}
+table.basetable th a{padding-right:10px; background-position:right 0; color:#03319a; cursor:pointer;}
+table.basetable th a:hover{text-decoration:none}
+table.basetable td{height:28px; padding-left:4px; padding-right:3px; text-align:left;border-bottom:1px solid #ededed; border-right:1px solid #ededed; white-space:nowrap;}
+table.basetable .booklink{color:#9a0303;}
+table.basetable .th-last{border-right:none;}
+table.basetable .input-edit{width:90%}
+table.basetable .tr-color{background-color:#e8f3f8}
+table.basetable .lbo{ border-left:1px solid #dce6f9;}
+table.basetable .rbo{ border-right:1px solid #dce6f9;}
+.l-panel-control{height:24px; background-color:#f2f2f2; border-bottom:1px solid #ccc;}
+/* 表格样式----分页 */
+.pagination {
+	FONT-FAMILY: Tahoma; HEIGHT: 22px; FONT-SIZE: 12px; height:30px; margin-top:15px;
+	margin-left:5px;
+}
+.pagination a,.page-prev,.page-cur,.page-break,.page-skip {
+	TEXT-ALIGN: center; LINE-HEIGHT: 18px; MARGIN: 0px 3px 0px 0px; FONT-FAMILY: Tahoma, SimSun, Arial; WHITE-SPACE: nowrap; FLOAT: left; HEIGHT: 18px; VERTICAL-ALIGN: middle
+}
+.pagination a {BORDER: #ccc 1px solid; PADDING: 0px 5px; }
+.pagination a:hover {BORDER: #fd6d01 1px solid; TEXT-DECORATION: none}
+a.page-prev {
+	PADDING-left: 16px; background-position:-68px -112px; 
+}
+.page-cur,.page-break{PADDING: 0px 3px;}
+a.page-next {PADDING-RIGHT: 16px; background-position:right -112px;}
+.page-cur {
+	BORDER: #fd6d01 1px solid;  PADDING: 0px 5px; BACKGROUND-COLOR: #ffede1; COLOR: #fd6d01; FONT-WEIGHT: 700; }
+.page-skip {PADDING: 0px 3px;  COLOR: #666; }
+.page-skip INPUT {
+	BORDER: #999 1px solid; TEXT-ALIGN: center; MARGIN: 0px 5px; WIDTH: 30px; FONT-FAMILY: Tahoma, SimSun, Arial; HEIGHT: 18px; COLOR: #000; VERTICAL-ALIGN: middle; 
+}
+.page-skip .btn-s{ height:19px; margin-left:5px;width: 37px; background:url(../img/bg.gif) no-repeat -204px -136px; border:0 none;}
+.page-skip .input-text {}
+div.pagination a.unclick-l,div.pagination a.unclick-r{background-color:#f2f2f2; color:#ccc; border:1px solid #ccc; cursor:default; background-position:-152px -112px;}
+div.pagination a.unclick-r{ background-position:right -171px;}
+
+/* Penel样式 */
+div.l-panel{margin-top:5px; border:1px solid #c4d5e0; font-size:12px;}
+div.l-panel .title{height:22px; background-repeat:repeat-x; background-position:0 -38px; border-bottom:1px solid #c4d5e0; line-height:22px; padding-left:3px; position:relative; margin:2px;}
+div.l-panel .title2{margin:20px 20px 0px 20px; line-height:25px; background-color:#dee7ef; font-size:14px; font-weight:bold; padding-left:3px;}
+div.l-panel .title .num,.l-panel .title2 .num{padding:2px 5px 2px 5px; background-color:#c60; color:#FFF; margin-right:5px; font-size:12px;}
+div.l-panel .title .icon-search{ height:21px; width:13px; background-position:0 -60px; float:left; margin:0 8px 0 2px;}
+div.l-panel .title .icon-view{height:21px; width:16px; background-position:-16px -60px; float:left; margin:0 8px 0 2px;}
+div.l-panel .content{padding:5px 20px 10px 20px;}
+div.l-panel .content .l-select{ width:120px;}
+.l-panel-table{font-size:12px; width:100%;  _padding-bottom:0px;  
+	 overFlow-y: hidden ;
+     overFlow-x:auto ;     
+}
+div.l-panel .operate{position:absolute; top:-1px; right:1px;}
+
+/*提示样式*/ 
+div.l-tip{ position:absolute; background-color:#e4edfe; border:1px solid #809cd0; font-size:12px; padding:10px; line-height:16px;}
+/*错误信息*/ 
+div.t-error{border:none;background:#f2f2f2;padding:0;margin:10px;  height:auto;border-bottom:1px dotted #ccc; padding-bottom:10px}
+div.t-error div{border:none;background:none; font-weight:bold; color:#cc0000; }
+div.t-error ul{margin:0; padding:0; background:none}
+div.t-error ul li{list-style:none; list-style-position:inside; list-style-type:square; margin:0; padding-left:25px;_padding:0; color:#cc0000;}
+/*自动完成样式*/ 
+DIV.t-autocomplete-menu {
+    z-index: 10;
+	font-size:12px;
+	-webkit-box-shadow: rgb(51, 51, 51) 2px 2px 5px;
+}
+div.t-autocomplete-menu-title{
+	height:25px;
+	line-height:25px;
+	color:#fff;
+	background-color:#004da3;
+	text-indent:10px;
+	white-space:nowrap;
+	}
+DIV.t-autocomplete-menu UL {
+    border: 1px solid #999;
+    background-color: #fff;
+    overflow: auto;
+	padding:0;
+}
+DIV.t-autocomplete-menu LI {
+    color: #333;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+	border-bottom:1px solid #FFFFFF;
+    border-top:1px solid #FFFFFF;
+	padding:6px 9px 6px 6px;
+	white-space:nowrap;
+}
+DIV.t-autocomplete-menu LI.selected {
+	color: #333;
+	background:#e8f4ff;
+	font-weight:normal;
+	border-bottom:1px solid #7F9DB9;
+    border-top:1px solid #7F9DB9;
+}
+/*日期控件样式*/
+.datePicker {
+	-moz-user-focus:normal;
+	background:none repeat scroll 0 0 window;
+	border:1px solid #fd5a14;
+	cursor:default;	
+	padding:0;
+	z-index:10;
+	width:170px;
+}
+.datePicker td {
+    font: smallcaption;
+    font: small-caption;
+    text-align: center;
+    color: WindowText;
+    cursor: default;
+    font-weight: normal !important;
+    -moz-user-select: none;
+    padding: 0;
+}
+.datePicker td.red {
+    color: red;
+}
+.datePicker .header {
+    background: url("../img/date.header.jpg") repeat-x left top;
+    padding:0px;margin:0px;
+    border-bottom: 1px solid #fd5a14;
+	height:21px;
+	position:relative;
+}
+.datePicker .header .labelContainer{position:absolute;left:18px; width:132px; top:1px;text-align:center}
+
+.datePicker .footer {
+    width:100%;
+   height:21px;
+	margin-top:5px;
+	padding:0;
+	background:url("../img/date.footer.jpg") repeat-x left top;
+}
+.datePicker .grid {
+    background:#fff;
+    width:100%;
+}
+.datePicker .gridTable {
+    width:100%;
+    
+}
+.datePicker .gridTable td {
+    width: 14.3%;
+	height:18px;
+	padding:0;
+	margin:0;
+}
+.datePicker Table td{
+	border-bottom:none;
+}
+.datePicker .gridTable .daysRow td {
+    font-weight: bold !important;
+    border-bottom: 1px solid #fd5a14;
+    color:#3B3B3B;
+}
+.datePicker .grid .gridTable .upperLine {
+    width: 100%;
+    height: 2px;
+    overflow: hidden;
+    background: transparent;
+}
+.datePicker td.today {
+    font-weight: bold !important;
+    border:1px solid #8b0000; 
+    background:#d6e2f2;
+}
+.datePicker td.selected {
+    background: Highlight;
+    color: HighlightText !important;
+}
+
+.datePicker a.topLabel{
+    color:#FFF;
+    font-weight: bold !important;
+    text-decoration: none;
+}
+.datePicker td.filler {
+    width: 100%;
+}
+.datePicker button {
+    font: Caption;
+    border:none;
+    font-size:12px
+}
+.datePicker .previousButton {
+    background: buttonface url( "../img/arrow.left.jpg" ) no-repeat center center;
+	cursor:pointer;
+	height:14px; width:14px;
+	position:absolute; left:3px; top:3px;
+}
+.datePicker .nextButton {
+    background: buttonface url( "../img/arrow.right.jpg" ) no-repeat center center;
+	cursor:pointer;
+	height:14px; width:14px;
+	position:absolute;right:3px; top:3px;
+}
+.datePicker .previousButton,
+    .datePicker .nextButton {
+    width: 14px;
+    height: 14px;
+	margin:0px;padding:0px;
+}
+.datePicker .todayButton,.datePicker .noneButton {
+    width: 50px;
+    background:url("../img/datebtn.jpg") repeat-x left top;
+    border:1px solid #EFBBA5;
+    height:18px;
+    margin-top:2px;
+    float:left;
+}
+.datePicker .noneButton {float:right;}
+.datePicker .labelPopup {
+    position: absolute;
+    width: 166px;
+    z-index:11;
+    background: Window;
+    border: 1px solid #ccc;
+    padding: 1px;
+	display:inline-block;
+	top:-1px;
+	left:-18px;
+}
+
+.datePicker .labelPopup .pmonth{ width:82px; float:left; border-bottom:1px dotted #999;}
+.datePicker .labelPopup .pyear{width:82px; float:left; border-left:1px solid #999;border-bottom:1px dotted #999;}
+.datePicker .labelPopup .pmonth a,.datePicker .labelPopup .pyear a,.datePicker .labelPopup .pyear span{display:block; text-align:center; float:left; width:41px; height:25px; line-height:25x;}
+.datePicker .labelPopup .prevBtn{background: buttonface url( "../img/arrow.left.jpg" ) no-repeat center center;
+	cursor:pointer;}
+.datePicker .labelPopup .nextBtn{background: buttonface url( "../img/arrow.right.jpg" ) no-repeat center center;
+	cursor:pointer;}
+.datePicker .pbtn{ padding:5px 0 4px 0; float:left; text-align:center;}
+.datePicker .pbtn-submit,.datePicker .pbtn-cancel{margin-left:28px; width:50px; background:url("../img/datebtn.jpg") repeat-x left top;
+    border:1px solid #EFBBA5;
+    height:19px;}
+.datePicker .pbtn-cancel{margin-left:10px;}
+.datePicker .labelPopup a {
+    color: WindowText;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.datePicker .labelPopup a:hover {
+    background: Highlight;
+    color: HighlightText;
+}
+.datePicker .labelPopup a.selected {
+    font-weight: bold;
+	background-color:#ccc;
+}
+.daysRow { 
+	background:#f9e1d6; 
+	border-bottom:1px solid #fd5a14;
+	color:#3b3b3b;
+	height:23px;
+}
+
+/*---新增开�?--*/
+table.flight{width:100%}
+table.flight th{height:25px; line-height:18px; background: url(../img/tab_h.jpg) repeat-x left top; border-right:1px solid #d0d0d0;  border-bottom:1px solid #c6d5f5; font-weight:normal; padding-left:3px; padding-right:3px; text-align:left; white-space:nowrap}
+table.flight th a{padding-right:10px; background-position:right 0; color:#03319a; cursor:pointer;}
+table.flight th a:hover{text-decoration:none}
+table.flight .th-last{border-right:none;}
+table.flight td{white-space:nowrap;}
+table.flight p{margin:5px; margin-top:10px;}
+table.flight tr{display: table-row;vertical-align: inherit;}
+table.flight tbody {
+border-color: inherit;
+display: table-row-group;
+vertical-align: middle;
+}
+table.flight .firstlist{border-bottom:none;}
+table.flight .normallist{display:none;border-bottom:none;}
+table.flight .normallist td{border-top:1px dashed #ccc;}
+table.flight .lastlist td{border-bottom:1px dashed #ccc;}
+table.flight .lastlist p{ background-color:#e3e3e3; color:#666; margin:5px; padding-left:5px}
+.show_fold, .show_unfold {
+display: inline-block;
+background: url(../img/arrow.gif) no-repeat;width:54px;
+padding: 1px 0px 0px 16px;
+}
+table.flight .price{
+display: inline-block;
+font-size: 14px;
+line-height: 20px;
+margin: 0px;
+width: 70px;
+	}
+.show_unfold {background-position: 0px -32px;}
+.widget-left{float:left; line-height:26px; padding-left:5px;}
+.widget-taxis .widget-text{float:left; height:22px; line-height:22px; background:url(../img/btn.gif) no-repeat 0 -93px; padding-left:10px; margin-top:2px; border-right:1px solid #999; position:relative; color:#333;}
+.widget-taxis div{float:left;position:relative}
+.widget-taxis .showbox{position:absolute; -webkit-box-shadow: rgb(51, 51, 51) 2px 2px 5px;background: white; border: 1px solid #CCC;
+max-height: 200px;
+overflow-x: hidden;
+overflow-y: hidden;
+padding:3px 0px;top:24px; left:0; display:none}
+.widget-taxis ul li {
+height: 20px;
+margin: 0px;
+}
+.widget-taxis ul li a { font-size:12px; font-family: Simsun, sans-serif;
+display: block;
+height: 20px;
+line-height: 20px;
+padding: 0px 10px;
+}
+.widget-taxis ul li a:hover{ text-decoration:none; background-color:#E8E8E8;outline: none;}
+.widget-taxis .widget-text strong{padding-right:22px; font-weight:normal;float:left; height:22px; line-height:22px;}
+.widget-taxis .widget-text span{float:left; height:22px; line-height:22px; background:url(../img/btn.gif) no-repeat right -93px; padding-right:22px;
+	}
+.widget-taxis .widget-text .up,.widget-taxis .widget-text .down{position:absolute; right:10px;
+background: url(../img/arrow.gif) no-repeat 0px -60px;
+display: block;
+height: 16px;
+top:-1px;
+width: 12px;
+}
+.widget-taxis .widget-text .down{ background-position:0px -92px;}
+.widget-taxis .widget-text .triangle{
+	-webkit-transform: rotate(0deg) scale(1);
+-webkit-transition: all 0.3s ease-out;
+background: url(../img/arrow.gif) no-repeat 0px -224px;
+display: block;
+height: 14px;
+margin-top: -8px;
+position: absolute;
+right: 8px;
+top:10px;
+width: 12px;
+	}
+.widget-taxis .pright{background-position:right -93px; border:none; border-left:1px solid #999;}
+.widget-taxis .boderclear{ border:none}
+.widget-taxis .widget-text:hover{background-position:0 -116px; text-decoration:none;}
+.widget-taxis .widget-text:hover span{background-position:right -116px;}
+.widget-taxis .selected{background:#333;color:#fff;}
+.widget-taxis .selected span{background:#333;color:#fff;}
+.widget-taxis .selected strong{background:#333;color:#fff;}
+.widget-taxis .pright:hover{background-position:right -116px;}
+.widget-taxis .widget-text:hover .triangle {-webkit-transform: rotate(90deg) scale(1);}
+.l-tabs{ border-bottom:2px solid #03319a; height:21px; margin-top:5px;}
+.l-tabs div{ text-align:center; height:21px; line-height:21px; padding:0 10px 0 10px;  float:left; margin-left:10px; border:1px solid #03319a; margin-bottom:-1px;border-bottom:none;}
+.l-tabs .current{background:#03319a; color:#fff; font-weight:bold;  border-top:2px solid #2265fe;}
+
+/*---新增结束---*/

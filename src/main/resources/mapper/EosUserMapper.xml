@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.whale.eos.repository.org.EosUserDAO" >
+  <resultMap id="EosUser" type="com.whale.eos.entity.org.EosUser" >
+    <result column="id" property="id" jdbcType="INTEGER" />
+    <result column="type1" property="type1" jdbcType="VARCHAR" />
+    <result column="type2" property="type2" jdbcType="VARCHAR" />
+    <result column="uno" property="uno" jdbcType="VARCHAR" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="province" property="province" jdbcType="VARCHAR" />
+    <result column="provinceid" property="provinceid" jdbcType="VARCHAR" />
+    <result column="city" property="city" jdbcType="VARCHAR" />
+    <result column="cityid" property="cityid" jdbcType="VARCHAR" />
+    <result column="district" property="district" jdbcType="VARCHAR" />
+    <result column="districtid" property="districtid" jdbcType="VARCHAR" />
+    <result column="addr" property="addr" jdbcType="VARCHAR" />
+    <result column="tel" property="tel" jdbcType="VARCHAR" />
+    <result column="fax" property="fax" jdbcType="VARCHAR" />
+    <result column="mob" property="mob" jdbcType="VARCHAR" />
+    <result column="email" property="email" jdbcType="VARCHAR" />
+    <result column="man" property="man" jdbcType="VARCHAR" />
+    <result column="qq" property="qq" jdbcType="VARCHAR" />
+    <result column="kind" property="kind" jdbcType="VARCHAR" />
+    <result column="paytype" property="paytype" jdbcType="VARCHAR" />
+    <result column="itempricecol" property="itempricecol" jdbcType="VARCHAR" />
+    <result column="state" property="state" jdbcType="VARCHAR" />
+    <result column="user_type" property="userType" jdbcType="VARCHAR" />
+    <result column="chelp" property="chelp" jdbcType="VARCHAR" />
+    <result column="orgmark" property="orgmark" jdbcType="VARCHAR" />
+    <result column="pordersize" property="pordersize" jdbcType="DOUBLE" />
+    <result column="psalesize" property="psalesize" jdbcType="DOUBLE" />
+    <result column="ppurchasesize" property="ppurchasesize" jdbcType="DOUBLE" />
+    <result column="paytypeok" property="paytypeok" jdbcType="VARCHAR" />
+    <result column="itemok" property="itemok" jdbcType="VARCHAR" />
+    <result column="itemdescok" property="itemdescok" jdbcType="VARCHAR" />
+    <result column="saleprocok" property="saleprocok" jdbcType="VARCHAR" />
+    <result column="smok" property="smok" jdbcType="VARCHAR" />
+    <result column="eip_databasetype" property="eipDatabasetype" jdbcType="VARCHAR" />
+    <result column="eip_server1" property="eipServer1" jdbcType="VARCHAR" />
+    <result column="eip_username1" property="eipUsername1" jdbcType="VARCHAR" />
+    <result column="eip_pwd1" property="eipPwd1" jdbcType="VARCHAR" />
+    <result column="eip_mastcol" property="eipMastcol" jdbcType="VARCHAR" />
+    <result column="eip_lastcol" property="eipLastcol" jdbcType="VARCHAR" />
+    <result column="eip_itemidcol" property="eipItemidcol" jdbcType="VARCHAR" />
+    <result column="eip_itemlastcol" property="eipItemlastcol" jdbcType="VARCHAR" />
+    <result column="eip_itemlastvalue" property="eipItemlastvalue" jdbcType="VARCHAR" />
+    <result column="eip_stockidcol" property="eipStockidcol" jdbcType="VARCHAR" />
+    <result column="eip_vendornamecol" property="eipVendornamecol" jdbcType="VARCHAR" />
+    <result column="eip_billidcol" property="eipBillidcol" jdbcType="VARCHAR" />
+    <result column="eip_billmastcol" property="eipBillmastcol" jdbcType="VARCHAR" />
+    <result column="eip_custidcol" property="eipCustidcol" jdbcType="VARCHAR" />
+    <result column="eip_custnamecol" property="eipCustnamecol" jdbcType="VARCHAR" />
+    <result column="eip_custdeptcol" property="eipCustdeptcol" jdbcType="VARCHAR" />
+    <result column="eip_custlastcol" property="eipCustlastcol" jdbcType="VARCHAR" />
+    <result column="eip_custlastvalue" property="eipCustlastvalue" jdbcType="VARCHAR" />
+    <result column="eip_vendoridcol" property="eipVendoridcol" jdbcType="VARCHAR" />
+    <result column="eip_billvendorcol" property="eipBillvendorcol" jdbcType="VARCHAR" />
+    <result column="eip_lastsend" property="eipLastsend" jdbcType="VARCHAR" />
+    <result column="eip_lastgetbill" property="eipLastgetbill" jdbcType="VARCHAR" />
+    <result column="eip_billname1" property="eipBillname1" jdbcType="VARCHAR" />
+    <result column="eip_billname2" property="eipBillname2" jdbcType="VARCHAR" />
+    <result column="custpricemark" property="custpricemark" jdbcType="VARCHAR" />
+    <result column="hbmark" property="hbmark" jdbcType="VARCHAR" />
+    <result column="custtypemark" property="custtypemark" jdbcType="VARCHAR" />
+    <result column="url" property="url" jdbcType="VARCHAR" />
+    <result column="topic" property="topic" jdbcType="VARCHAR" />
+    <result column="created_date" property="createdDate" jdbcType="VARCHAR" />
+    <result column="updated_date" property="updatedDate" jdbcType="VARCHAR" />
+    <result column="created_by" property="createdBy" jdbcType="VARCHAR" />
+    <result column="updated_by" property="updatedBy" jdbcType="VARCHAR" />
+    <result column="created_time" property="createdTime" jdbcType="VARCHAR" />
+    <result column="updated_time" property="updatedTime" jdbcType="VARCHAR" />
+  </resultMap>
+  <resultMap id="EosUserWithBLOBs" type="com.whale.eos.entity.org.EosUserWithBLOBs" extends="EosUser" >
+    <result column="remark" property="remark" jdbcType="LONGVARCHAR" />
+    <result column="eip_sqlin1" property="eipSqlin1" jdbcType="LONGVARCHAR" />
+    <result column="eip_sqlin2" property="eipSqlin2" jdbcType="LONGVARCHAR" />
+    <result column="eip_sqlout1" property="eipSqlout1" jdbcType="LONGVARCHAR" />
+    <result column="eip_sqlout2" property="eipSqlout2" jdbcType="LONGVARCHAR" />
+    <result column="eip_sqlvendor" property="eipSqlvendor" jdbcType="LONGVARCHAR" />
+    <result column="eip_sqlcust" property="eipSqlcust" jdbcType="LONGVARCHAR" />
+    <result column="eip_sqlitem" property="eipSqlitem" jdbcType="LONGVARCHAR" />
+    <result column="eip_sqlstock" property="eipSqlstock" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+	    id, type1, type2, uno, `name`, province, provinceid, city, cityid, district, districtid, 
+	    addr, tel, fax, mob, email, man, qq, kind, paytype, itempricecol, `state`, user_type, 
+	    chelp, orgmark, pordersize, psalesize, ppurchasesize, paytypeok, itemok, itemdescok, 
+	    saleprocok, smok, eip_databasetype, eip_server1, eip_username1, eip_pwd1, eip_mastcol, 
+	    eip_lastcol, eip_itemidcol, eip_itemlastcol, eip_itemlastvalue, eip_stockidcol, eip_vendornamecol, 
+	    eip_billidcol, eip_billmastcol, eip_custidcol, eip_custnamecol, eip_custdeptcol, 
+	    eip_custlastcol, eip_custlastvalue, eip_vendoridcol, eip_billvendorcol, eip_lastsend, 
+	    eip_lastgetbill, eip_billname1, eip_billname2, custpricemark, hbmark, custtypemark, 
+	    url, topic, created_date, updated_date, created_by, updated_by, created_time, updated_time
+  </sql>
+  
+  <select id="findByUno" resultMap="EosUser" parameterType="String">
+		select 
+			u.id, u.type1, u.type2, u.uno, u.`name`, u.province, u.provinceid, u.city, u.cityid, u.district, u.districtid, 
+			u.addr, u.tel, u.fax, u.mob, u.email, u.man, u.qq, u.kind, u.paytype, u.itempricecol, u.`state`, u.user_type, 
+			u.chelp, u.orgmark, u.pordersize, u.psalesize, u.ppurchasesize, u.paytypeok, u.itemok, u.itemdescok, 
+			u.saleprocok, u.smok, u.eip_databasetype, u.eip_server1, u.eip_username1, u.eip_pwd1, u.eip_mastcol, 
+			u.eip_lastcol, u.eip_itemidcol, u.eip_itemlastcol, u.eip_itemlastvalue, u.eip_stockidcol, u.eip_vendornamecol, 
+		    u.eip_billidcol, u.eip_billmastcol, u.eip_custidcol, u.eip_custnamecol, u.eip_custdeptcol, 
+		    u.eip_custlastcol, u.eip_custlastvalue, u.eip_vendoridcol, u.eip_billvendorcol, u.eip_lastsend, 
+		    u.eip_lastgetbill, u.eip_billname1, u.eip_billname2, u.custpricemark, u.hbmark, u.custtypemark, 
+		    u.url, u.topic, u.created_date, u.updated_date, u.created_by, u.updated_by, u.created_time, u.updated_time 
+		from eos_user u where u.uno = #{uno}
+	</select>
+  
+  
+  
+  
+  
+  <!--<sql id="Blob_Column_List" >
+    remark, eip_sqlin1, eip_sqlin2, eip_sqlout1, eip_sqlout2, eip_sqlvendor, eip_sqlcust, 
+    eip_sqlitem, eip_sqlstock
+  </sql>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <select id="selectByExampleWithBLOBs" resultMap="ResultMapWithBLOBs" parameterType="com.whale.eos.entity.org.EosUserExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from eos_user
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.whale.eos.entity.org.EosUserExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from eos_user
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExampleWithBLOBsAndPage" resultMap="ResultMapWithBLOBs" parameterType="com.whale.eos.entity.org.EosUserExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from eos_user
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExampleAndPage" resultMap="BaseResultMap" parameterType="com.whale.eos.entity.org.EosUserExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from eos_user
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <delete id="deleteByExample" parameterType="com.whale.eos.entity.org.EosUserExample" >
+    delete from eos_user
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <select id="countByExample" parameterType="com.whale.eos.entity.org.EosUserExample" resultType="java.lang.Integer" >
+    select count(*) from eos_user
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update eos_user
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.type1 != null" >
+        type1 = #{record.type1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.type2 != null" >
+        type2 = #{record.type2,jdbcType=VARCHAR},
+      </if>
+      <if test="record.uno != null" >
+        uno = #{record.uno,jdbcType=VARCHAR},
+      </if>
+      <if test="record.name != null" >
+        `name` = #{record.name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.province != null" >
+        province = #{record.province,jdbcType=VARCHAR},
+      </if>
+      <if test="record.provinceid != null" >
+        provinceid = #{record.provinceid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.city != null" >
+        city = #{record.city,jdbcType=VARCHAR},
+      </if>
+      <if test="record.cityid != null" >
+        cityid = #{record.cityid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.district != null" >
+        district = #{record.district,jdbcType=VARCHAR},
+      </if>
+      <if test="record.districtid != null" >
+        districtid = #{record.districtid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.addr != null" >
+        addr = #{record.addr,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tel != null" >
+        tel = #{record.tel,jdbcType=VARCHAR},
+      </if>
+      <if test="record.fax != null" >
+        fax = #{record.fax,jdbcType=VARCHAR},
+      </if>
+      <if test="record.mob != null" >
+        mob = #{record.mob,jdbcType=VARCHAR},
+      </if>
+      <if test="record.email != null" >
+        email = #{record.email,jdbcType=VARCHAR},
+      </if>
+      <if test="record.man != null" >
+        man = #{record.man,jdbcType=VARCHAR},
+      </if>
+      <if test="record.qq != null" >
+        qq = #{record.qq,jdbcType=VARCHAR},
+      </if>
+      <if test="record.kind != null" >
+        kind = #{record.kind,jdbcType=VARCHAR},
+      </if>
+      <if test="record.paytype != null" >
+        paytype = #{record.paytype,jdbcType=VARCHAR},
+      </if>
+      <if test="record.itempricecol != null" >
+        itempricecol = #{record.itempricecol,jdbcType=VARCHAR},
+      </if>
+      <if test="record.state != null" >
+        `state` = #{record.state,jdbcType=VARCHAR},
+      </if>
+      <if test="record.userType != null" >
+        user_type = #{record.userType,jdbcType=VARCHAR},
+      </if>
+      <if test="record.chelp != null" >
+        chelp = #{record.chelp,jdbcType=VARCHAR},
+      </if>
+      <if test="record.orgmark != null" >
+        orgmark = #{record.orgmark,jdbcType=VARCHAR},
+      </if>
+      <if test="record.pordersize != null" >
+        pordersize = #{record.pordersize,jdbcType=DOUBLE},
+      </if>
+      <if test="record.psalesize != null" >
+        psalesize = #{record.psalesize,jdbcType=DOUBLE},
+      </if>
+      <if test="record.ppurchasesize != null" >
+        ppurchasesize = #{record.ppurchasesize,jdbcType=DOUBLE},
+      </if>
+      <if test="record.paytypeok != null" >
+        paytypeok = #{record.paytypeok,jdbcType=VARCHAR},
+      </if>
+      <if test="record.itemok != null" >
+        itemok = #{record.itemok,jdbcType=VARCHAR},
+      </if>
+      <if test="record.itemdescok != null" >
+        itemdescok = #{record.itemdescok,jdbcType=VARCHAR},
+      </if>
+      <if test="record.saleprocok != null" >
+        saleprocok = #{record.saleprocok,jdbcType=VARCHAR},
+      </if>
+      <if test="record.smok != null" >
+        smok = #{record.smok,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipDatabasetype != null" >
+        eip_databasetype = #{record.eipDatabasetype,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipServer1 != null" >
+        eip_server1 = #{record.eipServer1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipUsername1 != null" >
+        eip_username1 = #{record.eipUsername1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipPwd1 != null" >
+        eip_pwd1 = #{record.eipPwd1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipMastcol != null" >
+        eip_mastcol = #{record.eipMastcol,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipLastcol != null" >
+        eip_lastcol = #{record.eipLastcol,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipItemidcol != null" >
+        eip_itemidcol = #{record.eipItemidcol,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipItemlastcol != null" >
+        eip_itemlastcol = #{record.eipItemlastcol,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipItemlastvalue != null" >
+        eip_itemlastvalue = #{record.eipItemlastvalue,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipStockidcol != null" >
+        eip_stockidcol = #{record.eipStockidcol,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipVendornamecol != null" >
+        eip_vendornamecol = #{record.eipVendornamecol,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipBillidcol != null" >
+        eip_billidcol = #{record.eipBillidcol,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipBillmastcol != null" >
+        eip_billmastcol = #{record.eipBillmastcol,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipCustidcol != null" >
+        eip_custidcol = #{record.eipCustidcol,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipCustnamecol != null" >
+        eip_custnamecol = #{record.eipCustnamecol,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipCustdeptcol != null" >
+        eip_custdeptcol = #{record.eipCustdeptcol,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipCustlastcol != null" >
+        eip_custlastcol = #{record.eipCustlastcol,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipCustlastvalue != null" >
+        eip_custlastvalue = #{record.eipCustlastvalue,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipVendoridcol != null" >
+        eip_vendoridcol = #{record.eipVendoridcol,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipBillvendorcol != null" >
+        eip_billvendorcol = #{record.eipBillvendorcol,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipLastsend != null" >
+        eip_lastsend = #{record.eipLastsend,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipLastgetbill != null" >
+        eip_lastgetbill = #{record.eipLastgetbill,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipBillname1 != null" >
+        eip_billname1 = #{record.eipBillname1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.eipBillname2 != null" >
+        eip_billname2 = #{record.eipBillname2,jdbcType=VARCHAR},
+      </if>
+      <if test="record.custpricemark != null" >
+        custpricemark = #{record.custpricemark,jdbcType=VARCHAR},
+      </if>
+      <if test="record.hbmark != null" >
+        hbmark = #{record.hbmark,jdbcType=VARCHAR},
+      </if>
+      <if test="record.custtypemark != null" >
+        custtypemark = #{record.custtypemark,jdbcType=VARCHAR},
+      </if>
+      <if test="record.url != null" >
+        url = #{record.url,jdbcType=VARCHAR},
+      </if>
+      <if test="record.topic != null" >
+        topic = #{record.topic,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createdDate != null" >
+        created_date = #{record.createdDate,jdbcType=VARCHAR},
+      </if>
+      <if test="record.updatedDate != null" >
+        updated_date = #{record.updatedDate,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createdBy != null" >
+        created_by = #{record.createdBy,jdbcType=VARCHAR},
+      </if>
+      <if test="record.updatedBy != null" >
+        updated_by = #{record.updatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createdTime != null" >
+        created_time = #{record.createdTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.updatedTime != null" >
+        updated_time = #{record.updatedTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.remark != null" >
+        remark = #{record.remark,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="record.eipSqlin1 != null" >
+        eip_sqlin1 = #{record.eipSqlin1,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="record.eipSqlin2 != null" >
+        eip_sqlin2 = #{record.eipSqlin2,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="record.eipSqlout1 != null" >
+        eip_sqlout1 = #{record.eipSqlout1,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="record.eipSqlout2 != null" >
+        eip_sqlout2 = #{record.eipSqlout2,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="record.eipSqlvendor != null" >
+        eip_sqlvendor = #{record.eipSqlvendor,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="record.eipSqlcust != null" >
+        eip_sqlcust = #{record.eipSqlcust,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="record.eipSqlitem != null" >
+        eip_sqlitem = #{record.eipSqlitem,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="record.eipSqlstock != null" >
+        eip_sqlstock = #{record.eipSqlstock,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map" >
+    update eos_user
+    set id = #{record.id,jdbcType=INTEGER},
+      type1 = #{record.type1,jdbcType=VARCHAR},
+      type2 = #{record.type2,jdbcType=VARCHAR},
+      uno = #{record.uno,jdbcType=VARCHAR},
+      `name` = #{record.name,jdbcType=VARCHAR},
+      province = #{record.province,jdbcType=VARCHAR},
+      provinceid = #{record.provinceid,jdbcType=VARCHAR},
+      city = #{record.city,jdbcType=VARCHAR},
+      cityid = #{record.cityid,jdbcType=VARCHAR},
+      district = #{record.district,jdbcType=VARCHAR},
+      districtid = #{record.districtid,jdbcType=VARCHAR},
+      addr = #{record.addr,jdbcType=VARCHAR},
+      tel = #{record.tel,jdbcType=VARCHAR},
+      fax = #{record.fax,jdbcType=VARCHAR},
+      mob = #{record.mob,jdbcType=VARCHAR},
+      email = #{record.email,jdbcType=VARCHAR},
+      man = #{record.man,jdbcType=VARCHAR},
+      qq = #{record.qq,jdbcType=VARCHAR},
+      kind = #{record.kind,jdbcType=VARCHAR},
+      paytype = #{record.paytype,jdbcType=VARCHAR},
+      itempricecol = #{record.itempricecol,jdbcType=VARCHAR},
+      `state` = #{record.state,jdbcType=VARCHAR},
+      user_type = #{record.userType,jdbcType=VARCHAR},
+      chelp = #{record.chelp,jdbcType=VARCHAR},
+      orgmark = #{record.orgmark,jdbcType=VARCHAR},
+      pordersize = #{record.pordersize,jdbcType=DOUBLE},
+      psalesize = #{record.psalesize,jdbcType=DOUBLE},
+      ppurchasesize = #{record.ppurchasesize,jdbcType=DOUBLE},
+      paytypeok = #{record.paytypeok,jdbcType=VARCHAR},
+      itemok = #{record.itemok,jdbcType=VARCHAR},
+      itemdescok = #{record.itemdescok,jdbcType=VARCHAR},
+      saleprocok = #{record.saleprocok,jdbcType=VARCHAR},
+      smok = #{record.smok,jdbcType=VARCHAR},
+      eip_databasetype = #{record.eipDatabasetype,jdbcType=VARCHAR},
+      eip_server1 = #{record.eipServer1,jdbcType=VARCHAR},
+      eip_username1 = #{record.eipUsername1,jdbcType=VARCHAR},
+      eip_pwd1 = #{record.eipPwd1,jdbcType=VARCHAR},
+      eip_mastcol = #{record.eipMastcol,jdbcType=VARCHAR},
+      eip_lastcol = #{record.eipLastcol,jdbcType=VARCHAR},
+      eip_itemidcol = #{record.eipItemidcol,jdbcType=VARCHAR},
+      eip_itemlastcol = #{record.eipItemlastcol,jdbcType=VARCHAR},
+      eip_itemlastvalue = #{record.eipItemlastvalue,jdbcType=VARCHAR},
+      eip_stockidcol = #{record.eipStockidcol,jdbcType=VARCHAR},
+      eip_vendornamecol = #{record.eipVendornamecol,jdbcType=VARCHAR},
+      eip_billidcol = #{record.eipBillidcol,jdbcType=VARCHAR},
+      eip_billmastcol = #{record.eipBillmastcol,jdbcType=VARCHAR},
+      eip_custidcol = #{record.eipCustidcol,jdbcType=VARCHAR},
+      eip_custnamecol = #{record.eipCustnamecol,jdbcType=VARCHAR},
+      eip_custdeptcol = #{record.eipCustdeptcol,jdbcType=VARCHAR},
+      eip_custlastcol = #{record.eipCustlastcol,jdbcType=VARCHAR},
+      eip_custlastvalue = #{record.eipCustlastvalue,jdbcType=VARCHAR},
+      eip_vendoridcol = #{record.eipVendoridcol,jdbcType=VARCHAR},
+      eip_billvendorcol = #{record.eipBillvendorcol,jdbcType=VARCHAR},
+      eip_lastsend = #{record.eipLastsend,jdbcType=VARCHAR},
+      eip_lastgetbill = #{record.eipLastgetbill,jdbcType=VARCHAR},
+      eip_billname1 = #{record.eipBillname1,jdbcType=VARCHAR},
+      eip_billname2 = #{record.eipBillname2,jdbcType=VARCHAR},
+      custpricemark = #{record.custpricemark,jdbcType=VARCHAR},
+      hbmark = #{record.hbmark,jdbcType=VARCHAR},
+      custtypemark = #{record.custtypemark,jdbcType=VARCHAR},
+      url = #{record.url,jdbcType=VARCHAR},
+      topic = #{record.topic,jdbcType=VARCHAR},
+      created_date = #{record.createdDate,jdbcType=VARCHAR},
+      updated_date = #{record.updatedDate,jdbcType=VARCHAR},
+      created_by = #{record.createdBy,jdbcType=VARCHAR},
+      updated_by = #{record.updatedBy,jdbcType=VARCHAR},
+      created_time = #{record.createdTime,jdbcType=VARCHAR},
+      updated_time = #{record.updatedTime,jdbcType=VARCHAR},
+      remark = #{record.remark,jdbcType=LONGVARCHAR},
+      eip_sqlin1 = #{record.eipSqlin1,jdbcType=LONGVARCHAR},
+      eip_sqlin2 = #{record.eipSqlin2,jdbcType=LONGVARCHAR},
+      eip_sqlout1 = #{record.eipSqlout1,jdbcType=LONGVARCHAR},
+      eip_sqlout2 = #{record.eipSqlout2,jdbcType=LONGVARCHAR},
+      eip_sqlvendor = #{record.eipSqlvendor,jdbcType=LONGVARCHAR},
+      eip_sqlcust = #{record.eipSqlcust,jdbcType=LONGVARCHAR},
+      eip_sqlitem = #{record.eipSqlitem,jdbcType=LONGVARCHAR},
+      eip_sqlstock = #{record.eipSqlstock,jdbcType=LONGVARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update eos_user
+    set id = #{record.id,jdbcType=INTEGER},
+      type1 = #{record.type1,jdbcType=VARCHAR},
+      type2 = #{record.type2,jdbcType=VARCHAR},
+      uno = #{record.uno,jdbcType=VARCHAR},
+      `name` = #{record.name,jdbcType=VARCHAR},
+      province = #{record.province,jdbcType=VARCHAR},
+      provinceid = #{record.provinceid,jdbcType=VARCHAR},
+      city = #{record.city,jdbcType=VARCHAR},
+      cityid = #{record.cityid,jdbcType=VARCHAR},
+      district = #{record.district,jdbcType=VARCHAR},
+      districtid = #{record.districtid,jdbcType=VARCHAR},
+      addr = #{record.addr,jdbcType=VARCHAR},
+      tel = #{record.tel,jdbcType=VARCHAR},
+      fax = #{record.fax,jdbcType=VARCHAR},
+      mob = #{record.mob,jdbcType=VARCHAR},
+      email = #{record.email,jdbcType=VARCHAR},
+      man = #{record.man,jdbcType=VARCHAR},
+      qq = #{record.qq,jdbcType=VARCHAR},
+      kind = #{record.kind,jdbcType=VARCHAR},
+      paytype = #{record.paytype,jdbcType=VARCHAR},
+      itempricecol = #{record.itempricecol,jdbcType=VARCHAR},
+      `state` = #{record.state,jdbcType=VARCHAR},
+      user_type = #{record.userType,jdbcType=VARCHAR},
+      chelp = #{record.chelp,jdbcType=VARCHAR},
+      orgmark = #{record.orgmark,jdbcType=VARCHAR},
+      pordersize = #{record.pordersize,jdbcType=DOUBLE},
+      psalesize = #{record.psalesize,jdbcType=DOUBLE},
+      ppurchasesize = #{record.ppurchasesize,jdbcType=DOUBLE},
+      paytypeok = #{record.paytypeok,jdbcType=VARCHAR},
+      itemok = #{record.itemok,jdbcType=VARCHAR},
+      itemdescok = #{record.itemdescok,jdbcType=VARCHAR},
+      saleprocok = #{record.saleprocok,jdbcType=VARCHAR},
+      smok = #{record.smok,jdbcType=VARCHAR},
+      eip_databasetype = #{record.eipDatabasetype,jdbcType=VARCHAR},
+      eip_server1 = #{record.eipServer1,jdbcType=VARCHAR},
+      eip_username1 = #{record.eipUsername1,jdbcType=VARCHAR},
+      eip_pwd1 = #{record.eipPwd1,jdbcType=VARCHAR},
+      eip_mastcol = #{record.eipMastcol,jdbcType=VARCHAR},
+      eip_lastcol = #{record.eipLastcol,jdbcType=VARCHAR},
+      eip_itemidcol = #{record.eipItemidcol,jdbcType=VARCHAR},
+      eip_itemlastcol = #{record.eipItemlastcol,jdbcType=VARCHAR},
+      eip_itemlastvalue = #{record.eipItemlastvalue,jdbcType=VARCHAR},
+      eip_stockidcol = #{record.eipStockidcol,jdbcType=VARCHAR},
+      eip_vendornamecol = #{record.eipVendornamecol,jdbcType=VARCHAR},
+      eip_billidcol = #{record.eipBillidcol,jdbcType=VARCHAR},
+      eip_billmastcol = #{record.eipBillmastcol,jdbcType=VARCHAR},
+      eip_custidcol = #{record.eipCustidcol,jdbcType=VARCHAR},
+      eip_custnamecol = #{record.eipCustnamecol,jdbcType=VARCHAR},
+      eip_custdeptcol = #{record.eipCustdeptcol,jdbcType=VARCHAR},
+      eip_custlastcol = #{record.eipCustlastcol,jdbcType=VARCHAR},
+      eip_custlastvalue = #{record.eipCustlastvalue,jdbcType=VARCHAR},
+      eip_vendoridcol = #{record.eipVendoridcol,jdbcType=VARCHAR},
+      eip_billvendorcol = #{record.eipBillvendorcol,jdbcType=VARCHAR},
+      eip_lastsend = #{record.eipLastsend,jdbcType=VARCHAR},
+      eip_lastgetbill = #{record.eipLastgetbill,jdbcType=VARCHAR},
+      eip_billname1 = #{record.eipBillname1,jdbcType=VARCHAR},
+      eip_billname2 = #{record.eipBillname2,jdbcType=VARCHAR},
+      custpricemark = #{record.custpricemark,jdbcType=VARCHAR},
+      hbmark = #{record.hbmark,jdbcType=VARCHAR},
+      custtypemark = #{record.custtypemark,jdbcType=VARCHAR},
+      url = #{record.url,jdbcType=VARCHAR},
+      topic = #{record.topic,jdbcType=VARCHAR},
+      created_date = #{record.createdDate,jdbcType=VARCHAR},
+      updated_date = #{record.updatedDate,jdbcType=VARCHAR},
+      created_by = #{record.createdBy,jdbcType=VARCHAR},
+      updated_by = #{record.updatedBy,jdbcType=VARCHAR},
+      created_time = #{record.createdTime,jdbcType=VARCHAR},
+      updated_time = #{record.updatedTime,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <insert id="insert" parameterType="com.whale.eos.entity.org.EosUserWithBLOBs" >
+    insert into eos_user (id, type1, type2, 
+      uno, `name`, province, 
+      provinceid, city, cityid, 
+      district, districtid, addr, 
+      tel, fax, mob, email, 
+      man, qq, kind, paytype, 
+      itempricecol, `state`, user_type, 
+      chelp, orgmark, pordersize, 
+      psalesize, ppurchasesize, paytypeok, 
+      itemok, itemdescok, saleprocok, 
+      smok, eip_databasetype, eip_server1, 
+      eip_username1, eip_pwd1, eip_mastcol, 
+      eip_lastcol, eip_itemidcol, eip_itemlastcol, 
+      eip_itemlastvalue, eip_stockidcol, eip_vendornamecol, 
+      eip_billidcol, eip_billmastcol, eip_custidcol, 
+      eip_custnamecol, eip_custdeptcol, eip_custlastcol, 
+      eip_custlastvalue, eip_vendoridcol, eip_billvendorcol, 
+      eip_lastsend, eip_lastgetbill, eip_billname1, 
+      eip_billname2, custpricemark, hbmark, 
+      custtypemark, url, topic, 
+      created_date, updated_date, created_by, 
+      updated_by, created_time, updated_time, 
+      remark, eip_sqlin1, eip_sqlin2, 
+      eip_sqlout1, eip_sqlout2, eip_sqlvendor, 
+      eip_sqlcust, eip_sqlitem, eip_sqlstock
+      )
+    values (#{id,jdbcType=INTEGER}, #{type1,jdbcType=VARCHAR}, #{type2,jdbcType=VARCHAR}, 
+      #{uno,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{province,jdbcType=VARCHAR}, 
+      #{provinceid,jdbcType=VARCHAR}, #{city,jdbcType=VARCHAR}, #{cityid,jdbcType=VARCHAR}, 
+      #{district,jdbcType=VARCHAR}, #{districtid,jdbcType=VARCHAR}, #{addr,jdbcType=VARCHAR}, 
+      #{tel,jdbcType=VARCHAR}, #{fax,jdbcType=VARCHAR}, #{mob,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, 
+      #{man,jdbcType=VARCHAR}, #{qq,jdbcType=VARCHAR}, #{kind,jdbcType=VARCHAR}, #{paytype,jdbcType=VARCHAR}, 
+      #{itempricecol,jdbcType=VARCHAR}, #{state,jdbcType=VARCHAR}, #{userType,jdbcType=VARCHAR}, 
+      #{chelp,jdbcType=VARCHAR}, #{orgmark,jdbcType=VARCHAR}, #{pordersize,jdbcType=DOUBLE}, 
+      #{psalesize,jdbcType=DOUBLE}, #{ppurchasesize,jdbcType=DOUBLE}, #{paytypeok,jdbcType=VARCHAR}, 
+      #{itemok,jdbcType=VARCHAR}, #{itemdescok,jdbcType=VARCHAR}, #{saleprocok,jdbcType=VARCHAR}, 
+      #{smok,jdbcType=VARCHAR}, #{eipDatabasetype,jdbcType=VARCHAR}, #{eipServer1,jdbcType=VARCHAR}, 
+      #{eipUsername1,jdbcType=VARCHAR}, #{eipPwd1,jdbcType=VARCHAR}, #{eipMastcol,jdbcType=VARCHAR}, 
+      #{eipLastcol,jdbcType=VARCHAR}, #{eipItemidcol,jdbcType=VARCHAR}, #{eipItemlastcol,jdbcType=VARCHAR}, 
+      #{eipItemlastvalue,jdbcType=VARCHAR}, #{eipStockidcol,jdbcType=VARCHAR}, #{eipVendornamecol,jdbcType=VARCHAR}, 
+      #{eipBillidcol,jdbcType=VARCHAR}, #{eipBillmastcol,jdbcType=VARCHAR}, #{eipCustidcol,jdbcType=VARCHAR}, 
+      #{eipCustnamecol,jdbcType=VARCHAR}, #{eipCustdeptcol,jdbcType=VARCHAR}, #{eipCustlastcol,jdbcType=VARCHAR}, 
+      #{eipCustlastvalue,jdbcType=VARCHAR}, #{eipVendoridcol,jdbcType=VARCHAR}, #{eipBillvendorcol,jdbcType=VARCHAR}, 
+      #{eipLastsend,jdbcType=VARCHAR}, #{eipLastgetbill,jdbcType=VARCHAR}, #{eipBillname1,jdbcType=VARCHAR}, 
+      #{eipBillname2,jdbcType=VARCHAR}, #{custpricemark,jdbcType=VARCHAR}, #{hbmark,jdbcType=VARCHAR}, 
+      #{custtypemark,jdbcType=VARCHAR}, #{url,jdbcType=VARCHAR}, #{topic,jdbcType=VARCHAR}, 
+      #{createdDate,jdbcType=VARCHAR}, #{updatedDate,jdbcType=VARCHAR}, #{createdBy,jdbcType=VARCHAR}, 
+      #{updatedBy,jdbcType=VARCHAR}, #{createdTime,jdbcType=VARCHAR}, #{updatedTime,jdbcType=VARCHAR}, 
+      #{remark,jdbcType=LONGVARCHAR}, #{eipSqlin1,jdbcType=LONGVARCHAR}, #{eipSqlin2,jdbcType=LONGVARCHAR}, 
+      #{eipSqlout1,jdbcType=LONGVARCHAR}, #{eipSqlout2,jdbcType=LONGVARCHAR}, #{eipSqlvendor,jdbcType=LONGVARCHAR}, 
+      #{eipSqlcust,jdbcType=LONGVARCHAR}, #{eipSqlitem,jdbcType=LONGVARCHAR}, #{eipSqlstock,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.whale.eos.entity.org.EosUserWithBLOBs" >
+    insert into eos_user
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      id,
+      type1,
+      type2,
+      uno,
+      `name`,
+      province,
+      provinceid,
+      city,
+      cityid,
+      district,
+      districtid,
+      addr,
+      tel,
+      fax,
+      mob,
+      email,
+      man,
+      qq,
+      kind,
+      paytype,
+      itempricecol,
+      `state`,
+      user_type,
+      chelp,
+      orgmark,
+      pordersize,
+      psalesize,
+      ppurchasesize,
+      paytypeok,
+      itemok,
+      itemdescok,
+      saleprocok,
+      smok,
+      eip_databasetype,
+      eip_server1,
+      eip_username1,
+      eip_pwd1,
+      eip_mastcol,
+      eip_lastcol,
+      eip_itemidcol,
+      eip_itemlastcol,
+      eip_itemlastvalue,
+      eip_stockidcol,
+      eip_vendornamecol,
+      eip_billidcol,
+      eip_billmastcol,
+      eip_custidcol,
+      eip_custnamecol,
+      eip_custdeptcol,
+      eip_custlastcol,
+      eip_custlastvalue,
+      eip_vendoridcol,
+      eip_billvendorcol,
+      eip_lastsend,
+      eip_lastgetbill,
+      eip_billname1,
+      eip_billname2,
+      custpricemark,
+      hbmark,
+      custtypemark,
+      url,
+      topic,
+      created_date,
+      updated_date,
+      created_by,
+      updated_by,
+      created_time,
+      updated_time,
+      remark,
+      eip_sqlin1,
+      eip_sqlin2,
+      eip_sqlout1,
+      eip_sqlout2,
+      eip_sqlvendor,
+      eip_sqlcust,
+      eip_sqlitem,
+      eip_sqlstock,
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      #{id,jdbcType=INTEGER},
+      #{type1,jdbcType=VARCHAR},
+      #{type2,jdbcType=VARCHAR},
+      #{uno,jdbcType=VARCHAR},
+      #{name,jdbcType=VARCHAR},
+      #{province,jdbcType=VARCHAR},
+      #{provinceid,jdbcType=VARCHAR},
+      #{city,jdbcType=VARCHAR},
+      #{cityid,jdbcType=VARCHAR},
+      #{district,jdbcType=VARCHAR},
+      #{districtid,jdbcType=VARCHAR},
+      #{addr,jdbcType=VARCHAR},
+      #{tel,jdbcType=VARCHAR},
+      #{fax,jdbcType=VARCHAR},
+      #{mob,jdbcType=VARCHAR},
+      #{email,jdbcType=VARCHAR},
+      #{man,jdbcType=VARCHAR},
+      #{qq,jdbcType=VARCHAR},
+      #{kind,jdbcType=VARCHAR},
+      #{paytype,jdbcType=VARCHAR},
+      #{itempricecol,jdbcType=VARCHAR},
+      #{state,jdbcType=VARCHAR},
+      #{userType,jdbcType=VARCHAR},
+      #{chelp,jdbcType=VARCHAR},
+      #{orgmark,jdbcType=VARCHAR},
+      #{pordersize,jdbcType=DOUBLE},
+      #{psalesize,jdbcType=DOUBLE},
+      #{ppurchasesize,jdbcType=DOUBLE},
+      #{paytypeok,jdbcType=VARCHAR},
+      #{itemok,jdbcType=VARCHAR},
+      #{itemdescok,jdbcType=VARCHAR},
+      #{saleprocok,jdbcType=VARCHAR},
+      #{smok,jdbcType=VARCHAR},
+      #{eipDatabasetype,jdbcType=VARCHAR},
+      #{eipServer1,jdbcType=VARCHAR},
+      #{eipUsername1,jdbcType=VARCHAR},
+      #{eipPwd1,jdbcType=VARCHAR},
+      #{eipMastcol,jdbcType=VARCHAR},
+      #{eipLastcol,jdbcType=VARCHAR},
+      #{eipItemidcol,jdbcType=VARCHAR},
+      #{eipItemlastcol,jdbcType=VARCHAR},
+      #{eipItemlastvalue,jdbcType=VARCHAR},
+      #{eipStockidcol,jdbcType=VARCHAR},
+      #{eipVendornamecol,jdbcType=VARCHAR},
+      #{eipBillidcol,jdbcType=VARCHAR},
+      #{eipBillmastcol,jdbcType=VARCHAR},
+      #{eipCustidcol,jdbcType=VARCHAR},
+      #{eipCustnamecol,jdbcType=VARCHAR},
+      #{eipCustdeptcol,jdbcType=VARCHAR},
+      #{eipCustlastcol,jdbcType=VARCHAR},
+      #{eipCustlastvalue,jdbcType=VARCHAR},
+      #{eipVendoridcol,jdbcType=VARCHAR},
+      #{eipBillvendorcol,jdbcType=VARCHAR},
+      #{eipLastsend,jdbcType=VARCHAR},
+      #{eipLastgetbill,jdbcType=VARCHAR},
+      #{eipBillname1,jdbcType=VARCHAR},
+      #{eipBillname2,jdbcType=VARCHAR},
+      #{custpricemark,jdbcType=VARCHAR},
+      #{hbmark,jdbcType=VARCHAR},
+      #{custtypemark,jdbcType=VARCHAR},
+      #{url,jdbcType=VARCHAR},
+      #{topic,jdbcType=VARCHAR},
+      #{createdDate,jdbcType=VARCHAR},
+      #{updatedDate,jdbcType=VARCHAR},
+      #{createdBy,jdbcType=VARCHAR},
+      #{updatedBy,jdbcType=VARCHAR},
+      #{createdTime,jdbcType=VARCHAR},
+      #{updatedTime,jdbcType=VARCHAR},
+      #{remark,jdbcType=LONGVARCHAR},
+      #{eipSqlin1,jdbcType=LONGVARCHAR},
+      #{eipSqlin2,jdbcType=LONGVARCHAR},
+      #{eipSqlout1,jdbcType=LONGVARCHAR},
+      #{eipSqlout2,jdbcType=LONGVARCHAR},
+      #{eipSqlvendor,jdbcType=LONGVARCHAR},
+      #{eipSqlcust,jdbcType=LONGVARCHAR},
+      #{eipSqlitem,jdbcType=LONGVARCHAR},
+      #{eipSqlstock,jdbcType=LONGVARCHAR},
+    </trim>
+  </insert>-->
+</mapper>

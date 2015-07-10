@@ -1,0 +1,29 @@
+/*lTREEMenu Start*/
+#lTREEMenuDEMO {width:160px;border:1px solid #c4d5df;margin-top:5px; padding:3px; float:left; background-color:#ecf4fc;
+	 overflow-y: hidden;
+     overflow-x: auto ;     /*   滚动条相关的颜色属性 */
+     scrollBar-face-color: #7abae9;        /* 滑块 */
+     scrollBar-hightLight-color: #fff;    /* 高亮 */
+     scrollBar-3dLight-color: #e8f3f8;    /* 3维光线 */
+     scrollBar-darkshadow-color:#fff;    /* 暗影    */
+     scrollBar-shadow-color:#e8f3f8;      /* 阴影   */
+     scrollBar-arrow-color:#fff;       /* 箭头 */
+     scrollBar-track-color:#e8f3f8;         /* 滑道颜色 */
+     scrollBar-base-color:#e8f3f8;          /* 主要颜色 */
+}
+.lTREEMenu dl {padding:0;margin:0 0 0 17px;clear:both;}
+.lTREEMenu a {background:none;}/*消除在FF2.0,Opera9下有重复背景图bug*/
+.lTREEMenu .cur{ font-weight:bold;}
+.lTREEMenu dd {padding:0;margin:0px;list-style:none;clear:both; white-space:nowrap;}
+.lTREEMenu dd button {width:20px;height:18px;overflow:hidden;cursor:pointer;vertical-align:middle;border:none;background:url(../img/tree/folder-opened2.gif) no-repeat 3px 1px;}
+.lTREEMenu dd.folderClose dl {display:none;}
+.lTREEMenu dd.folderClose button {background-image:url(../img/tree/folder-closed2.gif);}
+.lTREEMenu dd {background:url(../img/tree/elbow-line.gif) repeat-y 0 0;}
+.lTREEMenu dd.lastChild {background:url(../img/tree/folder-last.gif) no-repeat 0 0;}
+.lTREEMenu dt {margin:0px;padding:0 0 0 36px;background:url(../img/tree/leaf-normal.gif) no-repeat 0 0;line-height:18px;}
+.lTREEMenu dt.lastChild {background:url(../img/tree/leaf-last.gif) no-repeat 0 0;}
+.lTREEMenu dd a,
+.lTREEMenu dd a:visited {color:#0594E7;font-weight:normal;}
+.lTREEMenu dt a,
+.lTREEMenu dt a:visited {color:#000;font-weight:normal;}
+/*lTREEMenu End*/

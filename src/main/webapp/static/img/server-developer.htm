@@ -1,0 +1,726 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-cn" xmlns="http://www.w3.org/1999/xhtml">
+ <head profile="http://gmpg.org/xfn/11">
+  <meta property="og:title" content="Intel&reg; Software Network"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="http://software.intel.com/zh-cn/server-developer/?cid=sw:prccsdn9000"/>
+  <meta property="og:image" content="http://software.intel.com/media/img/isn_square_fb.jpg" />
+  <meta property="og:site_name" content="Intel&reg; Software Network" />
+  <meta property="fb:page_id" content="94251532337" />
+  <meta property="fb:admins" content="123981191010926" />
+  <meta property="og:description" content="Intel Software Network is Intel's online community for software developers. Come find answers to your software questions in our blogs, forums, videos, and more."/>
+  <meta http-equiv="Content-Language" content="zh-cn" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=8" />
+  <link rel="pingback" href="http://software.intel.com/zh-cn/services/comment/pingback/" />
+  <link rel="shortcut icon" href="/common/img/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="/common/v3.1/gaat-header.css?v=1333055222" id="HAT-linkStyle" />
+  <link rel="stylesheet" type="text/css" href="/common/v3.1/master-global-min.css?v=1333055222" media="all" />
+  <link rel="stylesheet" type="text/css" href="/media/js/tooltip/jquery.cluetip.css?v=1333055222" />
+  <link rel="stylesheet" type="text/css" href="/common/css/style.css?v=1333055222" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/common/css/style_print.css?v=1333055222" media="print" />
+  <script type="text/javascript" src="/common/v3.1/jquery-1.4.2.min.js?v=1333055222"></script>
+  <script type="text/javascript" src="/common/v3.1/global.js?v=1333055222"></script>
+  <script type="text/javascript" src="/common/v3.1/mod-share.js?v=1333055222"></script>
+  <script type="text/javascript" src="/common/js/jquery.bgiframe.min.js?v=1333055222"></script>
+  <script type="text/javascript" src="/common/js/jqmodal.js?v=1333055222"></script>
+  <script type="text/javascript" src="/media/js/tooltip/jquery.hoverIntent.js?v=1333055222"></script>
+  <script type="text/javascript" src="/media/js/tooltip/jquery.cluetip.js?v=1333055222"></script>
+  <script type="text/javascript" src="/common/js/ufo.js?v=1333055222"></script>
+  <script type="text/javascript" src="/common/js/isn/combined.js?v=1333055222"></script>
+  <script type="text/javascript" src="/common/js/isn/search.js?v=1333055222"></script>
+  <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+<!-- services -->
+<link rel="stylesheet" href="/media/css/SyntaxHighlighter.css?v=1333055222" type="text/css" media="screen" />
+<link rel="stylesheet" href="/media/css/widget.css?v=1333055222" type="text/css" media="screen" />
+<link rel="stylesheet" href="/media/css/jquery.rating.css?v=1333055222" type="text/css" media="screen" />
+<script type="text/javascript" src="/lang/zh-cn/services/alerts.js?v=1333055222"></script><script type="text/javascript" src="/media/js/ajaxfileupload.js?v=1333055222"></script>
+<script type="text/javascript" src="/media/js/select.js?v=1333055222"></script>
+<script type="text/javascript" src="/media/js/jquery.rating.js?v=1333055222"></script>
+<script type="text/javascript" src="/media/js/isncommentsapi.js?v=1333055222"></script>
+<script type="text/javascript" src="/media/js/isnratingapi.js?v=1333055222"></script>
+<script type="text/javascript" src="/media/js/isnpollapi.js?v=1333055222"></script>
+<script type="text/javascript" src="/media/js/isncategoryapi.js?v=1333055222"></script>
+<script type="text/javascript" src="/media/js/file_folder.js?v=1333055222"></script>
+<script type="text/javascript" src="/media/js/shCore.js?v=1333055222"></script>
+<script type="text/javascript" src="/media/js/shCode.js?v=1333055222"></script>
+<script type="text/javascript" src="/media/js/querystring.js?v=1333055222"></script>
+<script type="text/javascript" src="/media/js/academicpop.js?v=1333055222"></script><!-- /services -->
+<!-- headpost -->
+<script type="text/javascript" src="/common/js/constants/zh-cn.js?v=1333055222"> </script>
+<!--
+<link rel="stylesheet" type="text/css" id="HAT-linkStyle" href="/common/css/ltr_header.css?v=1333055222" />
+-->
+<!-- /headpost -->
+  <title>企业应用开发社区 - 英特尔&#174; 软件网络</title>
+ </head>
+ <body>
+  <noscript><center><strong>Javascript is disabled on your browser. In order to use this platform effeciently, please enable javascript from your browser settings or contact your system administrator.</strong></center></noscript>  <div id="grid-11-lnb" class="main-outer" style="width: 100%;">
+   <div class="main-wrap" style="width: 993px;">
+    <div class="main-left"></div>
+    <div style="width: 973px;" class="main-center">
+     <div class="con con-hdr">
+      <span>
+       <script type="text/javascript">
+        /**/
+        var GAAT40=(typeof GAAT40=="undefined"||!GAAT40)?{}:GAAT40;GAAT40.renderSettings={pageWidth:"w1024",renderMode:"standards",textDirection:"ltr",protocol:"http",culture:"en_US",enableShareWidget:false,enableEmailWidget:true,enablePrintWidget:true,shareTxt:"Share",changeTxt:"Change",searchTxt:"Search",printTxt:"Print",emailTxt:"Email A Friend",sitewidePath:"/sites/sitewide/hat/40recode"};GAAT40.ProtocolType=(function(){var protocol=(GAAT40.renderSettings.protocol=="https")?"https://www-ssl.":"http://www.";return protocol;})();GAAT40.FileType=(function(){var extension=(document.location.search.indexOf("filemax=1")!=-1)?"-master":"";return extension;})();GAAT40.AssetPath=(function(){var testUrls=["int-40recode.mrmpweb.co.uk","int-40recode2.mrmpweb.co.uk","proto-cps.cps.intel.com","preview-cps.cps.intel.com"];var defaultUrl=GAAT40.ProtocolType+"intel.com";var liveUrl=defaultUrl;var cUrl=document.location.search;var dCook=document.cookie;var setincookie=(cUrl.indexOf("assetcookie=1")!=-1);if(cUrl.indexOf("assetpath=rel")!=-1||(dCook.indexOf("GAATAssetPath=rel")!=-1)||testUrls.join().indexOf(document.domain)!=-1){liveUrl=defaultUrl;if(setincookie){document.cookie="GAATAssetPath=rel; path=/";}}
+        if((cUrl.indexOf("assetpath=proto")!=-1)||dCook.indexOf("GAATAssetPath=proto")!=-1){liveUrl=(GAAT40.renderSettings.protocol=="https")?"https://":"http://";liveUrl+="proto-cps.cps.intel.com";if(setincookie){document.cookie="GAATAssetPath=proto; path=/";}}
+        if((cUrl.indexOf("assetpath=preview")!=-1)||dCook.indexOf("GAATAssetPath=preview")!=-1){liveUrl=(GAAT40.renderSettings.protocol=="https")?"https://":"http://";liveUrl+="preview-cps.cps.intel.com";if(setincookie){document.cookie="GAATAssetPath=preview; path=/";}}
+        if(cUrl.indexOf("assetpath=live")!=-1||dCook.indexOf("GAATAssetPath=live")!=-1){liveUrl=defaultUrl;if(setincookie){document.cookie="GAATAssetPath=live; path=/";}}
+        return liveUrl;})();document.write('<style type="text/css">#gaat40-header {height:91px;overflow:hidden;visibility:hidden;}</style>');document.write('<link id="gaat-linkstyle" href="'+GAAT40.AssetPath+GAAT40.renderSettings.sitewidePath+'/css/'+GAAT40.renderSettings.textDirection+'_header'+GAAT40.FileType+'.css" rel="stylesheet" type="text/css" />');document.write('<link href="'+GAAT40.AssetPath+'/sites/sitewide/search/css/mod-search-searchbox.css" rel="stylesheet" type="text/css" />');if(typeof(INTEL)=="undefined"){document.write('<scr'+'ipt type="text/javascript" src="'+GAAT40.AssetPath+'/sites/js/INTEL.js"><\/scr'+'ipt>')}  
+        /**/
+       </script>
+       <div id="gaat40-header" class="gaat40-reset" style="z-index:3; height:73px;">
+        <a class="gaat40-logo" title="" href="http://www.intel.com"><img src="http://www.intel.com/sites/sitewide/HAT/40recode/pix/main-logo.png" alt="Logo - Intel" /></a>
+        <ul class="gaat40-search">
+         <li class="gaat40-first" style="text-align:right;border-right: 1px solid #E6E6E6;font-weight:normal;padding-right:5px;position: absolute;right:180px;top:7px;width:93px;" id="product-index"><a style="font-weight:normal;" href="http://www.intel.com/products/sitemap.htm">Product Index</a></li>
+         <li>
+          <form method="get" id="FORMSearchHeader" action="http://search.intel.com/Default.aspx" target="_blank">
+           <fieldset><input type="hidden" name="c" id="c" value="zh_CN" /><input type="hidden" name="category" id="category" /><input type="hidden" name="adv" id="adv" /><input type="hidden" name="value" id="value" /><input type="hidden" name="method" id="method" value="text" /><label id="lbl_search" for="q">搜索</label><input id="q" name="q" type="text" class="gaat40-inptsearch" /><input type="submit" value="Search" id="input-submit" class="gaat40-btnsearch" /><div id="HAT-filtermenu-container" class="gaat40-hide"></div></fieldset>
+              <input type="hidden" name="uno" value="<%=uno%>">						
+    <input type="hidden" name="uname" value="<%=uname%>">						
+    <input type="hidden" name="eid" value="<%=eid%>">    <input type="hidden" name="ename" value="<%=ename%>"><input type="hidden" name="typeno" value="<%=typeno%>">	<input type="hidden" name="menuid" value="<%=menuid%>">	
+
+</form></li>
+        </ul>
+        <div class="gaat40-nav">
+         <ul class="gaat40-mainnav">
+          <li class="gaat40-first gaat40-selected" id="gaat40-hdr_link_bus"><a href="/zh-cn/">英特尔® 软件网络</a></li>
+         </ul>
+         <div class="gaat40-lower">
+          <ul id="gaat40-subnav" class="gaat40-subnav">
+           <li class="gaat40-first">
+            <div class="menu-head"><a href="/zh-cn/articles/intel-software-network-communities/">社区</a></div>
+            <div class="gaat40-subsubnav gaat40-hide">
+             <ul class="gaat40-first">
+              <li class="gaat40-first"><a href="http://appdeveloper.intel.com/">凌动开发者</a></li>
+              <li><a href="/zh-cn/visual-computing/">视觉计算</a></li>
+              <li><a href="/zh-cn/parallel/">并行计算</a></li>
+              <li><a href="/zh-cn/manageability/">vPro　开发者社区。</a></li>
+              <li><a href="/zh-cn/android/">Android* 开发社区</a></li>
+              <li><a href="/zh-cn/academic/">学术社区</a></li>
+              <li><a href="/zh-cn/blackbelt/">英特尔&reg; 黑带软件开发人员</a></li>
+              <li><a href="/zh-cn/articles/intel-software-network-communities/">更多...</a></li>
+             </ul>
+             <div class="gaat40-end"><b></b><i></i></div>
+            </div>
+           </li>
+           <li class="">
+            <div class="menu-head"><a href="/partner/home?locale=zh-CN">合作伙伴</a></div>
+            <div class="gaat40-subsubnav gaat40-hide">
+             <ul class="gaat40-first">
+              <li class="gaat40-first"><a href="/partner/home?locale=zh-CN">英特尔® 软件合作伙伴计划</a></li>
+              <li><a href="/partner/software-technology?locale=zh-CN">英特尔® 技术</a></li>
+              <li><a href="/partner/app/software-assessment?locale=zh-CN">软件评估中心</a></li>
+              <li><a href="/partner/library/resource-library?locale=zh-CN">资源库</a></li>
+              <li><a href="/partner/search?locale=zh-CN">合作伙伴查找工具</a></li>
+              <li><a href="/swfinder/tabid/36/language/zh-CN/default.aspx">软件查找工具</a></li>
+              <li><a href="/partner/overview?locale=zh-CN">合作伙伴计划概述</a></li>
+              <li><a href="/partner/software-news?locale=zh-CN">新闻</a></li>
+              <li><a href="/partner/library/contact-us?locale=zh-CN">支持</a></li>
+             </ul>
+             <div class="gaat40-end"><b></b><i></i></div>
+            </div>
+           </li>
+           <li class="">
+            <div class="menu-head"><a href="javascript:void(0);">工具 & 下载</a></div>
+            <div class="gaat40-subsubnav gaat40-hide">
+             <ul class="gaat40-first">
+              <li><h5>工具</h5></li>
+              <li><a href="/zh-cn/intel-sdp-home/">英特尔&reg; 软件开发产品</a></li>
+              <li><a href="/zh-cn/intel-hpc-home/">英特尔&reg; 高性能计算（HPC）工具</a></li>
+              <li><a href="/zh-cn/articles/tools/">英特尔&reg; 软件开发产品知识库</a></li>
+              <li><a href="/zh-cn/articles/intel-academic-developer-program/">英特尔&reg; 教育开发人员计划</a></li>
+              <li><a href="/en-us/vcsource/">英特尔® 视觉计算资源</a></li>
+             </ul>
+             <ul>
+              <li><h5>下载</h5></li>
+              <li><a href="/zh-cn/articles/code-downloads/">代码和下载</a></li>
+              <li><a href="/zh-cn/articles/non-commercial-software-development/">非商业软件开发</a></li>
+              <li><a href="http://software.intel.com/en-us/whatif/">What If 软件</a></li>
+              <li><a href="http://downloadcenter.intel.com/default.aspx?lang=zho&iid=gg_support-cn+home_download">驱动程序</a></li>
+              <li><a href="http://www.intel.com/support/cn/detect.htm?iid=gg_support-cn+home_autodetect">英特尔&reg; 驱动程序更新实用程序</a></li>
+             </ul>
+             <div class="gaat40-end"><b></b><i></i></div>
+            </div>
+           </li>
+           <li class="">
+            <div class="menu-head"><a href="javascript:void(0);">论坛 & 支持</a></div>
+            <div class="gaat40-subsubnav gaat40-hide">
+             <ul class="gaat40-first">
+              <li class="gaat40-first"><a href="/zh-cn/forums/">软件论坛</a></li>
+              <li><a href="/zh-cn/articles/all/1/">知识库</a></li>
+              <li><a href="/zh-cn/articles/intel-software-developer-support/">软件支持</a></li>
+             </ul>
+             <div class="gaat40-end"><b></b><i></i></div>
+            </div>
+           </li>
+           <li class="">
+            <div class="menu-head"><a href="javascript:void(0);">博客</a></div>
+            <div class="gaat40-subsubnav gaat40-hide">
+             <ul class="gaat40-first">
+              <li class="gaat40-first"><a href="/zh-cn/blogs/">所有博客</a></li>
+              <li><a href="http://appdeveloper.intel.com/en-us/blog">凌动开发者</a></li>
+              <li><a href="/zh-cn/blogs/category/learning/">软件技术学习及认证</a></li>
+              <li><a href="/zh-cn/blogs/category/manageability/">可管理性</a></li>
+              <li><a href="/zh-cn/blogs/category/parallel/">并行计算</a></li>
+              <li><a href="/zh-cn/blogs/category/visual-computing/">图形和视觉计算</a></li>
+              <li><a href="/zh-cn/blogs/authors/">相约博友</a></li>
+             </ul>
+             <div class="gaat40-end"><b></b><i></i></div>
+            </div>
+           </li>
+           <li class="">
+            <div class="menu-head"><a href="javascript:void(0);">资源</a></div>
+            <div class="gaat40-subsubnav gaat40-hide">
+             <ul class="gaat40-first">
+              <li class="gaat40-first"><a href="/zh-cn/videos/list/1/1/">Take-5 视频</a></li>
+              <li><a href="http://software.intel.com/en-us/articles/intel-software-network-events-calendar/">活动日程表</a></li>
+              <li><a href="http://software.intel.com/en-us/articles/intel-software-network-news-archive/">新闻简报</a></li>
+              <li><a href="http://www.intel.com/intelpress/">英特尔出版社技术书籍</a></li>
+              <li><a href="http://softwareinsight.intel.com/">英特尔软件展望杂志</a></li>
+              <li><a href="http://software.intel.com/en-us/articles/intel-visual-adrenaline-magazine/">英特尔视觉冲击杂志</a></li>
+             </ul>
+             <div class="gaat40-end"><b></b><i></i></div>
+            </div>
+           </li>
+          </ul>
+          <ul class="gaat40-overview">
+           <li style="border-left:0px none;padding-top:0px;margin-right:0px;"><span style="float:left;margin-top:3px;margin-right:5px;"><strong>Language: </strong></span>
+            <ul id="cssdropdown" style="float:left;">
+             <li class="headlink" style="border-left:0px none;font-size:10px;padding-left:0px;">
+              <span style="color:#007dc5; line-he3ight: 14px; margin-top: -4px; padding-top: -4px">中文</span>
+              <ul>
+               <li style="border-left:0px none;float:none;"><a href="/en-us/">English</a></li>
+               <li style="border-left:0px none;float:none;"><a href="/zh-cn/">中文</a></li>
+               <li style="border-left:0px none;float:none;"><a href="/ru-ru/">Русский</a></li>
+               <li style="border-left:0px none;float:none;"><a href="/fr-fr/">Français</a></li>
+               <!-- <li style="border-left:0px none;float:none;"><a href="/pt-br/">Português</a></li> -->
+              </ul>
+             </li>
+            </ul>
+           </li>
+          </ul>
+          <script type="text/javascript">
+           /**/
+           document.write('<scr'+'ipt type="text/javascript" src="'+GAAT40.AssetPath+GAAT40.renderSettings.sitewidePath+'/js/header'+GAAT40.FileType+'.js"><\/scr'+'ipt>');
+           /**/
+          </script>
+         </div>
+        </div>
+       </div>
+      </span>
+      <div style="position: absolute; right: 0px;">
+       <div class="mod-share">
+        <ul class="share-tool">
+         <li class="share">Share</li>
+         <li class="drop img-txt">
+          <span><a href="javascript:;"></a></span>
+          <div class="sec-nav">
+           <div class="tp"></div>
+           <div class="bdy sharefix">
+            <div class="inner-wrap">
+             <ul>
+              <li class="facebook"><a title="Facebook" href="javascript:;" onclick="window.open('http://facebook.com/IntelSoftwareNetwork','');return false;">Facebook</a></li>
+              <li class="twitter"><a title="Twitter" href="javascript:;" onclick="window.open('http://twitter.com/IntelSoftware','');return false;">Twitter</a></li>
+              <li class="youtube"><a title="YouTube" href="javascript:;" onclick="window.open('http://www.youtube.com/intelswnetwork','');return false;">YouTube</a></li>
+              <li class="linkedin"><a title="Linkedin" href="javascript:;" onclick="window.open('http://www.linkedin.com/groups/Intel-Software-Network-3078126','');return false;">Linkedin</a></li>
+              <li class="delicious"><a title="Delicious" href="javascript:;" onclick="window.open('http://del.icio.us/post?url=http%3A%2F%2Fsoftware.intel.com%2Fzh-cn%2Fserver-developer%2F%3Fcid%3Dsw%3Aprccsdn9000','');return false;">Delicious</a></li>
+              <li class="digg last"><a title="Digg" href="javascript:;" onclick="window.open('http://digg.com/submit?phase=2&url=http%3A%2F%2Fsoftware.intel.com%2Fzh-cn%2Fserver-developer%2F%3Fcid%3Dsw%3Aprccsdn9000','');return false;">Digg</a></li>
+             </ul>
+            </div>
+           </div>
+           <div class="ft"></div>
+          </div>
+         </li>
+         <li class="print img-txt"><a title="打印" href="javascript:window.print();">打印</a></li>
+        </ul>
+       </div>
+       <div class="cleaner"></div>
+      </div>
+     </div>
+     <div class="main-inner">
+      <!-- body -->
+<link rel="stylesheet" href="/rfadmin/landingpages/css/landing_pages.css" type="text/css" media="screen" /><link href="/media/css/buttons.css" rel="stylesheet" type="text/css">	<style>
+		.wordwrap { -moz-binding: url('/rfadmin/landingpages/wordwrap.xml#wordwrap'); 
+				padding: 0px;
+				overflow: hidden;
+				margin :0px;}
+		h2 { border-bottom: 1px solid #bababa; border-color: #bababa; color: #000000; font-size: 12px; font-weight: bold; margin-bottom: 4px; padding-bottom: 4px }
+	</style>	
+	<div id="breadcrumb">
+	    <a href="http://software.intel.com/zh-cn">主页</a>	    
+	    &rsaquo;
+	    企业应用开发社区 	</div>
+	<div id="clear"></div>
+	<h1 id="mainH1Head">企业应用开发社区</h1>
+	<div id="mainBody"><!--mainbody-->
+		<div id="right"><div class="box">
+ <div class="boxHeader">登录</div>
+ <div class="boxBody">
+  <form action="https://ssl.software.intel.com/en-us/login/?Lang=ZHO&amp;TARGET=http%3A%2F%2Fsoftware.intel.com%2Fzh-cn%2Fserver-developer%2F%3Fcid%3Dsw%3Aprccsdn9000" method="post">
+   <input type="hidden" name="qlogin" value="true" />
+   <div class="row">
+    <div class="key">登录账号:</div>
+    <div class="value"><input id="txtUserName" name="txtUserName" class="login" size="12" type="text" /></div>
+   </div>
+   <div class="row">
+    <div class="key">密码:</div>
+    <div class="value"><input id="txtPassword" name="txtPassword" class="login" size="12" type="password" /></div>
+   </div>
+   <div class="row">
+    <div class="key">记住登录信息？</div><div class="value"><input id="chkRememberMe" type="checkbox" name="chkRememberMe" value="on" /></div>
+   </div>
+   <div style="clear: both"></div>
+   <input type="submit" class="login" value="登录" /><br />
+      <input type="hidden" name="uno" value="<%=uno%>">						
+    <input type="hidden" name="uname" value="<%=uname%>">						
+    <input type="hidden" name="eid" value="<%=eid%>">    <input type="hidden" name="ename" value="<%=ename%>"><input type="hidden" name="typeno" value="<%=typeno%>">	<input type="hidden" name="menuid" value="<%=menuid%>">	
+
+</form><br />
+	<b><a id="new_reg" href="https://login-software.intel.com/isn/registration/isnRegpage.aspx?Lang=ZHO&TARGET=http%3A%2F%2Fsoftware.intel.com%2Fzh-cn%2Fserver-developer%2F%3Fcid%3Dsw%3Aprccsdn9000">注册新用户？</a></b><br />
+  <a href="https://welcome.intel.com/forgot_loginid.aspx?Lang=ZHO">忘记了登录账号？</a><br />
+  <a href="https://welcome.intel.com/forgot_password.aspx?Lang=ZHO">忘记了密码？</a><br />
+ </div>
+</div>
+<div class="box"><div class="boxHeader">  </div><div class="boxBody"><a href="http://software.intel.com/partner/app/software-assessment?locale=zh-CN"><img src="http://software.intel.com/file/41888" /></a></div></div><div class="box"><div class="boxHeader">   </div><div class="boxBody"><a href="http://software.intel.com/zh-cn/articles/intel-parallel-studio-home/"><img src="http://software.intel.com/file/41889" /></a></div></div></div>
+		<!--body-->
+		<div>
+			<div id="quick_login" align="right" style="display:none"><div id="loginBoxContent" style="display:none;z-index:99999"><div class="box">
+ <div class="boxHeader">登录</div>
+ <div class="boxBody">
+  <form action="https://ssl.software.intel.com/en-us/login/?Lang=ZHO&amp;TARGET=http%3A%2F%2Fsoftware.intel.com%2Fzh-cn%2Fserver-developer%2F%3Fcid%3Dsw%3Aprccsdn9000" method="post">
+   <input type="hidden" name="qlogin" value="true" />
+   <div class="row">
+    <div class="key">登录账号:</div>
+    <div class="value"><input id="txtUserName" name="txtUserName" class="login" size="12" type="text" /></div>
+   </div>
+   <div class="row">
+    <div class="key">密码:</div>
+    <div class="value"><input id="txtPassword" name="txtPassword" class="login" size="12" type="password" /></div>
+   </div>
+   <div class="row">
+    <div class="key">记住登录信息？</div><div class="value"><input id="chkRememberMe" type="checkbox" name="chkRememberMe" value="on" /></div>
+   </div>
+   <div style="clear: both"></div>
+   <input type="submit" class="login" value="登录" /><br />
+      <input type="hidden" name="uno" value="<%=uno%>">						
+    <input type="hidden" name="uname" value="<%=uname%>">						
+    <input type="hidden" name="eid" value="<%=eid%>">    <input type="hidden" name="ename" value="<%=ename%>"><input type="hidden" name="typeno" value="<%=typeno%>">	<input type="hidden" name="menuid" value="<%=menuid%>">	
+
+</form><br />
+	<b><a id="new_reg" href="https://login-software.intel.com/isn/registration/isnRegpage.aspx?Lang=ZHO&TARGET=http%3A%2F%2Fsoftware.intel.com%2Fzh-cn%2Fserver-developer%2F%3Fcid%3Dsw%3Aprccsdn9000">注册新用户？</a></b><br />
+  <a href="https://welcome.intel.com/forgot_loginid.aspx?Lang=ZHO">忘记了登录账号？</a><br />
+  <a href="https://welcome.intel.com/forgot_password.aspx?Lang=ZHO">忘记了密码？</a><br />
+ </div>
+</div>
+</div><div class="log_user">您未登陆 <a id="loginForm" class="load-local" href="#" rel="#loginBoxContent">登陆/注册</a></div></div>
+			<div id="tab-content" style="width:746px;"><!--3-->
+					
+					<div><script type="text/javascript" src="http://use.typekit.com/phg4mss.js"></script>
+  
+      <script type="text/javascript">
+        try { 
+          Typekit.load();
+        } catch (e) {
+          //alert("error");
+        }
+      </script>
+
+         <link rel="stylesheet" type="text/css" media="all" href="http://software.intel.com/sites/landingpage/android/css/android.css" />
+
+         <script type="text/javascript" src="http://software.intel.com/sites/landingpage/android/js/html5placeholder.jquery.min.js"></script>
+
+      <script type="text/javascript">
+        $(document).ready(function(){
+            
+            $("input[placeholder]").placeholder({"placeholderCSS": {
+                                                  "top": "-8px",
+                                                  "left": "5px",
+                                                  "color": "#bababa",
+                                                  "position": "absolute",
+                                                  "overflow": "hidden" }});
+                       
+            $("#signup-form > form").submit(function() {
+                
+                $.ajax({
+                    type: "POST",
+                    url: "http://lz1.intel.com/mailform/mailform.aspx", // ***** replace with real url to post to *******
+                    data: $(this).serialize(),
+                    success: function(data, status) { 
+                      $("#signup-form").hide();
+                      $("#signup-thanks").show();
+                    },
+                    error: function(xhr, status, error) {
+                      $("#signup-form").append("<p class="error">"+error+"</p>");
+                    }
+                });
+                
+                return false;
+                
+            });
+            
+        });
+      </script>
+
+
+<!--<link href="http://software.intel.com/file/29332" rel="stylesheet" type="text/css" />-->
+<script language="javascript" type="text/javascript">
+$("#mainH1Head").hide();
+</script>
+<div id="container">
+
+<div id="android_container_left"><img src="http://software.intel.com/file/42012" width="736" height="195" alt="Server Developer Community" /><br />
+  <br />
+
+  <div class="android_left_inner_left_tall" id="gettingstarted">
+    <img src="http://software.intel.com/file/41718" width="365" height="36" alt="节能性能" />
+    <div class="custom" style="padding-top: 1px; height: 100%; border-bottom: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; border-right: 1px solid #d5d5d5;">
+
+<ul><li><a href="http://software.intel.com/zh-cn/articles/planning-for-parallel-optimization/">并行优化规划</a></li></ul>
+<div id="gs_desc">并行优化可得到很大的性能改进，但您需要一个非常适合应用程序的行动计划。这里有一些建议帮助您开始。</div>
+
+<ul><li><a href="http://software.intel.com/zh-cn/articles/testing-parallel-programs/">测试并行程序</a></li></ul>
+<div id="gs_desc">测试是软件开发周期中最昂贵的阶段之一。这里有一个不同的并行软件测试方法的介绍。 </div>
+
+<ul><li><a href="http://software.intel.com/zh-cn/articles/avoiding-avx-sse-transition-penalties/">避免 AVX-SSE 转换造成的性能损失</a></li></ul>
+<div id="gs_desc">如何避免在256位英特尔® AVX指令和原有的英特尔® SSE指令间转换时造成的性能损失，以及一些常见建议以避免使用英特尔® AVX时出现问题。</div>
+
+<ul><li><a href="http://software.intel.com/zh-cn/articles/using-avx-without-writing-avx-code/">在不编写 AVX 代码的情况下使用 AVX</a></li></ul>
+<div id="gs_desc">本文讨论了开发人员可通过哪些方式将英特尔® AVX 集成到应用中，且无需在低级别汇编语言中进行明确地编码。</div>
+
+<ul><li><a href="http://software.intel.com/zh-cn/articles/intel-guide-for-developing-multithreaded-applications/">英特尔® 多线程应用开发指南</a></li></ul>
+<div id="gs_desc">为开发人员在基于英特尔® 架构的对称多处理器（SMP）和/或支持英特尔® 超线程（HT）技术的系统上，开发高效多线程应用提供一些有用的指导。应用开发人员可以在本文建议下提高当前及未来支持英特尔® 处理器的 SMP 架构上的多线程处理性能，最大限度减少意外出现的性能故障。</div>
+
+<ul><li><a href="http://software.intel.com/zh-cn/articles/intel-64-architecture-processor-topology-enumeration/">64 位英特尔® 架构处理器拓扑枚举</a></li></ul>
+<div id="gs_desc">本白皮书介绍了适用于使用 64 位和 32 位英特尔架构处理器的单路到多路平台的拓扑枚举算法。</div>
+
+<ul><li><a href="http://software.intel.com/zh-cn/articles/intel-performance-counter-monitor/">英特尔® Performance Counter Monitor（PCM）——测量 CPU 利用率的更好方法</a></li></ul>
+<div id="gs_desc">英特尔® Performance Counter Monitor 可提供范例 C++ 例程和实用程序，用于估算最新英特尔® 至强® 和英特尔® 酷睿™ 处理器的内部资源利用率，进而实现大幅度的性能提升。</div>
+
+<ul><li><a href="http://software.intel.com/zh-cn/articles/intel-hyper-threading-technology-your-questions-answered/">英特尔® 超线程技术：问题解答</a></li></ul>
+<div id="gs_desc">英特尔® 超线程技术是全新英特尔® 酷睿™ i7 处理器和英特尔® 至强® 5500 系列处理器所具有的一种出色特性。</div>
+
+<ul><li><a href="http://software.intel.com/zh-cn/parallel/">并行编程社区</a></li></ul>
+<div id="gs_desc">并行编程方面的最大社区。</div>
+
+</div>
+</div>
+
+<div class="android_left_inner_right_tall" id="techcontent" ><img src="http://software.intel.com/file/41719" width="365" height="36" alt="可管理性与产品专栏" /><br />
+  <div class="custom" style="padding-top: 1px; height: 100%; border-bottom: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; border-right: 1px solid #d5d5d5;">
+                   
+<ul><li><a href="http://software.intel.com/zh-cn/articles/intel-active-management-technology-AMT/">英特尔® 主动管理技术</a></li></ul>
+<div id="gs_desc">是否第一次接触英特尔® 主动管理技术（英特尔®AMT）吗？在这里您将获得英特尔® AMT的架构、功能、使用情况以及特点的完整概述。</div>
+
+<ul><li><a href="http://software.intel.com/file/42270">英特尔® 主动管理技术（英特尔® AMT）入门指南</a></li></ul>
+<div id="gs_desc">概括介绍了英特尔® AMT 各版本的特性、最低系统要求信息、英特尔® AMT 客户端的配置，以及可帮助为英特尔® AMT 开发程序的各种开发人员工具。</div>
+
+<ul><li><a href="http://software.intel.com/zh-cn/manageability/">英特尔®可管理性软件开发社区
+</a></li></ul>
+<div id="gs_desc">英特尔® 博锐™ 处理器技术和英特尔® 迅驰® 专业处理器技术包含了英特尔® 主动管理技术。借助英特尔® 主动管理技术，您的软件将能够充分利用内置可管理性和前瞻性安全防护功能的巨大优势。</div>
+
+<ul><li><a href="http://software.intel.com/zh-cn/articles/intel-amt-software-development-kit-sdk-start-here-guide/">英特尔® 主动管理技术（英特尔® AMT）软件开发套件 (SDK) 入门指南</a></li></ul>
+<div id="gs_desc">概括介绍了英特尔® AMT 各版本的特性、最低系统需求信息、英特尔® AMT 客户端的配置方法，以及有助于英特尔® AMT 编程的各种开发人员工具。</div>
+
+<ul><li><a href="http://software.intel.com/zh-cn/articles/download-the-latest-version-of-intel-amt-setup-and-configuration-service-scs/">下载最新版英特尔® 设置与配置服务（英特尔® SCS）</a></li></ul>
+<div id="gs_desc">设置和配置英特尔® 主动管理技术设备所需的工具</div>
+
+<ul><li><a href="http://software.intel.com/zh-cn/articles/download-the-latest-version-of-manageability-developer-tool-kit/">下载最新版本的可管理性开发人员工具套件</a></li></ul>
+<div id="gs_desc">该套件运行在微软 Windows* .NET* 2.0环境中，并提供了一​​套，通过使用一个简单的面向开发人员和测试人员的用户界面，快速使用英特尔AMT的所有功能的工具。</div>
+
+<ul><li><a href="http://software.intel.com/zh-cn/articles/Intel-Xeon-E7-column/">英特尔® 至强® 处理器E7系列</a></li></ul>
+<div id="gs_desc">借助采用英特尔® 至强® 处理器 E7 系列的服务器的强大可靠特性，实现管理和保护企业关键数据，应对当今严峻的关键业务IT 挑战。</div>
+
+<ul><li><a href="http://software.intel.com/zh-cn/articles/Intel-xeon-7500-column/">英特尔® 至强® 7500 处理器</a></li></ul>
+<div id="gs_desc">英特尔® 至强® 7500 处理器，采用全新英特尔® 微体系结构（代号“Nehalem”），集众多新技术于一身，更高性能，更加智能，更加节能！全新的英特尔® 至强® 7500 处理器于2010年3月31日正式推出！</div>
+
+<ul><li><a href="http://software.intel.com/zh-cn/articles/Intel-parallel-studio-column/">英特尔® Parallel Studio并行程序开发套件</a></li></ul>
+<div id="gs_desc">英特尔® Parallel Studio是一个针 对Microsoft Visual Studio C/C++开发者的综合并行开发套件，由英特尔® Parallel Composer, 英特尔® Parallel Inspector, 和英特尔® Parallel Amplifier等构成英特尔® Parallel Studio。</div>
+
+</div>
+</div>
+
+
+<div style="clear: both;"></div>
+
+  <div class="android_left_inner_left_tall" id="softwaredev"><img src="http://software.intel.com/file/41720" width="365" height="36" alt="软件开发工具" /><br />
+  <div class="custom" style="height: 100%; border-bottom: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; border-right: 1px solid #d5d5d5; padding-top:1px;" >
+
+<ul><li><a href="http://software.intel.com/zh-cn/articles/intel-parallel-studio-xe/">Intel® Parallel Studio XE</a></li></ul>
+<div id="gs_desc">用于新一代多核处理器的空前应用性能和代码健壮性的开发工具。</div>
+
+<ul><li><a href="http://software.intel.com/zh-cn/articles/ready-for-2x-moores-law-intel-cluster-studio-xe/">为实现双倍于摩尔定律的发展速度做好准备：英特尔® Cluster Studio XE</a></li></ul> 
+<div id="gs_desc">这是一套功能强大的工具集合，专为使用 MPI 和其它编程模型以充分利用集群和超级计算机的 HPC 编程员提供。</div>
+
+<ul><li><a href="http://software.intel.com/en-us/articles/improve-performance-with-recompile/?cid=sw:prccsdn1976">不重写一行代码便可快速提高性能</a></li></ul>
+<div id="gs_desc">了解更多有关寻找热点和在Windows系统上使用英特尔C++ 重编译以提高性能的详细信息。</div>
+
+<ul><li><a href="http://software.intel.com/en-us/articles/download-intel-opencl-sdk/">下载英特尔® OpenCL SDK</a></li></ul>
+<div id="gs_desc">OpenCL™（开放计算语言）是第一个开放的、免税版标准，旨在提供客户端计算机系统、高性能计算服务器、手持设备的并行编程。</div>
+
+<ul><li><a href="http://software.intel.com/en-us/articles/opencl-release-notes/">英特尔® OpenCL SDK 1.5 - 发布说明</a></li></ul>
+<div id="gs_desc">免费下载英特尔® OpenCL SDK 1.5，有助于OpenCL开发人员设计、建造、调试及配置CPU设备上运行的OpenCL应用应用程序。</div>
+
+<ul><li><a href="http://software.intel.com/en-us/articles/performance-tools-for-software-developers-intel-compiler-options-for-sse-generation-and-processor-specific-optimizations/">英特尔® 编译器类型：英特尔® SSE、英特尔® AVX (SSE2, SSE3, SSE3_ATOM, SSSE3, SSE4.1, SSE4.2, AVX, AVX2)以及针对特定处理器优化而添加的服务器开发人员类别</a></li></ul>
+<div id="gs_desc">了解特定处理器优化选项的三个主要类型。</div>
+
+
+
+</div>
+</div>
+
+<div class="android_left_inner_right_tall" id="blogsandforums"><img src="http://software.intel.com/file/41721" width="365" height="36" alt="博客与论坛" /><br />
+  <div class="custom" style="height: 100%; border-bottom: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; border-right: 1px solid #d5d5d5; padding-top:1px;">
+
+<ul><li><a href="http://software.intel.com/zh-cn/blogs/">软件博客</a></li></ul>
+<div id="gs_desc">英特尔开发人员社区邀请您参与我们的博客互动，记录所有有关软件开发方面的点滴。</div>
+
+<ul><li><a href="http://software.intel.com/en-us/forums/intel-vpro-software-development/">英特尔® 博锐™ 软件开发论坛</a></li></ul>
+<div id="gs_desc">支持解答架构师/开发人员的问题，涵盖英特尔® 博锐™ 软件开发以及与英特尔博锐平台相关的技术。同行和英特尔公司的技术专家将回答您的问题。</div>
+
+<ul><li><a href="http://software.intel.com/en-us/forums/threading-on-intel-parallel-architectures/">英特尔® 并行架构线程论坛</a></li></ul>
+<div id="gs_desc">咨询我们的专家或同行，以满足开发强大的操作系统和服务器环境应用程序级的线程应用方面的挑战。有关英特尔® 线程工具方面的问题也请在这里咨询。</div>
+
+<ul><li><a href="http://software.intel.com/en-us/forums/intel-avx-and-cpu-instructions/">英特尔® AVX和CPU指令论坛</a></li></ul>
+<div id="gs_desc">支持英特尔® AVX，提供基础设施和构建模块，用于满足如财务分析、媒体内容制作、编码和加密、自然资源行业和高性能计算（HPC）等应用程序不断增长的需求所需的性能。</div>
+
+</div>
+</div>
+
+
+</div>
+
+<style>
+#right .box {
+         border: 0px !important;
+}
+
+#right .boxHeader {
+         border: 0px !important;
+}
+
+@charset "UTF-8";
+/* CSS Document */
+
+/* these style are just to recreate the Intel Framework, not necessary for integration */
+
+body { background: #fff; color: #000; font-size: 11px; padding: 0px 15px 15px 10px }
+
+#container { margin: 10px auto 10px auto; width: 760px }
+
+#top_intel_content { width:975px; height:202:px; margin:0; }
+
+/* the following two styles divide the content into right and left columns, these might need to be integrated */
+
+#android_container_left { width:759px; float:left;  min-height: 205px; }
+
+#android_container_right { width:216px; float:left;  min-height: 205px; }
+
+/* the following styles are unique to the new android design and should be integrated into the CMS */
+
+
+.custom ul { list-style: none; margin-top: 5px;         margin-bottom: 5px; margin-left: 0;        padding-left: 1em; text-indent: -1em; }
+
+.custom a { text-decoration:none; }
+
+#forum_text ul { list-style: none; margin-top: 5px; margin-bottom: 5px; margin-left: 0;        padding-left: 1em; text-indent: -1em; }
+                   
+
+/* left side column */
+
+.android_vision_statement { font-family:Verdana, Geneva, sans-serif; font-size:12px; color:#000; line-height:18px; margin-top:0px; padding-right:15px; }
+
+.android_left_inner_left_tall { width:365px; float:left; margin-right:10px; /*background-image:url(http://software.intel.com/file/29330);*/ margin-bottom:20px; }
+
+.android_left_inner_right_tall { width:365px; float:left; /*background-image:url(http://software.intel.com/file/29330);*/ margin-bottom:20px; }
+
+.android_left_inner_left_short { width:365px; height:347px; float:left; margin-right:10px; /*background-image:url(http://software.intel.com/file/29331);*/ margin-bottom:20px; }
+
+.android_left_inner_right_short { width:365px; height:347px; float:left; /*background-image:url(http://software.intel.com/file/29331);*/ margin-bottom:20px; }
+
+.android_inner_content { padding-left:10px; }
+
+.section_title { font-family:Verdana, Geneva, sans-serif; font-size:11px; color:#0f4a84; line-height:16px; }
+
+.gs_section_title { font-family:Verdana, Geneva, sans-serif; font-size:12px; color:#0f4a84; line-height:18px; }
+
+#techcontent li { margin-bottom:10; margin-top:5px; margin-left:0; margin-right:10px; padding-left: 12px; text-indent: -12px; }
+
+#techcontent a { text-decoration:none; }
+
+#gettingstarted li { margin-bottom:10; margin-top:5px; margin-left:0; margin-right:10px; padding-left: 12px; text-indent: -12px; }
+
+#gettingstarted a { text-decoration:none; }
+
+#softwaredev li { margin-bottom:10; margin-top:5px; margin-left:0; margin-right:10px; padding-left: 12px; text-indent: -12px; }
+
+#softwaredev a { text-decoration:none; }
+
+#blogsandforums li { margin-bottom:10; margin-top:5px; margin-left:0; margin-right:10px; padding-left: 12px; text-indent: -12px; }
+
+#blogsandforums a { text-decoration:none; }
+
+
+#gs_desc { padding-left:24px; padding-right: 10px; padding-bottom:15px; font-family:Verdana, Geneva, sans-serif; font-size:10px; color:#4c4c4c; line-height:14px; }
+
+#gs_desc a {text-decoration:none; font-weight: bold; color:#0f4a84; }
+
+#blogforum_desc { padding-left:15px; padding-right:10px; padding-top:15px; font-family:Verdana, Geneva, sans-serif; font-size:10px; color:#4c4c4c; line-height:14px; }
+
+#blogforum_desc a {text-decoration:none; font-weight: bold; color:#0f4a84; padding-top:15px; }
+
+.blogforum_post { margin-left:12px; padding-bottom:10px; font-family:Verdana, Geneva, sans-serif; font-size:11px; color:#333; line-height:16px; }
+
+.subtitle { padding-left:12px; padding-top:5px; padding-bottom:10px; }
+
+/* right side column */
+
+#cross_promo { margin:0; padding-top:10px; }
+
+.video_content { height:140px; margin:0; }
+
+.video_title { margin-left:10px; margin-bottom: 10px; font-family:Verdana, Geneva, sans-serif; font-size:11px; color:#333; line-height:16px; }
+
+.clear { clear:both; }
+
+/* form sign up */
+
+#signup-form {
+  padding: 10px 20px 10px 18px;
+}
+
+#signup-form label {
+  width: 300px;
+  padding-left: 5px;
+  font-size: 12px;
+}
+
+#signup-form .text {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+#signup-form p {
+  margin-bottom: 10px;
+}
+
+#signup-form p span.error {
+  display: none;
+}
+
+#signup-form p.error {
+  color: #ff0000;
+}
+
+#signup-form p.error span.error {
+  display:inline;
+}
+
+#signup-form .submit {
+  display: block;
+  width: 61px;
+  height: 21px;
+  font-size: 0;
+  text-indent: -10000px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: url("/sites/landingpage/android/media/buttons/submit-square.gif") no-repeat top left;
+}
+
+
+#signup-thanks {
+  padding: 10px 20px 10px 18px;
+}
+
+
+
+.hidden {
+  display:none;
+}
+</style>
+
+</div>
+</div></div>			
+				</div><!--bodyclosed-->	
+</div><!--mainbodyclosed-->
+
+<script>		
+</script>
+      <!-- /body -->
+     </div>
+     <div class="cleaner"></div>
+     <div class="con con-ftr">
+      <div class="gaat40-clear"></div>
+      <div id="gaat40-footer" class="gaat40-reset">
+       <div class="gaat40-cr">
+        <ul class="gaat40-first">
+         <li class="gaat40-first">©英特尔公司</li>
+        </ul>
+       </div>
+       <div class="gaat40-main">
+        <ul class="gaat40-first">
+         <li class="gaat40-first"><a href="http://www.intel.com/cd/corporate/sitemap/apac/zho/85051.htm?iid=CNCorporate+Footer_Sitemap">站点索引</a></li>
+         <li><a href="http://www.intel.com/intel/rss.htm?iid=CNCorporate+Footer_RSS">来自网络社区</a></li>
+         <li><a href="http://www.intel.com/jobs/china/index.htm?iid=CNCorporate+Footer_jobs">英特尔就业</a></li>
+         <li><a href="http://newsroom.intel.com/?iid=ftr+press">新闻发布室</a></li>
+         <li><a target="_blank" href="/en-us/articles/optimization-notice/">Optimization Notice</a></li>
+        </ul>
+       </div>
+       <div class="gaat40-terms">
+        <ul class="gaat40-first">
+         <li class="gaat40-first"><a href="http://www.intel.com/sites/sitewide/en_US/termsofuse.htm?iid=ftr+terms">使用条款</a></li>
+         <li><a class="gaat40-trademark" href="http://www.intel.com/sites/sitewide/en_US/tradmarx.htm?iid=ftr+trademark">*法律信息</a></li>
+         <li><a href="http://www.intel.com/sites/sitewide/en_US/privacy/privacy.htm?iid=ftr+privacy">隐私条款</a></li>
+        </ul>
+       </div>
+       <div class="clear"></div>
+      </div> 
+     </div>
+    </div>
+    <div class="main-right"></div>
+    <div class="cleaner"></div>
+   </div>
+  </div>
+  <div style="display: none">
+   <script type="text/javascript">
+     var _gaq = _gaq || [];
+     _gaq.push(['ISNtracker._setAccount', 'UA-17890616-1']);
+     _gaq.push(['ISNtracker._setDomainName', 'intel.com']);
+     _gaq.push(['ISNtracker._setAllowHash', false]);
+     _gaq.push(['ISNtracker._trackPageview']);
+     _gaq.push(['SWtracker._setAccount', 'UA-17890616-3']);
+     _gaq.push(['SWtracker._setDomainName', 'intel.com']);
+     _gaq.push(['SWtracker._setAllowHash', false]);
+     _gaq.push(['SWtracker._trackPageview']);
+     (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+   </script>
+   <script type="text/javascript" src="/common/js/wa_setup.js?v=20120331"></script>
+   <script type="text/javascript"><!--
+    var wa_pagename='企业应用开发社区';
+    var wa_geo='apac';
+    var wa_language='zh-cn';
+    var wa_org1='sw';
+    var wa_org2='isn';
+    var wa_org3='category landing';
+    var wa_org4='企业应用开发社区';
+    var wa_orgX='';
+    var wa_custom14='2012-02-12';
+    var wa_custom15='2012-02-27';
+    var wa_urlQueryString="all";
+    var wa_reportSuites='intelcorpsw,intelcorpswprc';
+    var s_charSet='UTF-8';
+    var wa_eCustom13='http://software.intel.com/zh-cn/server-developer/';
+    var wa_eCustom28='http://software.intel.com/zh-cn/server-developer/?cid=sw:prccsdn9000';
+   // -->
+   </script>
+   <script type="text/javascript" src="/common/js/wa_process.js?v=20120331"></script>
+   <script type="text/javascript">var _sf_async_config={uid:982,domain:"software.intel.com"}; (function(){ function loadChartbeat() { window._sf_endpt=(new Date()).getTime(); var e = document.createElement('script'); e.setAttribute('language', 'javascript'); e.setAttribute('type', 'text/javascript'); e.setAttribute('src', (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") + "static.chartbeat.com/js/chartbeat.js"); document.body.appendChild(e); } var oldonload = window.onload; window.onload = (typeof window.onload != 'function') ? loadChartbeat : function() { oldonload(); loadChartbeat(); }; })();</script>
+  </div>
+ </body>
+</html>

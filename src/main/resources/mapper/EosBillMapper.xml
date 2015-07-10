@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.whale.eos.repository.bill.EosBillDAO" >
+  <resultMap id="EosBillInfo" type="com.whale.eos.entity.bill.EosBillInfo" >
+    <result column="id" property="id" jdbcType="BIGINT" />
+    <result column="bno" property="bno" jdbcType="VARCHAR" />
+    <result column="bno_user" property="bnoUser" jdbcType="VARCHAR" />
+    <result column="orgcode" property="orgcode" jdbcType="VARCHAR" />
+    <result column="billtype" property="billtype" jdbcType="VARCHAR" />
+    <result column="rbilltype" property="rbilltype" jdbcType="VARCHAR" />
+    <result column="rbno" property="rbno" jdbcType="VARCHAR" />
+    <result column="itemtype" property="itemtype" jdbcType="VARCHAR" />
+    <result column="itype" property="itype" jdbcType="VARCHAR" />
+    <result column="arrivedate" property="arrivedate" jdbcType="VARCHAR" />
+    <result column="arrivetime" property="arrivetime" jdbcType="VARCHAR" />
+    <result column="custno" property="custno" jdbcType="VARCHAR" />
+    <result column="custname" property="custname" jdbcType="VARCHAR" />
+    <result column="custshortname" property="custshortname" jdbcType="VARCHAR" />
+    <result column="custman" property="custman" jdbcType="VARCHAR" />
+    <result column="custtel" property="custtel" jdbcType="VARCHAR" />
+    <result column="custqq" property="custqq" jdbcType="VARCHAR" />
+    <result column="custmob" property="custmob" jdbcType="VARCHAR" />
+    <result column="hostno" property="hostno" jdbcType="VARCHAR" />
+    <result column="hostname" property="hostname" jdbcType="VARCHAR" />
+    <result column="hostman" property="hostman" jdbcType="VARCHAR" />
+    <result column="hosttel" property="hosttel" jdbcType="VARCHAR" />
+    <result column="hostqq" property="hostqq" jdbcType="VARCHAR" />
+    <result column="hostmob" property="hostmob" jdbcType="VARCHAR" />
+    <result column="hostprovince" property="hostprovince" jdbcType="VARCHAR" />
+    <result column="hostcity" property="hostcity" jdbcType="VARCHAR" />
+    <result column="hostaddr" property="hostaddr" jdbcType="VARCHAR" />
+    <result column="hosttopic" property="hosttopic" jdbcType="VARCHAR" />
+    <result column="addrid" property="addrid" jdbcType="INTEGER" />
+    <result column="addrprovince" property="addrprovince" jdbcType="VARCHAR" />
+    <result column="addrcity" property="addrcity" jdbcType="VARCHAR" />
+    <result column="addrdistrict" property="addrdistrict" jdbcType="VARCHAR" />
+    <result column="addr" property="addr" jdbcType="VARCHAR" />
+    <result column="addrman" property="addrman" jdbcType="VARCHAR" />
+    <result column="addrtel" property="addrtel" jdbcType="VARCHAR" />
+    <result column="addrqq" property="addrqq" jdbcType="VARCHAR" />
+    <result column="addrmob" property="addrmob" jdbcType="VARCHAR" />
+    <result column="paytype" property="paytype" jdbcType="VARCHAR" />
+    <result column="paymenttype" property="paymenttype" jdbcType="VARCHAR" />
+    <result column="paystate" property="paystate" jdbcType="VARCHAR" />
+    <result column="freighttype" property="freighttype" jdbcType="VARCHAR" />
+    <result column="freight" property="freight" jdbcType="DOUBLE" />
+    <result column="state" property="state" jdbcType="VARCHAR" />
+    <result column="webstate" property="webstate" jdbcType="VARCHAR" />
+    <result column="itemamount1" property="itemamount1" jdbcType="DOUBLE" />
+    <result column="freightamount1" property="freightamount1" jdbcType="DOUBLE" />
+    <result column="total1" property="total1" jdbcType="DOUBLE" />
+    <result column="itemamount2" property="itemamount2" jdbcType="DOUBLE" />
+    <result column="freightamount2" property="freightamount2" jdbcType="DOUBLE" />
+    <result column="total2" property="total2" jdbcType="DOUBLE" />
+    <result column="rettot" property="rettot" jdbcType="DOUBLE" />
+    <result column="paytot" property="paytot" jdbcType="DOUBLE" />
+    <result column="recnum" property="recnum" jdbcType="DOUBLE" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="inputorid" property="inputorid" jdbcType="INTEGER" />
+    <result column="inputor" property="inputor" jdbcType="VARCHAR" />
+    <result column="manager" property="manager" jdbcType="VARCHAR" />
+    <result column="managerid" property="managerid" jdbcType="INTEGER" />
+    <result column="pricecol" property="pricecol" jdbcType="VARCHAR" />
+    <result column="pricedesc" property="pricedesc" jdbcType="VARCHAR" />
+    <result column="custpricemark" property="custpricemark" jdbcType="VARCHAR" />
+    <result column="hbmark" property="hbmark" jdbcType="VARCHAR" />
+    <result column="store_id" property="storeId" jdbcType="INTEGER" />
+    <result column="store_name" property="storeName" jdbcType="VARCHAR" />
+    <result column="storenote" property="storenote" jdbcType="VARCHAR" />
+    <result column="custtype" property="custtype" jdbcType="VARCHAR" />
+    <result column="bill_proc" property="billProc" jdbcType="VARCHAR" />
+    <result column="proc_man" property="procMan" jdbcType="VARCHAR" />
+    <result column="created_date" property="createdDate" jdbcType="VARCHAR" />
+    <result column="updated_date" property="updatedDate" jdbcType="VARCHAR" />
+    <result column="created_by" property="createdBy" jdbcType="VARCHAR" />
+    <result column="updated_by" property="updatedBy" jdbcType="VARCHAR" />
+    <result column="created_time" property="createdTime" jdbcType="VARCHAR" />
+    <result column="updated_time" property="updatedTime" jdbcType="VARCHAR" />
+    <result column="updated_datetime" property="updatedDatetime" jdbcType="VARCHAR" />
+    <result column="info" property="info" jdbcType="LONGVARCHAR" />
+    <!-- 查询结果映射列 （Proc）start -->
+    <result column="pno" property="pno" jdbcType="BIGINT" />
+    <result column="ptype" property="ptype" jdbcType="VARCHAR" />
+    <result column="state_id" property="stateId" jdbcType="INTEGER" />
+    <result column="bill_proc" property="billProc" jdbcType="VARCHAR" />
+    <result column="bill_proc_id" property="billProcId" jdbcType="BIGINT" />
+    <result column="ynqty" property="ynqty" jdbcType="VARCHAR" />
+    <result column="ynprice" property="ynprice" jdbcType="VARCHAR" />
+    <result column="bpid" property="bpid" jdbcType="BIGINT" />
+    <result column="readmark" property="readmark" jdbcType="VARCHAR" />
+    <!-- 查询结果映射列 （Proc）end -->
+    
+  </resultMap>
+  <sql id="Base_EosBillHead_List" >
+    id, bno, bno_user, orgcode, billtype, rbilltype, rbno, itemtype, itype, arrivedate, 
+    arrivetime, custno, custname, custshortname, custman, custtel, custqq, custmob, hostno, 
+    hostname, hostman, hosttel, hostqq, hostmob, hostprovince, hostcity, hostaddr, hosttopic, 
+    addrid, addrprovince, addrcity, addrdistrict, addr, addrman, addrtel, addrqq, addrmob, 
+    paytype, paymenttype, paystate, freighttype, freight, `state`, webstate, itemamount1, 
+    freightamount1, total1, itemamount2, freightamount2, total2, rettot, paytot, recnum, 
+    remark, inputorid, inputor, manager, managerid, pricecol, pricedesc, custpricemark, 
+    hbmark, store_id, store_name, storenote, custtype, bill_proc, proc_man, created_date, 
+    updated_date, created_by, updated_by, created_time, updated_time, updated_datetime,info
+  </sql>
+  <sql id="Base_EosBillProc_List" >
+    id, wftype, bno, `state`, state_id, ptype, pkind, pno, bill_proc, tmin, tmax, ynqty, 
+    ynprice, ynyf, tot3, pnote, empid, ename, enameok, readmark, created_date, updated_date, 
+    created_by, updated_by, created_time, updated_time
+  </sql>
+  
+  <select id="findUncheckedBillCount" resultType="int" parameterType="string">
+		<![CDATA[
+		SELECT count(1) FROM eos_bill_head bh, eos_bill_proc bp 
+			WHERE 1=1 AND bh.bno=bp.bno 
+			AND bp.state='待处理' 
+			]]> 
+			<if test="hostno != null and '' != hostno"> 
+				AND (bp.empid=#{empid} OR (bp.empid IS NULL AND bh.hostno=#{hostno}))
+			</if> 
+			<if test="billtype != null and '' != billtype and '=单据类型='!= billtype "> 
+				AND bh.billtype=#{billtype}
+			</if> 
+			<if test="date1 != null and '' != date1"> 
+				AND bh.arrivedate
+				<![CDATA[
+					>=
+				]]>
+				#{date1}
+			</if> 
+			<if test="date2 != null and '' != date2"> 
+				AND bh.arrivedate
+				<![CDATA[
+					<=
+				]]> #{date2}
+			</if> 
+			<if test="qbno != null and '' != qbno"> 
+				AND bh.bno like  CONCAT('%','${qbno}','%' )
+			</if> 
+			<if test="custhost != null and '' != custhost"> 
+				AND (bh.custname like CONCAT('%','${custhost}','%' ) or bh.hostname like CONCAT('%','${custhost}','%' ))
+			</if> 
+			  ORDER BY bh.custname, bp.id DESC
+	</select>
+  <select id="findUncheckedBill" resultMap="EosBillInfo" parameterType="string">
+		<![CDATA[
+		SELECT bh.id, bh.bno, bh.bno_user, bh.orgcode, bh.billtype, bh.rbilltype, bh.rbno, bh.itemtype, bh.itype, bh.arrivedate, 
+		    bh.arrivetime, bh.custno, bh.custname, bh.custshortname, bh.custman, bh.custtel, bh.custqq, bh.custmob, bh.hostno, 
+		    bh.hostname, bh.hostman, bh.hosttel, bh.hostqq, bh.hostmob, bh.hostprovince, bh.hostcity, bh.hostaddr, bh.hosttopic, bh.
+		    addrid, bh.addrprovince, bh.addrcity, bh.addrdistrict, bh.addr, bh.addrman, bh.addrtel, bh.addrqq, bh.addrmob, bh.
+		    paytype, bh.paymenttype, bh.paystate, bh.freighttype, bh.freight, bh.`state`, bh.webstate, bh.itemamount1, bh.
+		    freightamount1, bh.total1, bh.itemamount2, bh.freightamount2, bh.total2, bh.rettot, bh.paytot, bh.recnum, bh.
+		    remark, bh.inputorid, bh.inputor, bh.manager, bh.managerid, bh.pricecol, bh.pricedesc, bh.custpricemark, bh.
+		    hbmark, bh.store_id, bh.store_name, bh.storenote, bh.custtype, bh.bill_proc, bh.proc_man, bh.created_date, bh.
+		    updated_date, bh.created_by, bh.updated_by, bh.created_time, bh.updated_time, bh.updated_datetime, bh.info,
+			
+			bp.pno,
+			bp.ptype,
+			bp.state_id,
+			bp.id AS bill_proc_id,
+			bp.ynprice,
+			bp.ynqty,
+			bp.id AS bpid,
+			bp.readmark FROM eos_bill_head bh, eos_bill_proc bp 
+			WHERE 1=1 AND bh.bno=bp.bno 
+			AND bp.state='待处理' 
+			]]> 
+			<if test="hostno != null and '' != hostno"> 
+				AND (bp.empid=#{empid} OR (bp.empid IS NULL AND bh.hostno=#{hostno}))
+			</if> 
+			<if test="billtype != null and '' != billtype and '=单据类型='!= billtype "> 
+				AND bh.billtype=#{billtype}
+			</if> 
+			<if test="date1 != null and '' != date1"> 
+				AND bh.arrivedate
+				<![CDATA[
+					>=
+				]]>
+				#{date1}
+			</if> 
+			<if test="date2 != null and '' != date2"> 
+				AND bh.arrivedate
+				<![CDATA[
+					<=
+				]]> #{date2}
+			</if> 
+			<if test="qbno != null and '' != qbno"> 
+				AND bh.bno like  CONCAT('%','${qbno}','%' )
+			</if> 
+			<if test="custhost != null and '' != custhost"> 
+				AND (bh.custname like CONCAT('%','${custhost}','%' ) or bh.hostname like CONCAT('%','${custhost}','%' ))
+			</if> 
+			  ORDER BY bh.custname,bpid DESC
+	</select>
+	
+	<select id="findCheckedBillCount" resultType="int" parameterType="string">
+		<![CDATA[
+		SELECT count(1)
+			WHERE bh.bno in (select distinct bh.bno from eos_bill_proc  bp
+			WHERE ((bp.state='完成' and bp.ptype<>'提交单据') or bp.state='退回') 
+			and bp.empid=#{empid})
+			]]> 
+			<if test="billtype != null and '' != billtype and '=单据类型='!= billtype "> 
+				AND bh.billtype=#{billtype}
+			</if> 
+			<if test="date1 != null and '' != date1"> 
+				AND bh.arrivedate
+				<![CDATA[
+					>=
+				]]>
+				#{date1}
+			</if> 
+			<if test="date2 != null and '' != date2"> 
+				AND bh.arrivedate
+				<![CDATA[
+					<=
+				]]> #{date2}
+			</if> 
+			<if test="qbno != null and '' != qbno"> 
+				AND bh.bno like  CONCAT('%','${qbno}','%' )
+			</if> 
+			<if test="custhost != null and '' != custhost"> 
+				AND (bh.custname like CONCAT('%','${custhost}','%' ) or bh.hostname like CONCAT('%','${custhost}','%' ))
+			</if> 
+			  order by bh.id DESC
+	</select>
+	<select id="findCheckedBill" resultMap="EosBillInfo" parameterType="string">
+		<![CDATA[
+		SELECT bh.id, bh.bno, bh.bno_user, bh.orgcode, bh.billtype, bh.rbilltype, bh.rbno, bh.itemtype, bh.itype, bh.arrivedate, 
+		    bh.arrivetime, bh.custno, bh.custname, bh.custshortname, bh.custman, bh.custtel, bh.custqq, bh.custmob, bh.hostno, 
+		    bh.hostname, bh.hostman, bh.hosttel, bh.hostqq, bh.hostmob, bh.hostprovince, bh.hostcity, bh.hostaddr, bh.hosttopic, bh.
+		    addrid, bh.addrprovince, bh.addrcity, bh.addrdistrict, bh.addr, bh.addrman, bh.addrtel, bh.addrqq, bh.addrmob, bh.
+		    paytype, bh.paymenttype, bh.paystate, bh.freighttype, bh.freight, bh.`state`, bh.webstate, bh.itemamount1, bh.
+		    freightamount1, bh.total1, bh.itemamount2, bh.freightamount2, bh.total2, bh.rettot, bh.paytot, bh.recnum, bh.
+		    remark, bh.inputorid, bh.inputor, bh.manager, bh.managerid, bh.pricecol, bh.pricedesc, bh.custpricemark, bh.
+		    hbmark, bh.store_id, bh.store_name, bh.storenote, bh.custtype, bh.bill_proc, bh.proc_man, bh.created_date, bh.
+		    updated_date, bh.created_by, bh.updated_by, bh.created_time, bh.updated_time, bh.updated_datetime, bh.info
+		    FROM eos_bill_head bh 
+			WHERE bh.bno in (select distinct bh.bno from eos_bill_proc  bp
+			WHERE ((bp.state='完成' and bp.ptype<>'提交单据') or bp.state='退回') 
+			and bp.empid=#{empid})
+			]]> 
+			<if test="billtype != null and '' != billtype and '=单据类型='!= billtype "> 
+				AND bh.billtype=#{billtype}
+			</if> 
+			<if test="date1 != null and '' != date1"> 
+				AND bh.arrivedate
+				<![CDATA[
+					>=
+				]]>
+				#{date1}
+			</if> 
+			<if test="date2 != null and '' != date2"> 
+				AND bh.arrivedate
+				<![CDATA[
+					<=
+				]]> #{date2}
+			</if> 
+			<if test="qbno != null and '' != qbno"> 
+				AND bh.bno like  CONCAT('%','${qbno}','%' )
+			</if> 
+			<if test="custhost != null and '' != custhost"> 
+				AND (bh.custname like CONCAT('%','${custhost}','%' ) or bh.hostname like CONCAT('%','${custhost}','%' ))
+			</if> 
+			  order by bh.id DESC
+	</select>
+  <!--
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <select id="selectByExampleWithBLOBs" resultMap="ResultMapWithBLOBs" parameterType="com.whale.eos.entity.bill.EosBillHeadInfo" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from eos_bill_head
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.whale.eos.entity.bill.EosBillHeadInfo" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from eos_bill_head
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExampleWithBLOBsAndPage" resultMap="ResultMapWithBLOBs" parameterType="com.whale.eos.entity.bill.EosBillHeadInfo" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from eos_bill_head
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExampleAndPage" resultMap="BaseResultMap" parameterType="com.whale.eos.entity.bill.EosBillHeadInfo" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from eos_bill_head
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <delete id="deleteByExample" parameterType="com.whale.eos.entity.bill.EosBillHeadInfo" >
+    delete from eos_bill_head
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <select id="countByExample" parameterType="com.whale.eos.entity.bill.EosBillHeadInfo" resultType="java.lang.Integer" >
+    select count(*) from eos_bill_head
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update eos_bill_head
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.bno != null" >
+        bno = #{record.bno,jdbcType=VARCHAR},
+      </if>
+      <if test="record.bnoUser != null" >
+        bno_user = #{record.bnoUser,jdbcType=VARCHAR},
+      </if>
+      <if test="record.orgcode != null" >
+        orgcode = #{record.orgcode,jdbcType=VARCHAR},
+      </if>
+      <if test="record.billtype != null" >
+        billtype = #{record.billtype,jdbcType=VARCHAR},
+      </if>
+      <if test="record.rbilltype != null" >
+        rbilltype = #{record.rbilltype,jdbcType=VARCHAR},
+      </if>
+      <if test="record.rbno != null" >
+        rbno = #{record.rbno,jdbcType=VARCHAR},
+      </if>
+      <if test="record.itemtype != null" >
+        itemtype = #{record.itemtype,jdbcType=VARCHAR},
+      </if>
+      <if test="record.itype != null" >
+        itype = #{record.itype,jdbcType=VARCHAR},
+      </if>
+      <if test="record.arrivedate != null" >
+        arrivedate = #{record.arrivedate,jdbcType=VARCHAR},
+      </if>
+      <if test="record.arrivetime != null" >
+        arrivetime = #{record.arrivetime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.custno != null" >
+        custno = #{record.custno,jdbcType=VARCHAR},
+      </if>
+      <if test="record.custname != null" >
+        custname = #{record.custname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.custshortname != null" >
+        custshortname = #{record.custshortname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.custman != null" >
+        custman = #{record.custman,jdbcType=VARCHAR},
+      </if>
+      <if test="record.custtel != null" >
+        custtel = #{record.custtel,jdbcType=VARCHAR},
+      </if>
+      <if test="record.custqq != null" >
+        custqq = #{record.custqq,jdbcType=VARCHAR},
+      </if>
+      <if test="record.custmob != null" >
+        custmob = #{record.custmob,jdbcType=VARCHAR},
+      </if>
+      <if test="record.hostno != null" >
+        hostno = #{record.hostno,jdbcType=VARCHAR},
+      </if>
+      <if test="record.hostname != null" >
+        hostname = #{record.hostname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.hostman != null" >
+        hostman = #{record.hostman,jdbcType=VARCHAR},
+      </if>
+      <if test="record.hosttel != null" >
+        hosttel = #{record.hosttel,jdbcType=VARCHAR},
+      </if>
+      <if test="record.hostqq != null" >
+        hostqq = #{record.hostqq,jdbcType=VARCHAR},
+      </if>
+      <if test="record.hostmob != null" >
+        hostmob = #{record.hostmob,jdbcType=VARCHAR},
+      </if>
+      <if test="record.hostprovince != null" >
+        hostprovince = #{record.hostprovince,jdbcType=VARCHAR},
+      </if>
+      <if test="record.hostcity != null" >
+        hostcity = #{record.hostcity,jdbcType=VARCHAR},
+      </if>
+      <if test="record.hostaddr != null" >
+        hostaddr = #{record.hostaddr,jdbcType=VARCHAR},
+      </if>
+      <if test="record.hosttopic != null" >
+        hosttopic = #{record.hosttopic,jdbcType=VARCHAR},
+      </if>
+      <if test="record.addrid != null" >
+        addrid = #{record.addrid,jdbcType=DOUBLE},
+      </if>
+      <if test="record.addrprovince != null" >
+        addrprovince = #{record.addrprovince,jdbcType=VARCHAR},
+      </if>
+      <if test="record.addrcity != null" >
+        addrcity = #{record.addrcity,jdbcType=VARCHAR},
+      </if>
+      <if test="record.addrdistrict != null" >
+        addrdistrict = #{record.addrdistrict,jdbcType=VARCHAR},
+      </if>
+      <if test="record.addr != null" >
+        addr = #{record.addr,jdbcType=VARCHAR},
+      </if>
+      <if test="record.addrman != null" >
+        addrman = #{record.addrman,jdbcType=VARCHAR},
+      </if>
+      <if test="record.addrtel != null" >
+        addrtel = #{record.addrtel,jdbcType=VARCHAR},
+      </if>
+      <if test="record.addrqq != null" >
+        addrqq = #{record.addrqq,jdbcType=VARCHAR},
+      </if>
+      <if test="record.addrmob != null" >
+        addrmob = #{record.addrmob,jdbcType=VARCHAR},
+      </if>
+      <if test="record.paytype != null" >
+        paytype = #{record.paytype,jdbcType=VARCHAR},
+      </if>
+      <if test="record.paymenttype != null" >
+        paymenttype = #{record.paymenttype,jdbcType=VARCHAR},
+      </if>
+      <if test="record.paystate != null" >
+        paystate = #{record.paystate,jdbcType=VARCHAR},
+      </if>
+      <if test="record.freighttype != null" >
+        freighttype = #{record.freighttype,jdbcType=VARCHAR},
+      </if>
+      <if test="record.freight != null" >
+        freight = #{record.freight,jdbcType=DOUBLE},
+      </if>
+      <if test="record.state != null" >
+        `state` = #{record.state,jdbcType=VARCHAR},
+      </if>
+      <if test="record.webstate != null" >
+        webstate = #{record.webstate,jdbcType=VARCHAR},
+      </if>
+      <if test="record.itemamount1 != null" >
+        itemamount1 = #{record.itemamount1,jdbcType=DOUBLE},
+      </if>
+      <if test="record.freightamount1 != null" >
+        freightamount1 = #{record.freightamount1,jdbcType=DOUBLE},
+      </if>
+      <if test="record.total1 != null" >
+        total1 = #{record.total1,jdbcType=DOUBLE},
+      </if>
+      <if test="record.itemamount2 != null" >
+        itemamount2 = #{record.itemamount2,jdbcType=DOUBLE},
+      </if>
+      <if test="record.freightamount2 != null" >
+        freightamount2 = #{record.freightamount2,jdbcType=DOUBLE},
+      </if>
+      <if test="record.total2 != null" >
+        total2 = #{record.total2,jdbcType=DOUBLE},
+      </if>
+      <if test="record.rettot != null" >
+        rettot = #{record.rettot,jdbcType=DOUBLE},
+      </if>
+      <if test="record.paytot != null" >
+        paytot = #{record.paytot,jdbcType=DOUBLE},
+      </if>
+      <if test="record.recnum != null" >
+        recnum = #{record.recnum,jdbcType=DOUBLE},
+      </if>
+      <if test="record.remark != null" >
+        remark = #{record.remark,jdbcType=VARCHAR},
+      </if>
+      <if test="record.inputorid != null" >
+        inputorid = #{record.inputorid,jdbcType=DOUBLE},
+      </if>
+      <if test="record.inputor != null" >
+        inputor = #{record.inputor,jdbcType=VARCHAR},
+      </if>
+      <if test="record.manager != null" >
+        manager = #{record.manager,jdbcType=VARCHAR},
+      </if>
+      <if test="record.managerid != null" >
+        managerid = #{record.managerid,jdbcType=DOUBLE},
+      </if>
+      <if test="record.pricecol != null" >
+        pricecol = #{record.pricecol,jdbcType=VARCHAR},
+      </if>
+      <if test="record.pricedesc != null" >
+        pricedesc = #{record.pricedesc,jdbcType=VARCHAR},
+      </if>
+      <if test="record.custpricemark != null" >
+        custpricemark = #{record.custpricemark,jdbcType=VARCHAR},
+      </if>
+      <if test="record.hbmark != null" >
+        hbmark = #{record.hbmark,jdbcType=VARCHAR},
+      </if>
+      <if test="record.storeId != null" >
+        store_id = #{record.storeId,jdbcType=DOUBLE},
+      </if>
+      <if test="record.storeName != null" >
+        store_name = #{record.storeName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.storenote != null" >
+        storenote = #{record.storenote,jdbcType=VARCHAR},
+      </if>
+      <if test="record.custtype != null" >
+        custtype = #{record.custtype,jdbcType=VARCHAR},
+      </if>
+      <if test="record.billProc != null" >
+        bill_proc = #{record.billProc,jdbcType=VARCHAR},
+      </if>
+      <if test="record.procMan != null" >
+        proc_man = #{record.procMan,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createdDate != null" >
+        created_date = #{record.createdDate,jdbcType=VARCHAR},
+      </if>
+      <if test="record.updatedDate != null" >
+        updated_date = #{record.updatedDate,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createdBy != null" >
+        created_by = #{record.createdBy,jdbcType=VARCHAR},
+      </if>
+      <if test="record.updatedBy != null" >
+        updated_by = #{record.updatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createdTime != null" >
+        created_time = #{record.createdTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.updatedTime != null" >
+        updated_time = #{record.updatedTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.updatedDatetime != null" >
+        updated_datetime = #{record.updatedDatetime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.info != null" >
+        info = #{record.info,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map" >
+    update eos_bill_head
+    set id = #{record.id,jdbcType=BIGINT},
+      bno = #{record.bno,jdbcType=VARCHAR},
+      bno_user = #{record.bnoUser,jdbcType=VARCHAR},
+      orgcode = #{record.orgcode,jdbcType=VARCHAR},
+      billtype = #{record.billtype,jdbcType=VARCHAR},
+      rbilltype = #{record.rbilltype,jdbcType=VARCHAR},
+      rbno = #{record.rbno,jdbcType=VARCHAR},
+      itemtype = #{record.itemtype,jdbcType=VARCHAR},
+      itype = #{record.itype,jdbcType=VARCHAR},
+      arrivedate = #{record.arrivedate,jdbcType=VARCHAR},
+      arrivetime = #{record.arrivetime,jdbcType=VARCHAR},
+      custno = #{record.custno,jdbcType=VARCHAR},
+      custname = #{record.custname,jdbcType=VARCHAR},
+      custshortname = #{record.custshortname,jdbcType=VARCHAR},
+      custman = #{record.custman,jdbcType=VARCHAR},
+      custtel = #{record.custtel,jdbcType=VARCHAR},
+      custqq = #{record.custqq,jdbcType=VARCHAR},
+      custmob = #{record.custmob,jdbcType=VARCHAR},
+      hostno = #{record.hostno,jdbcType=VARCHAR},
+      hostname = #{record.hostname,jdbcType=VARCHAR},
+      hostman = #{record.hostman,jdbcType=VARCHAR},
+      hosttel = #{record.hosttel,jdbcType=VARCHAR},
+      hostqq = #{record.hostqq,jdbcType=VARCHAR},
+      hostmob = #{record.hostmob,jdbcType=VARCHAR},
+      hostprovince = #{record.hostprovince,jdbcType=VARCHAR},
+      hostcity = #{record.hostcity,jdbcType=VARCHAR},
+      hostaddr = #{record.hostaddr,jdbcType=VARCHAR},
+      hosttopic = #{record.hosttopic,jdbcType=VARCHAR},
+      addrid = #{record.addrid,jdbcType=DOUBLE},
+      addrprovince = #{record.addrprovince,jdbcType=VARCHAR},
+      addrcity = #{record.addrcity,jdbcType=VARCHAR},
+      addrdistrict = #{record.addrdistrict,jdbcType=VARCHAR},
+      addr = #{record.addr,jdbcType=VARCHAR},
+      addrman = #{record.addrman,jdbcType=VARCHAR},
+      addrtel = #{record.addrtel,jdbcType=VARCHAR},
+      addrqq = #{record.addrqq,jdbcType=VARCHAR},
+      addrmob = #{record.addrmob,jdbcType=VARCHAR},
+      paytype = #{record.paytype,jdbcType=VARCHAR},
+      paymenttype = #{record.paymenttype,jdbcType=VARCHAR},
+      paystate = #{record.paystate,jdbcType=VARCHAR},
+      freighttype = #{record.freighttype,jdbcType=VARCHAR},
+      freight = #{record.freight,jdbcType=DOUBLE},
+      `state` = #{record.state,jdbcType=VARCHAR},
+      webstate = #{record.webstate,jdbcType=VARCHAR},
+      itemamount1 = #{record.itemamount1,jdbcType=DOUBLE},
+      freightamount1 = #{record.freightamount1,jdbcType=DOUBLE},
+      total1 = #{record.total1,jdbcType=DOUBLE},
+      itemamount2 = #{record.itemamount2,jdbcType=DOUBLE},
+      freightamount2 = #{record.freightamount2,jdbcType=DOUBLE},
+      total2 = #{record.total2,jdbcType=DOUBLE},
+      rettot = #{record.rettot,jdbcType=DOUBLE},
+      paytot = #{record.paytot,jdbcType=DOUBLE},
+      recnum = #{record.recnum,jdbcType=DOUBLE},
+      remark = #{record.remark,jdbcType=VARCHAR},
+      inputorid = #{record.inputorid,jdbcType=DOUBLE},
+      inputor = #{record.inputor,jdbcType=VARCHAR},
+      manager = #{record.manager,jdbcType=VARCHAR},
+      managerid = #{record.managerid,jdbcType=DOUBLE},
+      pricecol = #{record.pricecol,jdbcType=VARCHAR},
+      pricedesc = #{record.pricedesc,jdbcType=VARCHAR},
+      custpricemark = #{record.custpricemark,jdbcType=VARCHAR},
+      hbmark = #{record.hbmark,jdbcType=VARCHAR},
+      store_id = #{record.storeId,jdbcType=DOUBLE},
+      store_name = #{record.storeName,jdbcType=VARCHAR},
+      storenote = #{record.storenote,jdbcType=VARCHAR},
+      custtype = #{record.custtype,jdbcType=VARCHAR},
+      bill_proc = #{record.billProc,jdbcType=VARCHAR},
+      proc_man = #{record.procMan,jdbcType=VARCHAR},
+      created_date = #{record.createdDate,jdbcType=VARCHAR},
+      updated_date = #{record.updatedDate,jdbcType=VARCHAR},
+      created_by = #{record.createdBy,jdbcType=VARCHAR},
+      updated_by = #{record.updatedBy,jdbcType=VARCHAR},
+      created_time = #{record.createdTime,jdbcType=VARCHAR},
+      updated_time = #{record.updatedTime,jdbcType=VARCHAR},
+      updated_datetime = #{record.updatedDatetime,jdbcType=VARCHAR},
+      info = #{record.info,jdbcType=LONGVARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update eos_bill_head
+    set id = #{record.id,jdbcType=BIGINT},
+      bno = #{record.bno,jdbcType=VARCHAR},
+      bno_user = #{record.bnoUser,jdbcType=VARCHAR},
+      orgcode = #{record.orgcode,jdbcType=VARCHAR},
+      billtype = #{record.billtype,jdbcType=VARCHAR},
+      rbilltype = #{record.rbilltype,jdbcType=VARCHAR},
+      rbno = #{record.rbno,jdbcType=VARCHAR},
+      itemtype = #{record.itemtype,jdbcType=VARCHAR},
+      itype = #{record.itype,jdbcType=VARCHAR},
+      arrivedate = #{record.arrivedate,jdbcType=VARCHAR},
+      arrivetime = #{record.arrivetime,jdbcType=VARCHAR},
+      custno = #{record.custno,jdbcType=VARCHAR},
+      custname = #{record.custname,jdbcType=VARCHAR},
+      custshortname = #{record.custshortname,jdbcType=VARCHAR},
+      custman = #{record.custman,jdbcType=VARCHAR},
+      custtel = #{record.custtel,jdbcType=VARCHAR},
+      custqq = #{record.custqq,jdbcType=VARCHAR},
+      custmob = #{record.custmob,jdbcType=VARCHAR},
+      hostno = #{record.hostno,jdbcType=VARCHAR},
+      hostname = #{record.hostname,jdbcType=VARCHAR},
+      hostman = #{record.hostman,jdbcType=VARCHAR},
+      hosttel = #{record.hosttel,jdbcType=VARCHAR},
+      hostqq = #{record.hostqq,jdbcType=VARCHAR},
+      hostmob = #{record.hostmob,jdbcType=VARCHAR},
+      hostprovince = #{record.hostprovince,jdbcType=VARCHAR},
+      hostcity = #{record.hostcity,jdbcType=VARCHAR},
+      hostaddr = #{record.hostaddr,jdbcType=VARCHAR},
+      hosttopic = #{record.hosttopic,jdbcType=VARCHAR},
+      addrid = #{record.addrid,jdbcType=DOUBLE},
+      addrprovince = #{record.addrprovince,jdbcType=VARCHAR},
+      addrcity = #{record.addrcity,jdbcType=VARCHAR},
+      addrdistrict = #{record.addrdistrict,jdbcType=VARCHAR},
+      addr = #{record.addr,jdbcType=VARCHAR},
+      addrman = #{record.addrman,jdbcType=VARCHAR},
+      addrtel = #{record.addrtel,jdbcType=VARCHAR},
+      addrqq = #{record.addrqq,jdbcType=VARCHAR},
+      addrmob = #{record.addrmob,jdbcType=VARCHAR},
+      paytype = #{record.paytype,jdbcType=VARCHAR},
+      paymenttype = #{record.paymenttype,jdbcType=VARCHAR},
+      paystate = #{record.paystate,jdbcType=VARCHAR},
+      freighttype = #{record.freighttype,jdbcType=VARCHAR},
+      freight = #{record.freight,jdbcType=DOUBLE},
+      `state` = #{record.state,jdbcType=VARCHAR},
+      webstate = #{record.webstate,jdbcType=VARCHAR},
+      itemamount1 = #{record.itemamount1,jdbcType=DOUBLE},
+      freightamount1 = #{record.freightamount1,jdbcType=DOUBLE},
+      total1 = #{record.total1,jdbcType=DOUBLE},
+      itemamount2 = #{record.itemamount2,jdbcType=DOUBLE},
+      freightamount2 = #{record.freightamount2,jdbcType=DOUBLE},
+      total2 = #{record.total2,jdbcType=DOUBLE},
+      rettot = #{record.rettot,jdbcType=DOUBLE},
+      paytot = #{record.paytot,jdbcType=DOUBLE},
+      recnum = #{record.recnum,jdbcType=DOUBLE},
+      remark = #{record.remark,jdbcType=VARCHAR},
+      inputorid = #{record.inputorid,jdbcType=DOUBLE},
+      inputor = #{record.inputor,jdbcType=VARCHAR},
+      manager = #{record.manager,jdbcType=VARCHAR},
+      managerid = #{record.managerid,jdbcType=DOUBLE},
+      pricecol = #{record.pricecol,jdbcType=VARCHAR},
+      pricedesc = #{record.pricedesc,jdbcType=VARCHAR},
+      custpricemark = #{record.custpricemark,jdbcType=VARCHAR},
+      hbmark = #{record.hbmark,jdbcType=VARCHAR},
+      store_id = #{record.storeId,jdbcType=DOUBLE},
+      store_name = #{record.storeName,jdbcType=VARCHAR},
+      storenote = #{record.storenote,jdbcType=VARCHAR},
+      custtype = #{record.custtype,jdbcType=VARCHAR},
+      bill_proc = #{record.billProc,jdbcType=VARCHAR},
+      proc_man = #{record.procMan,jdbcType=VARCHAR},
+      created_date = #{record.createdDate,jdbcType=VARCHAR},
+      updated_date = #{record.updatedDate,jdbcType=VARCHAR},
+      created_by = #{record.createdBy,jdbcType=VARCHAR},
+      updated_by = #{record.updatedBy,jdbcType=VARCHAR},
+      created_time = #{record.createdTime,jdbcType=VARCHAR},
+      updated_time = #{record.updatedTime,jdbcType=VARCHAR},
+      updated_datetime = #{record.updatedDatetime,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <insert id="insert" parameterType="com.whale.eos.entity.bill.EosBillHead" >
+    insert into eos_bill_head (id, bno, bno_user, 
+      orgcode, billtype, rbilltype, 
+      rbno, itemtype, itype, 
+      arrivedate, arrivetime, custno, 
+      custname, custshortname, custman, 
+      custtel, custqq, custmob, 
+      hostno, hostname, hostman, 
+      hosttel, hostqq, hostmob, 
+      hostprovince, hostcity, hostaddr, 
+      hosttopic, addrid, addrprovince, 
+      addrcity, addrdistrict, addr, 
+      addrman, addrtel, addrqq, 
+      addrmob, paytype, paymenttype, 
+      paystate, freighttype, freight, 
+      `state`, webstate, itemamount1, 
+      freightamount1, total1, itemamount2, 
+      freightamount2, total2, rettot, 
+      paytot, recnum, remark, 
+      inputorid, inputor, manager, 
+      managerid, pricecol, pricedesc, 
+      custpricemark, hbmark, store_id, 
+      store_name, storenote, custtype, 
+      bill_proc, proc_man, created_date, 
+      updated_date, created_by, updated_by, 
+      created_time, updated_time, updated_datetime, 
+      info)
+    values (#{id,jdbcType=BIGINT}, #{bno,jdbcType=VARCHAR}, #{bnoUser,jdbcType=VARCHAR}, 
+      #{orgcode,jdbcType=VARCHAR}, #{billtype,jdbcType=VARCHAR}, #{rbilltype,jdbcType=VARCHAR}, 
+      #{rbno,jdbcType=VARCHAR}, #{itemtype,jdbcType=VARCHAR}, #{itype,jdbcType=VARCHAR}, 
+      #{arrivedate,jdbcType=VARCHAR}, #{arrivetime,jdbcType=VARCHAR}, #{custno,jdbcType=VARCHAR}, 
+      #{custname,jdbcType=VARCHAR}, #{custshortname,jdbcType=VARCHAR}, #{custman,jdbcType=VARCHAR}, 
+      #{custtel,jdbcType=VARCHAR}, #{custqq,jdbcType=VARCHAR}, #{custmob,jdbcType=VARCHAR}, 
+      #{hostno,jdbcType=VARCHAR}, #{hostname,jdbcType=VARCHAR}, #{hostman,jdbcType=VARCHAR}, 
+      #{hosttel,jdbcType=VARCHAR}, #{hostqq,jdbcType=VARCHAR}, #{hostmob,jdbcType=VARCHAR}, 
+      #{hostprovince,jdbcType=VARCHAR}, #{hostcity,jdbcType=VARCHAR}, #{hostaddr,jdbcType=VARCHAR}, 
+      #{hosttopic,jdbcType=VARCHAR}, #{addrid,jdbcType=DOUBLE}, #{addrprovince,jdbcType=VARCHAR}, 
+      #{addrcity,jdbcType=VARCHAR}, #{addrdistrict,jdbcType=VARCHAR}, #{addr,jdbcType=VARCHAR}, 
+      #{addrman,jdbcType=VARCHAR}, #{addrtel,jdbcType=VARCHAR}, #{addrqq,jdbcType=VARCHAR}, 
+      #{addrmob,jdbcType=VARCHAR}, #{paytype,jdbcType=VARCHAR}, #{paymenttype,jdbcType=VARCHAR}, 
+      #{paystate,jdbcType=VARCHAR}, #{freighttype,jdbcType=VARCHAR}, #{freight,jdbcType=DOUBLE}, 
+      #{state,jdbcType=VARCHAR}, #{webstate,jdbcType=VARCHAR}, #{itemamount1,jdbcType=DOUBLE}, 
+      #{freightamount1,jdbcType=DOUBLE}, #{total1,jdbcType=DOUBLE}, #{itemamount2,jdbcType=DOUBLE}, 
+      #{freightamount2,jdbcType=DOUBLE}, #{total2,jdbcType=DOUBLE}, #{rettot,jdbcType=DOUBLE}, 
+      #{paytot,jdbcType=DOUBLE}, #{recnum,jdbcType=DOUBLE}, #{remark,jdbcType=VARCHAR}, 
+      #{inputorid,jdbcType=DOUBLE}, #{inputor,jdbcType=VARCHAR}, #{manager,jdbcType=VARCHAR}, 
+      #{managerid,jdbcType=DOUBLE}, #{pricecol,jdbcType=VARCHAR}, #{pricedesc,jdbcType=VARCHAR}, 
+      #{custpricemark,jdbcType=VARCHAR}, #{hbmark,jdbcType=VARCHAR}, #{storeId,jdbcType=DOUBLE}, 
+      #{storeName,jdbcType=VARCHAR}, #{storenote,jdbcType=VARCHAR}, #{custtype,jdbcType=VARCHAR}, 
+      #{billProc,jdbcType=VARCHAR}, #{procMan,jdbcType=VARCHAR}, #{createdDate,jdbcType=VARCHAR}, 
+      #{updatedDate,jdbcType=VARCHAR}, #{createdBy,jdbcType=VARCHAR}, #{updatedBy,jdbcType=VARCHAR}, 
+      #{createdTime,jdbcType=VARCHAR}, #{updatedTime,jdbcType=VARCHAR}, #{updatedDatetime,jdbcType=VARCHAR}, 
+      #{info,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.whale.eos.entity.bill.EosBillHead" >
+    insert into eos_bill_head
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      id,
+      bno,
+      bno_user,
+      orgcode,
+      billtype,
+      rbilltype,
+      rbno,
+      itemtype,
+      itype,
+      arrivedate,
+      arrivetime,
+      custno,
+      custname,
+      custshortname,
+      custman,
+      custtel,
+      custqq,
+      custmob,
+      hostno,
+      hostname,
+      hostman,
+      hosttel,
+      hostqq,
+      hostmob,
+      hostprovince,
+      hostcity,
+      hostaddr,
+      hosttopic,
+      addrid,
+      addrprovince,
+      addrcity,
+      addrdistrict,
+      addr,
+      addrman,
+      addrtel,
+      addrqq,
+      addrmob,
+      paytype,
+      paymenttype,
+      paystate,
+      freighttype,
+      freight,
+      `state`,
+      webstate,
+      itemamount1,
+      freightamount1,
+      total1,
+      itemamount2,
+      freightamount2,
+      total2,
+      rettot,
+      paytot,
+      recnum,
+      remark,
+      inputorid,
+      inputor,
+      manager,
+      managerid,
+      pricecol,
+      pricedesc,
+      custpricemark,
+      hbmark,
+      store_id,
+      store_name,
+      storenote,
+      custtype,
+      bill_proc,
+      proc_man,
+      created_date,
+      updated_date,
+      created_by,
+      updated_by,
+      created_time,
+      updated_time,
+      updated_datetime,
+      info,
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      #{id,jdbcType=BIGINT},
+      #{bno,jdbcType=VARCHAR},
+      #{bnoUser,jdbcType=VARCHAR},
+      #{orgcode,jdbcType=VARCHAR},
+      #{billtype,jdbcType=VARCHAR},
+      #{rbilltype,jdbcType=VARCHAR},
+      #{rbno,jdbcType=VARCHAR},
+      #{itemtype,jdbcType=VARCHAR},
+      #{itype,jdbcType=VARCHAR},
+      #{arrivedate,jdbcType=VARCHAR},
+      #{arrivetime,jdbcType=VARCHAR},
+      #{custno,jdbcType=VARCHAR},
+      #{custname,jdbcType=VARCHAR},
+      #{custshortname,jdbcType=VARCHAR},
+      #{custman,jdbcType=VARCHAR},
+      #{custtel,jdbcType=VARCHAR},
+      #{custqq,jdbcType=VARCHAR},
+      #{custmob,jdbcType=VARCHAR},
+      #{hostno,jdbcType=VARCHAR},
+      #{hostname,jdbcType=VARCHAR},
+      #{hostman,jdbcType=VARCHAR},
+      #{hosttel,jdbcType=VARCHAR},
+      #{hostqq,jdbcType=VARCHAR},
+      #{hostmob,jdbcType=VARCHAR},
+      #{hostprovince,jdbcType=VARCHAR},
+      #{hostcity,jdbcType=VARCHAR},
+      #{hostaddr,jdbcType=VARCHAR},
+      #{hosttopic,jdbcType=VARCHAR},
+      #{addrid,jdbcType=DOUBLE},
+      #{addrprovince,jdbcType=VARCHAR},
+      #{addrcity,jdbcType=VARCHAR},
+      #{addrdistrict,jdbcType=VARCHAR},
+      #{addr,jdbcType=VARCHAR},
+      #{addrman,jdbcType=VARCHAR},
+      #{addrtel,jdbcType=VARCHAR},
+      #{addrqq,jdbcType=VARCHAR},
+      #{addrmob,jdbcType=VARCHAR},
+      #{paytype,jdbcType=VARCHAR},
+      #{paymenttype,jdbcType=VARCHAR},
+      #{paystate,jdbcType=VARCHAR},
+      #{freighttype,jdbcType=VARCHAR},
+      #{freight,jdbcType=DOUBLE},
+      #{state,jdbcType=VARCHAR},
+      #{webstate,jdbcType=VARCHAR},
+      #{itemamount1,jdbcType=DOUBLE},
+      #{freightamount1,jdbcType=DOUBLE},
+      #{total1,jdbcType=DOUBLE},
+      #{itemamount2,jdbcType=DOUBLE},
+      #{freightamount2,jdbcType=DOUBLE},
+      #{total2,jdbcType=DOUBLE},
+      #{rettot,jdbcType=DOUBLE},
+      #{paytot,jdbcType=DOUBLE},
+      #{recnum,jdbcType=DOUBLE},
+      #{remark,jdbcType=VARCHAR},
+      #{inputorid,jdbcType=DOUBLE},
+      #{inputor,jdbcType=VARCHAR},
+      #{manager,jdbcType=VARCHAR},
+      #{managerid,jdbcType=DOUBLE},
+      #{pricecol,jdbcType=VARCHAR},
+      #{pricedesc,jdbcType=VARCHAR},
+      #{custpricemark,jdbcType=VARCHAR},
+      #{hbmark,jdbcType=VARCHAR},
+      #{storeId,jdbcType=DOUBLE},
+      #{storeName,jdbcType=VARCHAR},
+      #{storenote,jdbcType=VARCHAR},
+      #{custtype,jdbcType=VARCHAR},
+      #{billProc,jdbcType=VARCHAR},
+      #{procMan,jdbcType=VARCHAR},
+      #{createdDate,jdbcType=VARCHAR},
+      #{updatedDate,jdbcType=VARCHAR},
+      #{createdBy,jdbcType=VARCHAR},
+      #{updatedBy,jdbcType=VARCHAR},
+      #{createdTime,jdbcType=VARCHAR},
+      #{updatedTime,jdbcType=VARCHAR},
+      #{updatedDatetime,jdbcType=VARCHAR},
+      #{info,jdbcType=LONGVARCHAR},
+    </trim>
+  </insert>
+  -->
+</mapper>

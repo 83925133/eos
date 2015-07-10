@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.whale.eos.repository.menu.EosMenuDAO" >
+	  <!--<cache type="org.mybatis.caches.ehcache.EhcacheCache" />-->
+	  <resultMap id="Menu" type="com.whale.eos.entity.menu.EosMenu" >
+		<result column="id" property="id" jdbcType="INTEGER" />
+		<result column="menuno" property="menuno" jdbcType="INTEGER" />
+		<result column="menugno" property="menugno" jdbcType="INTEGER" />
+		<result column="menutype" property="menutype" jdbcType="VARCHAR" />
+		<result column="menuname" property="menuname" jdbcType="VARCHAR" />
+		<result column="menunote" property="menunote" jdbcType="VARCHAR" />
+		<result column="menucode" property="menucode" jdbcType="VARCHAR" />
+		<result column="url" property="url" jdbcType="VARCHAR" />
+		<result column="state" property="state" jdbcType="VARCHAR" />
+	  </resultMap>
+	<sql id="Base_Column_List" >
+    	id, menugno, menuno, menutype, menuname, menunote, menucode, url, `state`
+	</sql>
+	<select id="findByEno" resultMap="Menu" parameterType="String">
+		select 
+			m.id, m.menugno, m.menuno, m.menutype, m.menuname, m.menunote, m.menucode, m.url, m.`state` 
+		from eos_menu m,eos_right r,eos_emp e where m.id= r.menu_id and r.emp_id = e.id and e.eno = #{eno} order by menuno
+	</select>
+	
+	<select id="findUserMenuByEno" resultMap="Menu" parameterType="String">
+		select 
+			m.id, m.menugno, m.menuno, m.menutype, m.menuname, m.menunote, m.menucode, m.url, m.`state` 
+		from eos_menu m,eos_usermenu um,eos_emp e where m.id= um.menu_id and um.emp_id = e.id and e.eno = #{eno} order by menuno
+	</select>
+	
+	
+	<delete id="deleteAllUserMenuByEmpId" parameterType="INTEGER">  
+	    delete from eos_usermenu where emp_id =  #{empId}
+	</delete>
+	<insert id="batchInsert" parameterType="java.util.List">  
+	    insert into eos_usermenu (menu_id,emp_id)  
+	    values   
+	    <foreach collection="list" item="item" index="index" separator="," >  
+	        (#{item.menuId},#{item.empId})  
+	    </foreach>  
+	</insert>
+  <!--
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.whale.eos.base.entity.menu.EosMenuExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from eos_menu
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExampleAndPage" resultMap="BaseResultMap" parameterType="com.whale.eos.base.entity.menu.EosMenuExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from eos_menu
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <delete id="deleteByExample" parameterType="com.whale.eos.base.entity.menu.EosMenuExample" flushCache="true" >
+    delete from eos_menu
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <select id="countByExample" parameterType="com.whale.eos.base.entity.menu.EosMenuExample" resultType="java.lang.Integer" >
+    select count(*) from eos_menu
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" flushCache="true" >
+    update eos_menu
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.menuno != null" >
+        menuno = #{record.menuno,jdbcType=INTEGER},
+      </if>
+      <if test="record.menutype != null" >
+        menutype = #{record.menutype,jdbcType=VARCHAR},
+      </if>
+      <if test="record.menuname != null" >
+        menuname = #{record.menuname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.menunote != null" >
+        menunote = #{record.menunote,jdbcType=VARCHAR},
+      </if>
+      <if test="record.menucode != null" >
+        menucode = #{record.menucode,jdbcType=VARCHAR},
+      </if>
+      <if test="record.url != null" >
+        url = #{record.url,jdbcType=VARCHAR},
+      </if>
+      <if test="record.state != null" >
+        `state` = #{record.state,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" flushCache="true" >
+    update eos_menu
+    set id = #{record.id,jdbcType=INTEGER},
+      menuno = #{record.menuno,jdbcType=INTEGER},
+      menutype = #{record.menutype,jdbcType=VARCHAR},
+      menuname = #{record.menuname,jdbcType=VARCHAR},
+      menunote = #{record.menunote,jdbcType=VARCHAR},
+      menucode = #{record.menucode,jdbcType=VARCHAR},
+      url = #{record.url,jdbcType=VARCHAR},
+      `state` = #{record.state,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <insert id="insert" parameterType="com.whale.eos.base.entity.menu.EosMenu" flushCache="true" >
+    insert into eos_menu (id, menuno, menutype, 
+      menuname, menunote, menucode, 
+      url, `state`)
+    values (#{id,jdbcType=INTEGER}, #{menuno,jdbcType=INTEGER}, #{menutype,jdbcType=VARCHAR}, 
+      #{menuname,jdbcType=VARCHAR}, #{menunote,jdbcType=VARCHAR}, #{menucode,jdbcType=VARCHAR}, 
+      #{url,jdbcType=VARCHAR}, #{state,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.whale.eos.base.entity.menu.EosMenu" flushCache="true" >
+    insert into eos_menu
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      id,
+      menuno,
+      menutype,
+      menuname,
+      menunote,
+      menucode,
+      url,
+      `state`,
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      #{id,jdbcType=INTEGER},
+      #{menuno,jdbcType=INTEGER},
+      #{menutype,jdbcType=VARCHAR},
+      #{menuname,jdbcType=VARCHAR},
+      #{menunote,jdbcType=VARCHAR},
+      #{menucode,jdbcType=VARCHAR},
+      #{url,jdbcType=VARCHAR},
+      #{state,jdbcType=VARCHAR},
+    </trim>
+  </insert>
+  -->
+</mapper>

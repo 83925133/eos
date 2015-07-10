@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.whale.eos.repository.bill.EosBillProcDAO" >
+  <resultMap id="BaseResultMap" type="com.whale.eos.entity.bill.EosBillProc" >
+    <result column="id" property="id" jdbcType="BIGINT" />
+    <result column="wftype" property="wftype" jdbcType="VARCHAR" />
+    <result column="bno" property="bno" jdbcType="VARCHAR" />
+    <result column="state" property="state" jdbcType="VARCHAR" />
+    <result column="state_id" property="stateId" jdbcType="DOUBLE" />
+    <result column="ptype" property="ptype" jdbcType="VARCHAR" />
+    <result column="pkind" property="pkind" jdbcType="VARCHAR" />
+    <result column="pno" property="pno" jdbcType="DOUBLE" />
+    <result column="bill_proc" property="billProc" jdbcType="VARCHAR" />
+    <result column="tmin" property="tmin" jdbcType="DOUBLE" />
+    <result column="tmax" property="tmax" jdbcType="DOUBLE" />
+    <result column="ynqty" property="ynqty" jdbcType="VARCHAR" />
+    <result column="ynprice" property="ynprice" jdbcType="VARCHAR" />
+    <result column="ynyf" property="ynyf" jdbcType="VARCHAR" />
+    <result column="tot3" property="tot3" jdbcType="DOUBLE" />
+    <result column="pnote" property="pnote" jdbcType="VARCHAR" />
+    <result column="empid" property="empid" jdbcType="DOUBLE" />
+    <result column="ename" property="ename" jdbcType="VARCHAR" />
+    <result column="enameok" property="enameok" jdbcType="VARCHAR" />
+    <result column="readmark" property="readmark" jdbcType="VARCHAR" />
+    <result column="created_date" property="createdDate" jdbcType="VARCHAR" />
+    <result column="updated_date" property="updatedDate" jdbcType="VARCHAR" />
+    <result column="created_by" property="createdBy" jdbcType="VARCHAR" />
+    <result column="updated_by" property="updatedBy" jdbcType="VARCHAR" />
+    <result column="created_time" property="createdTime" jdbcType="VARCHAR" />
+    <result column="updated_time" property="updatedTime" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, wftype, bno, `state`, state_id, ptype, pkind, pno, bill_proc, tmin, tmax, ynqty, 
+    ynprice, ynyf, tot3, pnote, empid, ename, enameok, readmark, created_date, updated_date, 
+    created_by, updated_by, created_time, updated_time
+  </sql>
+  <!--
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.whale.eos.entity.bill.EosBillProcInfo" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from eos_bill_proc
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExampleAndPage" resultMap="BaseResultMap" parameterType="com.whale.eos.entity.bill.EosBillProcInfo" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from eos_bill_proc
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <delete id="deleteByExample" parameterType="com.whale.eos.entity.bill.EosBillProcInfo" >
+    delete from eos_bill_proc
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <select id="countByExample" parameterType="com.whale.eos.entity.bill.EosBillProcInfo" resultType="java.lang.Integer" >
+    select count(*) from eos_bill_proc
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update eos_bill_proc
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.wftype != null" >
+        wftype = #{record.wftype,jdbcType=VARCHAR},
+      </if>
+      <if test="record.bno != null" >
+        bno = #{record.bno,jdbcType=VARCHAR},
+      </if>
+      <if test="record.state != null" >
+        `state` = #{record.state,jdbcType=VARCHAR},
+      </if>
+      <if test="record.stateId != null" >
+        state_id = #{record.stateId,jdbcType=DOUBLE},
+      </if>
+      <if test="record.ptype != null" >
+        ptype = #{record.ptype,jdbcType=VARCHAR},
+      </if>
+      <if test="record.pkind != null" >
+        pkind = #{record.pkind,jdbcType=VARCHAR},
+      </if>
+      <if test="record.pno != null" >
+        pno = #{record.pno,jdbcType=DOUBLE},
+      </if>
+      <if test="record.billProc != null" >
+        bill_proc = #{record.billProc,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tmin != null" >
+        tmin = #{record.tmin,jdbcType=DOUBLE},
+      </if>
+      <if test="record.tmax != null" >
+        tmax = #{record.tmax,jdbcType=DOUBLE},
+      </if>
+      <if test="record.ynqty != null" >
+        ynqty = #{record.ynqty,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ynprice != null" >
+        ynprice = #{record.ynprice,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ynyf != null" >
+        ynyf = #{record.ynyf,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tot3 != null" >
+        tot3 = #{record.tot3,jdbcType=DOUBLE},
+      </if>
+      <if test="record.pnote != null" >
+        pnote = #{record.pnote,jdbcType=VARCHAR},
+      </if>
+      <if test="record.empid != null" >
+        empid = #{record.empid,jdbcType=DOUBLE},
+      </if>
+      <if test="record.ename != null" >
+        ename = #{record.ename,jdbcType=VARCHAR},
+      </if>
+      <if test="record.enameok != null" >
+        enameok = #{record.enameok,jdbcType=VARCHAR},
+      </if>
+      <if test="record.readmark != null" >
+        readmark = #{record.readmark,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createdDate != null" >
+        created_date = #{record.createdDate,jdbcType=VARCHAR},
+      </if>
+      <if test="record.updatedDate != null" >
+        updated_date = #{record.updatedDate,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createdBy != null" >
+        created_by = #{record.createdBy,jdbcType=VARCHAR},
+      </if>
+      <if test="record.updatedBy != null" >
+        updated_by = #{record.updatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createdTime != null" >
+        created_time = #{record.createdTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.updatedTime != null" >
+        updated_time = #{record.updatedTime,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update eos_bill_proc
+    set id = #{record.id,jdbcType=BIGINT},
+      wftype = #{record.wftype,jdbcType=VARCHAR},
+      bno = #{record.bno,jdbcType=VARCHAR},
+      `state` = #{record.state,jdbcType=VARCHAR},
+      state_id = #{record.stateId,jdbcType=DOUBLE},
+      ptype = #{record.ptype,jdbcType=VARCHAR},
+      pkind = #{record.pkind,jdbcType=VARCHAR},
+      pno = #{record.pno,jdbcType=DOUBLE},
+      bill_proc = #{record.billProc,jdbcType=VARCHAR},
+      tmin = #{record.tmin,jdbcType=DOUBLE},
+      tmax = #{record.tmax,jdbcType=DOUBLE},
+      ynqty = #{record.ynqty,jdbcType=VARCHAR},
+      ynprice = #{record.ynprice,jdbcType=VARCHAR},
+      ynyf = #{record.ynyf,jdbcType=VARCHAR},
+      tot3 = #{record.tot3,jdbcType=DOUBLE},
+      pnote = #{record.pnote,jdbcType=VARCHAR},
+      empid = #{record.empid,jdbcType=DOUBLE},
+      ename = #{record.ename,jdbcType=VARCHAR},
+      enameok = #{record.enameok,jdbcType=VARCHAR},
+      readmark = #{record.readmark,jdbcType=VARCHAR},
+      created_date = #{record.createdDate,jdbcType=VARCHAR},
+      updated_date = #{record.updatedDate,jdbcType=VARCHAR},
+      created_by = #{record.createdBy,jdbcType=VARCHAR},
+      updated_by = #{record.updatedBy,jdbcType=VARCHAR},
+      created_time = #{record.createdTime,jdbcType=VARCHAR},
+      updated_time = #{record.updatedTime,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <insert id="insert" parameterType="com.whale.eos.entity.bill.EosBillProc" >
+    insert into eos_bill_proc (id, wftype, bno, 
+      `state`, state_id, ptype, 
+      pkind, pno, bill_proc, 
+      tmin, tmax, ynqty, ynprice, 
+      ynyf, tot3, pnote, empid, 
+      ename, enameok, readmark, 
+      created_date, updated_date, created_by, 
+      updated_by, created_time, updated_time
+      )
+    values (#{id,jdbcType=BIGINT}, #{wftype,jdbcType=VARCHAR}, #{bno,jdbcType=VARCHAR}, 
+      #{state,jdbcType=VARCHAR}, #{stateId,jdbcType=DOUBLE}, #{ptype,jdbcType=VARCHAR}, 
+      #{pkind,jdbcType=VARCHAR}, #{pno,jdbcType=DOUBLE}, #{billProc,jdbcType=VARCHAR}, 
+      #{tmin,jdbcType=DOUBLE}, #{tmax,jdbcType=DOUBLE}, #{ynqty,jdbcType=VARCHAR}, #{ynprice,jdbcType=VARCHAR}, 
+      #{ynyf,jdbcType=VARCHAR}, #{tot3,jdbcType=DOUBLE}, #{pnote,jdbcType=VARCHAR}, #{empid,jdbcType=DOUBLE}, 
+      #{ename,jdbcType=VARCHAR}, #{enameok,jdbcType=VARCHAR}, #{readmark,jdbcType=VARCHAR}, 
+      #{createdDate,jdbcType=VARCHAR}, #{updatedDate,jdbcType=VARCHAR}, #{createdBy,jdbcType=VARCHAR}, 
+      #{updatedBy,jdbcType=VARCHAR}, #{createdTime,jdbcType=VARCHAR}, #{updatedTime,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.whale.eos.entity.bill.EosBillProc" >
+    insert into eos_bill_proc
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      id,
+      wftype,
+      bno,
+      `state`,
+      state_id,
+      ptype,
+      pkind,
+      pno,
+      bill_proc,
+      tmin,
+      tmax,
+      ynqty,
+      ynprice,
+      ynyf,
+      tot3,
+      pnote,
+      empid,
+      ename,
+      enameok,
+      readmark,
+      created_date,
+      updated_date,
+      created_by,
+      updated_by,
+      created_time,
+      updated_time,
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      #{id,jdbcType=BIGINT},
+      #{wftype,jdbcType=VARCHAR},
+      #{bno,jdbcType=VARCHAR},
+      #{state,jdbcType=VARCHAR},
+      #{stateId,jdbcType=DOUBLE},
+      #{ptype,jdbcType=VARCHAR},
+      #{pkind,jdbcType=VARCHAR},
+      #{pno,jdbcType=DOUBLE},
+      #{billProc,jdbcType=VARCHAR},
+      #{tmin,jdbcType=DOUBLE},
+      #{tmax,jdbcType=DOUBLE},
+      #{ynqty,jdbcType=VARCHAR},
+      #{ynprice,jdbcType=VARCHAR},
+      #{ynyf,jdbcType=VARCHAR},
+      #{tot3,jdbcType=DOUBLE},
+      #{pnote,jdbcType=VARCHAR},
+      #{empid,jdbcType=DOUBLE},
+      #{ename,jdbcType=VARCHAR},
+      #{enameok,jdbcType=VARCHAR},
+      #{readmark,jdbcType=VARCHAR},
+      #{createdDate,jdbcType=VARCHAR},
+      #{updatedDate,jdbcType=VARCHAR},
+      #{createdBy,jdbcType=VARCHAR},
+      #{updatedBy,jdbcType=VARCHAR},
+      #{createdTime,jdbcType=VARCHAR},
+      #{updatedTime,jdbcType=VARCHAR},
+    </trim>
+  </insert>
+  -->
+</mapper>

@@ -1,0 +1,18 @@
+/*lTREEMenu Start*/
+#lTREEMenuDEMO {width:230px;border:1px solid #c4d5df;margin-top:3px; padding:3px; float:left; background-color:#ecf4fc;}
+.lTREEMenu dl {padding:0;margin:0 0 0 17px;clear:both;}
+.lTREEMenu a {background:none;}/*消除在FF2.0,Opera9下有重复背景图bug*/
+.lTREEMenu .cur{ font-weight:bold;}
+.lTREEMenu dd {padding:0;margin:0px;list-style:none;clear:both;}
+.lTREEMenu dd button {width:35px;height:18px;overflow:hidden;cursor:pointer;vertical-align:middle;border:none;background:url(../img/tree/folder-opened.gif) no-repeat 3px 1px;}
+.lTREEMenu dd.folderClose dl {display:none;}
+.lTREEMenu dd.folderClose button {background-image:url(../img/tree/folder-closed.gif);}
+.lTREEMenu dd {background:url(../img/tree/elbow-line.gif) repeat-y 0 0;}
+.lTREEMenu dd.lastChild {background:url(../img/tree/folder-last.gif) no-repeat 0 0;}
+.lTREEMenu dt {margin:0px;padding:0 0 0 36px;background:url(../img/tree/leaf-normal.gif) no-repeat 0 0;line-height:18px;}
+.lTREEMenu dt.lastChild {background:url(../img/tree/leaf-last.gif) no-repeat 0 0;}
+.lTREEMenu dd a,
+.lTREEMenu dd a:visited {color:#0594E7;font-weight:normal;}
+.lTREEMenu dt a,
+.lTREEMenu dt a:visited {color:#000;font-weight:normal;}
+/*lTREEMenu End*/

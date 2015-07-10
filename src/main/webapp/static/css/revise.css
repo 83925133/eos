@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+.mleft10{margin-left:10px;}
+.mleft20{margin-left:20px;}
+.mleft30{margin-left:30px;}
+.mleft50{margin-left:50px;}
+.mtop20{margin-top:20px;}
+.mtop10{margin-top:10px;}
+.mtop5{margin-top:5px;}
+.ptop5{padding-top:5px;}
+.wp1{width:26%}
+.wp2{width:42%}
+.wp3{width:32%}
+.wp4{width:90%}
+.wp5{width:49%}
+.w1{width:60px;}
+.w2{width:120px;}
+.w3{width:100px;}
+.w4{width:50px;}
+.w5{width:200px;}
+.w6{width:95px;}
+.hgt1{ height:28px;}
+.fleft{ float:left;}
+.fright{float:right;}
+/* -----新增开始----- */
+.hgt2{ height:80px;}
+.hgt3{ height:50px;}
+.w7{width:458px;}
+.w8{width:360px;}
+.w9{width:135px;}
+.w10{width:85px }
+.w11{width:48px }
+.w12{width:36px }
+.p10{padding:10px;}
+.m10{margin:10px;}
+.mleft70{margin-left:70px;}
+.mleft5{ margin-left:5px}
+.mleft51{ margin-left:78px}
+.mright10{ margin-right:10px}
+.layoutfix {display: inline-block;} 
+/* -----新增结束----- */

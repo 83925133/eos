@@ -1,0 +1,129 @@
+@charset "utf-8";
+@import url(public.css);
+
+.box{ width:950px;font-family:΢���ź�; font-size:10pt;font-family:΢���ź�; font-size:10pt margin:0 auto; text-align:left;}
+
+.content{ width:950px;font-family:΢���ź�; font-size:10pt;font-family:΢���ź�; font-size:10pt margin-top:8px;}
+.cxHb{ width:215px; height:290px; float:left; background:#c5defb;}
+.cxHb .biaoTi{ width:180px; height:35px; background:url(../img/no-repeat.gif) 231px -95px; line-height:34px; padding-left:35px; color:#15428B; font-weight:bold;}
+.chaXu{ width:195px; height:244px; background:#fff; margin:0 auto;}
+.chaXu .one{ width:175px; height:18px; padding-left:15px;}
+.chaXu .two{ width:175px; height:19px; padding-left:15px; line-height:18px; color:#000;}
+.chaXu .three{ width:175px; height:25px; padding-left:15px; line-height:18px; color:#000;}
+.hbBtn{ width:163px; height:22px; color:#808080; line-height:21px; background:url(../img/no-repeat.gif) -146px -222px; font-size:12px; padding-left:5px;}
+.chaXu .four{ width:125px; height:30px; padding-left:55px; padding-top:10px; line-height:18px; color:#3e3e3e;}
+.tjBtn{ width:80px; height:25px; background:url(../img/no-repeat.gif) -89px -183px; cursor:pointer;}
+
+.cxRi{ width:722px; float:right; height:290px;}
+.hotPic{ float:left; width:496px; height:290px; overflow:hidden; position:relative;}
+.hotPic img{display:none;}
+.hotPic ul{ position:absolute; right:0px; width:100px; bottom:10px;}
+.hotPic ul li{ float:left; display:block; padding:2px 6px; background-color:#FCF2CF;  border:1px solid #F27602; color:#D94B01; margin-left:8px; cursor:pointer; font-weight:normal; list-style:none;}
+.hotPic ul li.current{color:#fff; background-color:#F00;}
+.fjInfo{ width:215px; height:290px; float:right;}
+.fjLogin{ width:215px; height:198px; overflow:hidden;}
+.fjLogin .biaoti{ width:180px; height:28px; background:url(../img/no-repeat.gif) no-repeat -234px -50px; padding-left:35px; line-height:27px; font-weight:bold; color:#02419d;}
+.loginCon{ width:213px; height:156px; border:1px solid #CFE3F1; padding-top:8px;}
+.loginCon .one{ width:52px; height:30px; line-height:29px; float:left; padding-left:10px; }
+.loginCon .five{ width:72px; height:30px; line-height:29px; float:left; padding-left:10px; }
+.loginCon .two{ width:136px; height:26px; line-height:20px; float:left; overflow:hidden; padding-top:4px;}
+.loginCon .six{ width:124px; height:26px; line-height:20px; float:left; overflow:hidden; padding-top:4px;}
+.bInpu{ width:134px; height:22px; background:url(../img/no-repeat.gif) no-repeat left -222px;}
+.input-code{height:22px; background:url(../img/no-repeat.gif) no-repeat left -222px; width:60px; float:left; border-right:1px solid #ccc; margin-right:10px;}
+.loginCon .three{ width:140px; height:28px; border-bottom:1px dashed #cfe3f1; padding-left:62px;}
+.dlBtn2{ width:69px; height:25px; font-size:12px; color:#fff; font-weight:bold; background:url(../img/no-repeat.gif) no-repeat left -183px; cursor:pointer;}
+.loginCon .four{ line-height:16px; text-align:center; color:#AAAAAA; padding-top:3px;}
+.loginCon .wel{ width:170px; height:30px; line-height:29px; float:left; padding-left:10px; margin-bottom:5px;}
+.loginCon .bm{ width:190px; line-height:18px; float:left; padding-left:10px; margin-bottom:5px;}
+.tuichuBT{ width:140px; height:43px; padding-left:70px; padding-top:10px;}
+.tuichuBT a:link, #tuichuBT a:visited{ width:69px; height:25px; background:url(../img/no-repeat.gif) no-repeat -234px -20px; display:block;}
+.tuichuBT a:hover{ width:69px; height:25px; background:url(../img/no-repeat.gif) no-repeat -234px -20px; display:block;}
+
+
+.quickLin{ width:215px; height:56px;}
+.cpBtn{ width:120px; height:38px; background:url(../img/no-repeat.gif) no-repeat left top;}
+.uccs a:link, .uccs a:visited {width:120px; height:38px; background:url(../img/no-repeat.gif) no-repeat left top; display:block;}
+.uccs a:hover {width:120px; height:38px; background:url(../img/no-repeat.gif) no-repeat left top; display:block;}
+.uccs2 a:link, .uccs2 a:visited{ width:90px; height:38px; background:url(../img/no-repeat.gif) no-repeat -136px top; display:block;}
+.uccs2 a:hover{ width:90px; height:38px; background:url(../img/no-repeat.gif) no-repeat -136px top; display:block;}
+.uccs{ width:120px; height:38px; float:left; margin-top:7px;}
+.uccs2{ width:90px; height:38px; float:right; margin-top:7px;}
+.keFu{ width:215px; height:38px; background:url(../img/no-repeat.gif) no-repeat -234px -153px;}
+.keFu a{ width:215px; height:38px; display:block; cursor:pointer;}
+
+.ziXun{ width:948px; height:210px; border:1px solid #afd2fa; float:left; margin-top:10px;}
+.ziXun .blkcon { width: 948px;  FLOAT: left;}
+.ziXun .tabcon {FLOAT: left; WIDTH: 948px; height:25px; background: url(../img/repeat.gif) repeat-x left -59px;}
+.ziXun .tabcon A:link, .ziXun .tabcon A:visited {COLOR: #15428B!important; TEXT-DECORATION: none}
+.ziXun .tabcon A:hover {COLOR: #FE730E;TEXT-DECORATION: underline; }
+.ziXun .content {WIDTH: 948px}
+.ziXun .tabcon LI {BORDER-RIGHT: #afd2fa 1px solid; DISPLAY: block; PADDING-LEFT: 5px;  CURSOR: pointer; COLOR: #808080; LINE-HEIGHT: 23px; BORDER-BOTTOM: #afd2fa 1px solid; TEXT-ALIGN: left; height:24px; width:80px; float:left; text-align:center; background: url(../img/repeat.gif) repeat-x left top; font-size:12px;}
+.ziXun .tabcon LI.curr { BORDER-BOTTOM-WIDTH: 0px; background:#fff url(../img/repeat.gif) repeat-x left -24px; color:#15428B; text-align:center; height:25px; font-weight:bold;}
+.xinWen{ width:450px; float:left; padding-left:30px; padding-top:10px;}
+.xinWen a:link, .xinWen a:visited { color: #000; text-decoration: none}
+.xinWen a:hover { color: #EA5822; }
+.shiCh{ width:350px; height:170px; float:right;}
+.xwBti{ width:305px; height:26px; padding-left:20px; line-height:25px; color:#15428B; font-weight:bold;}
+.xwBinf{ width:420px;}
+.xwBinf li{ width:390px; height:22px; padding-left:20px; line-height:20px; white-space:nowrap; overflow:hidden; float:left; background:url(../img/no-repeat.gif) no-repeat -448px -6px;}
+.xwBinf .more{ width:380px; height:23px; line-height:22px; text-align:right;}
+
+.xinWen2{ width:420px; float:right; padding-top:10px;}
+.xinWen2 a:link, .xinWen2 a:visited { color: #000; text-decoration: none}
+.xinWen2 a:hover { color: #EA5822; }
+.shiCh2{ width:350px; height:170px; float:right;}
+.xwBti2{ width:305px; height:26px; padding-left:20px; line-height:25px; color:#15428B; font-weight:bold;}
+.xwBinf2{ width:400px;}
+.xwBinf2 li{ width:380px; height:22px; padding-left:20px; white-space:nowrap; overflow:hidden; line-height:20px; float:left; background:url(../img/no-repeat.gif) no-repeat -448px -6px;}
+.xwBinf2 .more{ width:380px; height:23px; line-height:22px; text-align:right;}
+
+.rmJs{width:420px; float:left; text-align:center; padding-top:20px; padding-left:20px;}
+.rmBg{ width:260px; float:right; height:180px; background:url(../img/hotsearch.gif) no-repeat right 20px;}
+.tags {color:#000; font-size:12px; height:180px; line-height:35px; margin:0 0 0 25px; padding-top:10px; text-align:left; }
+.tag14 {color:#000;font-size:14px;line-height:25px;}
+
+.proFa{ width:946px; height:177px;
+     overFlow-y: scroll ;
+     overFlow-x: hidden ;     
+    /*   滚动条相关的颜色属�&#65533;?*/
+     scrollBar-face-color: #90d7f5;        /* 滑块 */
+     scrollBar-hightLight-color: #fff;    /* 高亮 */
+     scrollBar-3dLight-color: #b9d9ff;    /* 3维光�?*/
+     scrollBar-darkshadow-color:#90d7f5;    /* 暗影    */
+     scrollBar-shadow-color:#b9d9ff;      /* 阴影   */
+     scrollBar-arrow-color:#e3f1f7;       /* 箭头 */
+     scrollBar-track-color:#ecf5ff;         /* 滑道颜色 */
+     scrollBar-base-color:#c5defb;          /* 主要颜色 */
+	 }
+.proMs{ line-height:21px; width:860px; padding-left:10px; padding-top:10px;}
+.proPic{ width:675px; padding-left:15px;}
+
+.heZuo{ width:213px; height:214px; border:1px solid #CFE3F1; float:right; margin-top:10px;}
+.heZuo .biaoti{ width:213px; height:25px; background:url(../img/no-repeat.gif) left -50px; line-height:24px;}
+.heZuo .biaoti p{ color:#02419d; font-weight:bold; width:75px; text-align:center; float:left;}
+.heZuo .biaoti span{ width:50px; float:right;}
+
+.f_condition{ width:724px; float:left; margin-top:8px; height:220px;}
+.f_con{ width:723px; height:28px; border-top:1px solid #afd2fa; border-right:1px solid #afd2fa; background:url(../img/dd_search.png) repeat-x left -38px;}
+.f_con .h_lt{ width:106px; height:20px; padding-top:8px; border-left:1px solid #afd2fa; float:left; font-weight:bold; color:#15428b; text-align:center;}
+.f_con .h_rcon{ width:356px; float:right;}
+.f_con .red{ color:#F00;}
+.ztai{ width:20px; height:20px; background:url(../img/dd_search.png) no-repeat -34px -76px;}
+.f_conl{ width:336px; height:126px; padding:10px; float:left; border-right:1px solid #afd2fa; border-left:1px solid #afd2fa; border-bottom:1px solid #afd2fa;}
+.f_conl th, .f_conr th{ padding:2px; text-align:left; white-space:nowrap; height:20px; line-height:20px; border-bottom:1px dashed #afd2fa;}
+.f_conl td, .f_conr td{padding:2px; text-align:left; white-space:nowrap; height:20px; line-height:20px; border-bottom:1px dashed #afd2fa;}
+.f_conr{ width:335px; height:126px; padding:10px; float:right; border-right:1px solid #afd2fa; border-left:1px solid #afd2fa; border-bottom:1px solid #afd2fa;}
+.f_cosearch{ width:722px; height:38px; border:1px solid #afd2fa; margin-top:3px;}
+.f_cosearch .yjing{ width:60px; height:36px; float:left; background:url(../img/dd_search.png) no-repeat -146px -68px;}
+.f_cosearch .sear{ width:620px; height:30px; float:left; padding-top:6px;}
+.f_hbBtn{ width:84px; height:18px; color:#808080; border:1px solid #b5b8c8; line-height:21px; font-size:12px; padding-left:5px;}
+.f_tjBtn{ width:50px; height:20px; background:url(../img/dd_search.png) -72px -77px; cursor:pointer; font-size:12px; color:#fff; font-weight:bold;}
+
+.Qdaoh{ width:213px; height:214px; border:1px solid #CFE3F1; float:right; margin-top:10px;}
+.Qdaoh .biaoti{ width:213px; height:25px; background:url(../img/no-repeat.gif) left -50px; line-height:24px;}
+.Qdaoh .biaoti p{ color:#02419d; font-weight:bold; width:75px; text-align:center; float:left;}
+.Qdaoh .biaoti span{ width:50px; float:right;}
+.Qd_info{ padding-top:10px;}
+.QdBinf li{ width:80px; height:22px; padding-left:20px; line-height:20px; float:left; background:url(../img/no-repeat.gif) no-repeat -448px -6px;}
+.QdBinf a:link, .QdBinf a:visited { color: #000; text-decoration: none}
+.QdBinf a:hover { color: #EA5822; }

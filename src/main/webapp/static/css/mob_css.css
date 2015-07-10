@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+/* 全局样式 */
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;}body,button,input,select,textarea{font:12px/1.5 tahoma,arial,\5b8b\4f53;}h1,h2,h3,h4,h5,h6{font-size:100%;}ul,ol,li{list-style:none;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}legend{color:#000;}fieldset,img{border:0;}button,input,select,textarea{font-size:12px;}table{border-collapse:collapse;border-spacing:0; font-size:12px;}
+body{background-color:#FFF;_background-image:url(about:blank);
+_background-attachment:fixed;}
+.input-time,.l-panel .title,.icon-search,.icon-view,.flynv div,.fl-transferbg,table th a,.xctable th,.page-prev,.page-next,.unclick-l,.unclick-r{background:url(../img/bg.gif) no-repeat;}
+/* 选择�?*/
+select{height:21px; border:1px solid #7f9db9;}
+.select-edit{color:#000;}
+/* 输入�?*/
+.input-text,.input-time{border:1px solid #7f9db9; height:19px; text-indent:2px; width:120px;}
+.input-time{background-position:right -61px;}
+.input-edit{color:#000;}
+/* 单�&#65533;�框 */
+.input-radio{margin-right:3px;}
+/*文本�?/
+textarea{width:80%; margin-right:5px;}
+/* 复�&#65533;�框 */
+.input-chekbox{margin-right:5px;}
+/* 文件表单 */
+.input-file{border:1px solid #7f9db9; height:21px; }
+/* 文字字体 */
+.font14{font-size:14px;}
+.font18{font-size:18px;}
+.font-red{color:#f00;}
+.font-orange{color:#ff6600}
+.underline{text-decoration:underline}
+.edit{color:#000;}/* 待编辑状�?*/
+.font-note{ color:#999;} /* 提示信息 */
+/* 链接 */
+a{color:#03319a;text-decoration:none; cursor:pointer}
+a:link{color:#03319a;text-decoration:none;}
+a:visited{color:#03319a;text-decoration:none;}
+a:hover{color:#cc0000;text-decoration: underline;}
+a:active{color:#03319a;text-decoration:none;}
+/* 其他公用样式 */
+.l-div{height:21px; margin-top:6px;}
+.l-div-c{height:21px; width:33%; float:left;}
+.l-div-c-l{ width:60px; height:21px; float:left;}
+.l-div-c-r{ height:21px; float:left;}
+.l-aright{text-align:right;}
+.bgcolor{ background-color:#C4E1FF}
+.bline{border-bottom:1px dotted #777;}
+#clear, .clear{ clear:both; font-size:0; line-height:0; margin:0; padding:0; text-align:0; }
+.gre{ background:#ffffcc;}
+.qiChen{ border-bottom:2px solid #03319a;}
+.qiChTitle{ background:#03319a; color:#fff; font-weight:bold; width:30px; float:left; padding:3px 15px; border-top:2px solid #2265fe;}
+/* 按钮 */
+.btn-o-check,.btn-o4,.btn-o4{background:url(../img/btn.gif) no-repeat 0 -179px; height:26px; line-height:26px; padding-left:10px; font-size:12px;  color:#FFF; border:none; width:54px;cursor:pointer;}
+
+.btn-o4{background-position:-145px -179px; padding:0; width:54px;}
+.btn-o4{background-position:-388px -179px;padding:0; width:72px;}
+
+.btn-o-check{background-position:-216px -179px; width:127px;  padding:0;}
+
+.btnsection,.btnsection2{height:35px; padding-top:10px; text-align:center}
+.btnsection{margin:0 auto}
+.btnsection2{padding-top:15px; height:35px;margin:0 auto}
+/* 链接按钮 */
+a.btn-o-checklink div,.btn-o4link div,.btn-o4link div{background:url(../img/btn.gif) no-repeat 0 -179px; height:26px; line-height:26px; font-size:12px;  color:#FFF; border:none; width:54px;cursor:pointer; text-align:center;}
+a.btn-o-searchlink div{background-position:-72px -179px;}
+a.btn-o-checklink div{background-position:-216px -179px; width:127px;  padding:0;}
+a.btn-o-searchlink div span,a.btn-o-cleanlink div span{padding-left:10px;}
+a.btn-o4link div{background-position:-145px -179px; padding:0; width:54px;}
+a.btn-o4link div{background-position:-388px -179px;padding:0; width:72px;}
+a.btn-o4link:hover,a.btn-o4link:hover,a.btn-o-checklink:hover{text-decoration:none; }
+.l-info-change{background:url(../img/btn.gif) no-repeat 0 -156px; padding:3px 0 3px 30px; margin-left:100px;}
+
+/* header提示信息 */
+.header-info{font-size:12px; margin:0px 10px 15px 10px;}
+/* 后台 */
+.l-search .input-text,.l-search .input-time,.l-search select{width:100px;}
+
+
+
+
+/* -----新增�&#65533;�?---- */
+.input-auto{background:url(../img/bg.gif) no-repeat;background-position:right -135px;}
+.btnlink{float:right; list-style:none; height:22px;margin-top:2px; margin-right:10px; position:relative}
+.btnlink a{height:22px; line-height:22px; float:left; padding-left:23px;background:url(../img/btn.gif) no-repeat;}
+.btnlink a span{height:22px; line-height:22px;float:left; padding-right:6px;background:url(../img/btn.gif) no-repeat right 0;}
+.btnlink a:hover{ text-decoration:none}
+.btnlink .add,.btnlink .edit,.btnlink .delete,.btnlink .view,.btnlink .agreebatch,.btnlink .excel,.btnlink .search,.btnlink .exchage{position:absolute; left:4px; top:2px; background:url(../img/icon.gif) no-repeat; width:16px; height:16px; display:block; cursor:pointer}
+.btnlink .add{background-position:0 -33px;}
+.btnlink .edit{background-position:0 -14px;}
+.btnlink .delete{background-position:0 -52px;}
+.btnlink .view{background-position:0 2px;}
+.btnlink .agreebatch{background-position:0 -213px;}
+.btnlink .excel{background-position:0 -240px;}
+.btnlink .search{background-position:0 -270px;}
+.btnlink .exchage{background-position:0 -316px;}
+
+.linkbtn{float:left; height:22px; line-height:22px; position:relative; list-style:none;display:block}
+.linkbtn a{background:url(../img/btn.gif) no-repeat; text-decoration:none;height:22px; line-height:22px;float:left; padding-left:6px; display:block}
+.linkbtn a span{background:url(../img/btn.gif) no-repeat right 0;height:22px; line-height:22px;float:left; padding-right:6px;display:block; white-space:nowrap}
+
+.btn-b2,.btn-b4,.btn-b5,.btn-b7{background:url(../img/btn.gif) no-repeat;height:22px; line-height:21px; font-size:12px; border:none;cursor:pointer; vertical-align:middle; position:relative; color:#03319a;}
+.btn-b2{ width:53px; background-position:0 -25px; padding-left:15px;}
+.btn-b4{ width:77px; background-position:-60px -25px; padding-left:15px;}
+.btn-b5{ width:89px; background-position:-144px -25px; padding-left:15px;}
+.btn-b7{ width:113px; background-position:-371px -25px; padding-left:15px;}
+
+.btn-db2,.btn-db4{background:url(../img/btn.gif) no-repeat;height:22px; line-height:21px; font-size:12px; color:#fff; border:none;cursor:pointer; vertical-align:middle;}
+.btn-db2{ width:45px; background-position:-241px -25px;}
+.btn-db4{ width:69px; background-position:-294px -25px;}
+
+
+.btn .add,.btn .edit,.btn .delete,.btn .view,.btn .agreebatch,.btn .excel,.btn .search{position:absolute; left:4px; top:2px; background:url(../img/icon.gif) no-repeat; width:16px; height:16px; display:block; cursor:pointer}
+.btn .add{background-position:0 -33px;}
+.btn .edit{background-position:0 -14px;}
+.btn .delete{background-position:0 -52px;}
+.btn .view{background-position:0 2px;}
+.btn .agreebatch{background-position:0 -213px;}
+.btn .excel{background-position:0 -240px;}
+.btn .search{background-position:0 -270px;}
+
+
+
+.btn-n{ border:none; background:none; color:#03319a;}
+
+
+.bline2{ border-bottom:1px solid #ccc; height:15px;}
+#mask{position:absolute; background-color:#333;filter: Alpha(opacity=80); -moz-opacity:0.8; opacity:0.8; left:0; top:0; z-index:10;}
+#mask2{position:absolute; background-color:#333;filter: Alpha(opacity=0); -moz-opacity:0; opacity:0; left:0; top:0; z-index:10;}
+.popup{position:absolute;width:500px; background-color:#fff; z-index:11; border:1px solid #000; display:none;}
+.popup .title{height:22px; overflow:hidden; background:#e9f1f4;font-weight:bold; font-size:12px; border:1px solid #fff;}
+.popup .title strong{float:left; margin-left:10px; line-height:22px;}
+.popup .title a{ float:right; margin-right:3px; padding-top:3px;}
+.popup .content{ padding:10px 10px 10px 20px;}
+.popup .l-select{width:120px;}
+.popup .viewtable{ margin:5px; border:1px solid #c4d5e0}
+.popiframe{ border:none;}
+
+.fram{ width:710px; height:200px; border-bottom:1px solid #c6d5f5; border-right:1px solid #c6d5f5;
+	 overflow-y: scroll;
+     overflow-x: hidden ;     
+}
+.fram2{ width:555px; border-top:1px solid #ededed; border-left:1px solid #ededed;
+	 overflow-y: hidden;
+     overflow-x: auto ;     
+}
+.bgCol01{ background-color:#e9f1f4;}
+.bgCol02{ background-color:#f2f9fb;}
+.uploadfile{position:absolute;filter:alpha(opacity=0);-moz-opacity:0; opacity:0; width:80px; height:26px; left:75px; top:0px; cursor:pointer;*left:0;}
+/* -----新增结束----- */

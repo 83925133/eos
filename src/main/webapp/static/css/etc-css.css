@@ -1,0 +1,376 @@
+﻿/* 航空公司图标 */
+.airwayslogo-3u,.airwayslogo-8c,.airwayslogo-8l,.airwayslogo-bk,.airwayslogo-ca,.airwayslogo-cn,.airwayslogo-cz,.airwayslogo-eu,.airwayslogo-fm,.airwayslogo-g5,.airwayslogo-gs,.airwayslogo-ho,.airwayslogo-hu,.airwayslogo-kn,.airwayslogo-mf,.airwayslogo-mu,.airwayslogo-ns,.airwayslogo-pn,.airwayslogo-sc,.airwayslogo-zh,.airwayslogo-vd,.airwayslogo-jr,.airwayslogo-9w,.airwayslogo-aa,.airwayslogo-ab,.airwayslogo-ac,.airwayslogo-af,.airwayslogo-ai,.airwayslogo-ay,.airwayslogo-az,.airwayslogo-ba,.airwayslogo-bd,.airwayslogo-bi,.airwayslogo-br,.airwayslogo-ci,.airwayslogo-co,.airwayslogo-cx,.airwayslogo-dl,.airwayslogo-ek,.airwayslogo-et,.airwayslogo-ft,.airwayslogo-ga,.airwayslogo-jk,.airwayslogo-jl,.airwayslogo-jp,.airwayslogo-ka,.airwayslogo-ke,.airwayslogo-kl,.airwayslogo-kq,.airwayslogo-la,.airwayslogo-lh,.airwayslogo-lo,.airwayslogo-lx,.airwayslogo-ly,.airwayslogo-ma,.airwayslogo-mh,.airwayslogo-nh,.airwayslogo-nw,.airwayslogo-nx,.airwayslogo-nz,.airwayslogo-ok,.airwayslogo-os,.airwayslogo-oz,.airwayslogo-pg,.airwayslogo-pr,.airwayslogo-qf,.airwayslogo-qr,.airwayslogo-sk,.airwayslogo-sn,.airwayslogo-sq,.airwayslogo-su,.airwayslogo-tg,.airwayslogo-tk,.airwayslogo-ua,.airwayslogo-ul,.airwayslogo-un,.airwayslogo-vn,.airwayslogo-vs,.airwayslogo-vv,.airwayslogo-hx,.airwayslogo-uo,.airwayslogo-jd,.airwayslogo-ey,.airwayslogo-us,.airwayslogo-ky,.airwayslogo-ae,.airwayslogo-ge,.airwayslogo-b7{float:left; width:18px; height:16px; background-color:transparent;background:url(../img/airways-logo.gif) no-repeat;}
+ .airwayslogo-3u{ background-position:0 0; } 
+.airwayslogo-8c{ background-position:0 -48px; } 
+.airwayslogo-8l{ background-position:0 -96px; } 
+.airwayslogo-bk{ background-position:0 -144px; } 
+.airwayslogo-ca{ background-position:0 -192px; } 
+.airwayslogo-cn{ background-position:0 -240px; } 
+.airwayslogo-cz{ background-position:0 -288px; } 
+.airwayslogo-eu{ background-position:0 -336px; } 
+.airwayslogo-fm{ background-position:0 -384px; } 
+.airwayslogo-g5{ background-position:0 -432px; } 
+.airwayslogo-gs{ background-position:0 -480px; } 
+.airwayslogo-ho{ background-position:0 -528px; } 
+.airwayslogo-hu{ background-position:0 -576px; } 
+.airwayslogo-kn{ background-position:0 -624px; } 
+.airwayslogo-mf{ background-position:0 -672px; } 
+.airwayslogo-mu{ background-position:0 -720px; } 
+.airwayslogo-ns{ background-position:0 -768px; } 
+.airwayslogo-pn{ background-position:0 -816px; } 
+.airwayslogo-sc{ background-position:0 -864px; } 
+.airwayslogo-zh{ background-position:0 -912px; } 
+.airwayslogo-vd{ background-position:0 -960px; } 
+.airwayslogo-jr{ background-position:0 -3008px; } 
+.airwayslogo-ky{ background-position:0 -3040px; }
+/*international ICON begin*/ 
+.airwayslogo-9w{ background-position:0 -992px; } 
+.airwayslogo-aa{ background-position:0 -1024px; } 
+.airwayslogo-ab{ background-position:0 -1056px; } 
+.airwayslogo-ac{ background-position:0 -1088px; } 
+.airwayslogo-af{ background-position:0 -1120px; } 
+.airwayslogo-ai{ background-position:0 -1152px; } 
+.airwayslogo-ay{ background-position:0 -1184px; } 
+.airwayslogo-az{ background-position:0 -1216px; } 
+.airwayslogo-ba{ background-position:0 -1248px; } 
+.airwayslogo-bd{ background-position:0 -1280px; } 
+.airwayslogo-bi{ background-position:0 -1312px; } 
+.airwayslogo-br{ background-position:0 -1344px; } 
+.airwayslogo-ci{ background-position:0 -1376px; } 
+.airwayslogo-co{ background-position:0 -1408px; } 
+.airwayslogo-cx{ background-position:0 -1440px; } 
+.airwayslogo-dl{ background-position:0 -1472px; } 
+.airwayslogo-ek{ background-position:0 -1504px; } 
+.airwayslogo-et{ background-position:0 -1536px; } 
+.airwayslogo-ft{ background-position:0 -1568px; } 
+.airwayslogo-ga{ background-position:0 -1600px; } 
+.airwayslogo-jk{ background-position:0 -1632px; } 
+.airwayslogo-jl{ background-position:0 -1664px; } 
+.airwayslogo-jp{ background-position:0 -1696px; } 
+.airwayslogo-ka{ background-position:0 -1728px; } 
+.airwayslogo-ke{ background-position:0 -1760px; } 
+.airwayslogo-kl{ background-position:0 -1792px; } 
+.airwayslogo-kq{ background-position:0 -1824px; } 
+.airwayslogo-la{ background-position:0 -1856px; } 
+.airwayslogo-lh{ background-position:0 -1888px; } 
+.airwayslogo-lo{ background-position:0 -1920px; } 
+.airwayslogo-lx{ background-position:0 -1952px; } 
+.airwayslogo-ly{ background-position:0 -1984px; } 
+.airwayslogo-ma{ background-position:0 -2016px; } 
+.airwayslogo-mh{ background-position:0 -2048px; } 
+.airwayslogo-nh{ background-position:0 -2080px; } 
+.airwayslogo-nw{ background-position:0 -2112px; } 
+.airwayslogo-nx{ background-position:0 -2144px; } 
+.airwayslogo-nz{ background-position:0 -2176px; } 
+.airwayslogo-ok{ background-position:0 -2208px; } 
+.airwayslogo-os{ background-position:0 -2240px; } 
+.airwayslogo-oz{ background-position:0 -2272px; } 
+.airwayslogo-pg{ background-position:0 -2304px; } 
+.airwayslogo-pr{ background-position:0 -2336px; } 
+.airwayslogo-qf{ background-position:0 -2368px; } 
+.airwayslogo-qr{ background-position:0 -2400px; } 
+.airwayslogo-sk{ background-position:0 -2432px; } 
+.airwayslogo-sn{ background-position:0 -2464px; } 
+.airwayslogo-sq{ background-position:0 -2496px; } 
+.airwayslogo-su{ background-position:0 -2528px; } 
+.airwayslogo-tg{ background-position:0 -2560px; } 
+.airwayslogo-tk{ background-position:0 -2592px; } 
+.airwayslogo-ua{ background-position:0 -2624px; } 
+.airwayslogo-ul{ background-position:0 -2656px; } 
+.airwayslogo-un{ background-position:0 -2688px; } 
+.airwayslogo-vn{ background-position:0 -2720px; } 
+.airwayslogo-vs{ background-position:0 -2752px; } 
+.airwayslogo-vv{ background-position:0 -2784px; } 
+.airwayslogo-hx{ background-position:0 -2832px; } 
+.airwayslogo-uo{ background-position:0 -2880px; } 
+.airwayslogo-jd{ background-position:0 -2913px; } 
+.airwayslogo-ey{ background-position:0 -2944px; } 
+.airwayslogo-us{ background-position:0 -2976px; } 
+.airwayslogo-ae{ background-position:0 -3072px; } 
+.airwayslogo-ge{ background-position:0 -3104px; } 
+.airwayslogo-b7{ background-position:0 -3136px; }
+/* 表格样式----行程信息表 */
+.xctable{border:1px solid #d0d0d0;}
+.xctable th{height:25px;  line-height:25px; background-position:0 -84px; background-repeat:repeat-x; border-right:1px solid #d0d0d0;  border-bottom:1px solid #d0d0d0; font-weight:normal}
+.xctable td{ height:20px; border-bottom:1px solid #ededed;}
+.xctable .table-th-last{border-right:none;}
+.xctable .input-text{width:90%}
+/*订票流程指示栏*/
+.flynv{height:45px;}
+.flynv div{float:right; padding-top:20px; width:100px; font-size:12px; color:#777;}
+.flynv .flynv-current{background-position:-298px 0; color:#000;}
+.flynv .flynv-undo{background-position:-398px 0;}
+.flynv .flynv-undo-last{background-position:-398px 0;width:inherit}
+.flynv .flynv-current-last{background-position:-298px 0; color:#000; width:inherit}
+
+/* 附加信息*/
+.adl-content{ height:50px; margin-top:5px;}
+.adl-div{float:left; height:50px;}
+.adl-div .adl-div-content{height:25px;}
+.adl-div .adl-div-content font{ color:#777; font-size:12px;}
+
+/* 航班查询 */
+.fs-div{margin-top:10px;}
+.fs-seacrh-more{float:right;  cursor:pointer}
+.fs-seacrh-more input{text-decoration:underline; border:none; font-weight:bold; color:#f36a00; background:none;}
+.fs-div-c1{width:40%}
+.fs-div-c2{width:50%}
+.fs-seacrh-more a{color:#ff6600;}
+
+/* 报销凭证 */
+.invoice-species{height:30px; border-bottom:1px dotted #777; margin-top:5px;}
+.invoice-info{margin-top:10px;}
+
+/* 特殊需求 */
+.sreq-textarea{margin-top:10px;}
+
+/* 成功信息 */
+.successinfo{margin-top:15px; background-color:#feefbd; line-height:25px; padding:15px;}
+
+/* 乘客信息 */
+.passengerinfo .pi-note{color:#777; padding:5px 0 5px 0;}
+.passengerinfo .input-text,.passengerinfo .input-time{width:100px;}
+.passengerinfo .l-div .input-text,.passengerinfo .l-div .input-time{float:left}
+.passengerinfo .l-div .l-div-c-r .l-select{width:50px; float:left;}
+.pi-sex{ margin-left:5px;}
+.pi-person{margin-left:5px;}
+.pi-num{margin-left:5px;}
+.passengerinfo .l-div .l-div-c-r .pi-pp,.passengerinfo .l-div .l-div-c-r .pi-location{width:90px;}
+.passengerinfo .l-div .pi-passlimit,.passengerinfo .l-div .pi-passname{width:155px;}
+.pi-linkman{margin-top:10px; height:30px;}
+.pi-linkman-detail{height:25px;}
+.pi-linkman-detail .input-text-edit{width:120px;}
+.pi-bline{border-bottom:1px dotted #777; height:30px;}
+.passengerinfo .infodelete{height:25px; magin-top:15px;}
+.pi-length1{width:38%}
+.pi-length2{width:24%}
+.pi-hgt1{ height:18px;}
+/* 航程信息 */
+.flightline .fl-div{ margin-top:5px;}
+.fl-info{ height:43px; padding-top:10px;}
+.fl-review{ margin-top:5px;}
+.fl-info-airdrome{float:left; height:40px; line-height:20px; width:40%}
+.fl-info-plane{float:left; height:40px; line-height:20px; width:25%}
+.fl-info-airways{float:left; height:40px; line-height:20px; padding-left:22px; position:relative; width:25%;}
+.fl-info-airways .airwayslogo{position:absolute; height:20px; left:0; top:10px; width:20px; float:none;}
+.fl-transfer{position:relative; height:30px;}
+.fl-bottomline{height:15px; border-bottom:1px dashed #cccccc}
+.fl-transferbg{position:absolute; left:0; top:5px; width:46px; height:20px; background-position:0px -112px;}
+.fl-info-passenger{height:50px; margin-top:5px;}
+.fl-info-long{float:left; width:24%; height:25px;}
+.fl-info-short{float:left; height:25px; width:12%;}
+.flightline-part{ padding-top:20px;}
+.fl-title{font-weight:bold; height:30px;}
+
+/* 改签信息 */
+.ai-textarea{margin-top:10px; width:80%;}
+.ai-remark{float:left; width:60px; _width:58px; height:80px; padding-top:10px;}
+.alterinfo .input-text{ width:200px;}
+
+/* 退票信息 */
+.returnticket .rt-date,.returnticket .rt-cost{height:30px;}
+.rt-left{float:left; height:30px; width:45%;}
+.rt-right{float:left; height:30px; width:55%;}
+.rt-level-left{float:left; width:80px;}
+.rt-level-right{float:left;}
+.rt-textarea{width:50%;}
+.returnticket .l-select{width:120px;}
+
+/*---新增开始---*/
+.l-panel-hotel{background: #EAEBF0;padding: 10px;z-index: 1;position: relative;}
+.hotel-left{float: left; padding-right: 20px;width: 101px;}
+.hotel-right{float: left; width:646px;}
+.hotel-realpic {
+background: url(../img/icon.gif) no-repeat 0 -168px;
+display: block;
+height: 16px;
+line-height: 16px;
+margin: 5px 0px 7px 5px;
+padding-left: 12px;
+}
+.hotel-title{ height:25px;}
+.hotel-name {
+color: #05A;
+float: left;
+font-size: 14px;
+line-height: 22px;
+margin-right: 3px;
+}
+.hotel-stars01, .hotel-stars02, .hotel-stars03, .hotel-stars04, .hotel-stars05 {
+background-image: url(../img/bg_rate.gif);
+background-repeat: no-repeat; display:block; float:left; margin-left:10px;
+height:16px; width:16px;
+background-position: 0px -32px;
+}
+.hotel-stars03{width:48px;}
+.hotel-stars04{width:64px;}
+.hotel-stars05{width:80px;}
+.hotel-info {
+margin: 6px 0px 0px;
+position: relative;
+z-index: 11;
+}
+.hotel-info p {
+margin-bottom: 4px;
+padding-right: 10px;
+}
+.hotel-info-text {
+height: 38px;
+overflow: hidden;
+}
+.hotel-emap, .hotel-elocal, .hotel-call {
+background-image: url(../img/icon.gif);
+background-repeat: no-repeat;
+float: left;
+margin-right: 10px;
+padding-left: 18px;
+}
+.hotel-elocal {background-position: 0px -142px;}
+.hotel-emap {background-position: 0px -110px;}
+.hotel-call {background-position: 0px -516px;}
+.hotel-special{height: 27px;
+line-height: 27px;}
+.hotel-special-info {
+background: url(../img/bg_32x32.gif) no-repeat 0px -4px;
+color: #C30;
+float: right;
+height: 24px;
+line-height: 27px;
+padding-left: 35px;
+}
+.hotel-table{ border:1px solid #ccc; background-color:#FFF}
+.hotel-table tbody {
+border-color: inherit;
+display: table-row-group;
+vertical-align: middle;
+}
+.hotel-table tbody tr{display: table-row;vertical-align: inherit;}
+.hotel-table .normallist{display:none;}
+.hotel-whitebg {
+background: white;
+border-bottom: 1px solid #CCC;
+border-right: 1px solid #CCC;
+color: #666;
+height: 105px;
+margin-bottom: 5px;
+overflow: hidden;
+padding: 9px 4px 0px;
+width: 92px;
+}
+.hotel-goldmedal {
+background: url(../img/bg_32x32.gif) no-repeat -5px -37px;
+}
+.hotel-silvermedal {
+background: url(../img/bg_32x32.gif) no-repeat -5px -61px;
+}
+.hotel-agreement{background: url(../img/bg_32x32.gif) no-repeat 0px -190px;}
+.hotel-goldmedal, .hotel-silvermedal,.hotel-agreement {padding-left: 22px;}
+
+.hotel-nametitle{width:200px; height:35px; position:absolute; margin-left:0; background:url(../img/ico_hotel_headline.gif) no-repeat left 3px; padding-left:56px; font-size:18px; padding-top:10px; color:#000; font-weight:bold;}
+.hotel-food{width:200px; height:35px; position:absolute; margin-left:0; background:url(../img/food.gif) no-repeat left 3px; padding-left:56px; font-size:18px; padding-top:10px; color:#000; font-weight:bold;}
+
+.searchresult_tab1, .searchresult_tab2 { height:25px;overflow:hidden;padding-left:21px; position:relative;z-index:10;}
+.searchresult_tab1 li, .searchresult_tab2 li {float:left;line-height:26px;}
+.searchresult_tab1 .tagon {background:url(../img/ico_hotel_headline.gif) no-repeat left -55px;height:25px;text-align:center;width:71px;}
+.searchresult_tab1 .searchicon{background:url(../img/icon.gif) no-repeat 0 -290px;height:25px; line-height:25px; width:20px;}
+.searchresult_tab1 .date {float:right;}
+.searchresult_tab2 {background:#E9F1FE;border-top:1px solid #c4d5e0;height:30px;margin-top:-1px;position:relative;z-index:1;}
+.searchresult_tab2 .sequenceicon{background:url(../img/icon.gif) no-repeat scroll 0 -312px #E9F1FE;height:25px; line-height:25px; width:20px;}
+.searchresult_tab2 .tagprice {background:url(../img/ico_hotel_headline.gif) no-repeat -8px -117px;}
+.searchresult_tab2 .tagoff {width:86px;}
+.searchresult_tab1 .tagoff, .searchresult_tab2 .tagoff {color:#0055AA;cursor:pointer;height:25px;text-align:center; width:75px;}
+.searchresult_tab2 .tagstar {background:url(../img/ico_hotel_headline.gif) no-repeat right -86px;}
+.searchresult_tab2 .amount {float:right;height:30px;overflow:hidden;white-space:nowrap;}
+.amount .pageprevious{background:url(../img/bg.gif) no-repeat -68px -112px;color:#297CE2;padding-left:15px; border:1px solid #D9D9D9; padding-top:2px; padding-bottom:3px;}
+.amount .pagenext{background:url(../img/bg.gif) no-repeat right -112px;color:#297CE2;padding-right:15px; border:1px solid #D9D9D9; padding-top:2px; padding-bottom:3px;}
+.base_btn05 {background: url(../img/ico_hotel_headline.gif) no-repeat 0 -195px; border:none; color:#CCCCCC;cursor:default;width:70px; height:22px;}
+.base_btn04 {background: url(../img/ico_hotel_headline.gif) no-repeat 0 -234px;width:70px;  height:22px; border:none;}
+
+
+
+#index-left{float:left; width:590px;}
+#index-rigth{float:right; width:180px;}
+#index-tip{padding:5px 0 15px 25px; margin-top:5px;  background:url(../img/bg_32x32.gif) no-repeat 0 -105px; background-color:#edf6ff;}
+#inde-nav{background:url(../img/index-icon.gif) no-repeat; padding-top:45px; margin:15px 0 0 20px;}
+#index-p-l{width:45%; float:left; margin:10px 0 10px 0; padding:10px; background:url(../img/t1.gif) no-repeat; background-color:#f2f2f2;}
+#index-p-r{width:45%; float:right; margin:10px 0 10px 0;padding:10px;background:url(../img/t2.gif) no-repeat; background-color:#f2f2f2;}
+#index-p-l div{padding-left:125px;height:155px;}
+#index-p-r div{padding-left:120px;height:155px;}
+#index-p-l li,#index-p-r li{ margin:8px 8px 0 0 ;}
+#feedbackline{ width:18px; position:absolute; right:0; border-left:1px dotted #999; height:300px; top:0px;}
+#feedback{background:url(../img/feedback.gif) no-repeat; width:30px; height:88px; position:fixed; top:200px; right:0; cursor:pointer; _position: absolute;                            
+_top: expression(documentElement.scrollTop + 200 + "px"); }
+
+
+/* 上传附件链接   */
+
+.att-doc,.att-xls,.att-ppt,.att-image,.att-txt,.att-upload,.att-zip,.att-pdf{background:url(../img/icon.gif) no-repeat; display:block; height:20px; line-height:20px; padding-left:20px; list-style:none}
+.att-upload{ background-position:0 -486px;}
+.att-doc{background-position:0 -349px;}
+.att-xls{background-position:0 -390px;}
+.att-ppt{background-position:0 -427px;}
+.att-image{background-position:0 -192px;}
+.att-txt{background-position:0 -463px;}
+.att-zip{background-position:0 -543px;}
+.att-pdf{background-position:0 -573px;}
+
+.qHuan{ border:1px solid #c4d5e0; float:left;}
+.qHuan .blkcon { float: left;}
+.qHuan .tabcon { float:left; height:21px; background: url(../img/bg.gif) repeat-x 0 -38px;}
+.qHuan .tabcon A:link, .qHuan .tabcon A:visited {COLOR: #15428B!important; TEXT-DECORATION: none}
+.qHuan .tabcon A:hover {COLOR: #FE730E;TEXT-DECORATION: underline; }
+.qHuan .in {}
+.qHuan .tabcon li {BORDER-RIGHT: #c4d5e0 1px solid; DISPLAY: block; PADDING-LEFT: 5px;  CURSOR: pointer; COLOR: #808080; line-height: 20px; TEXT-ALIGN: left; height:21px; width:80px; float:left; text-align:center; background: url(../img/bg.gif) repeat-x 0 -38px; font-size:12px; list-style:none;}
+.qHuan .tabcon li.curr { border-bottom-width:0px; background:#fff; color:#15428B; text-align:center; height:21px; font-weight:bold;}
+
+.tab-section{ margin-top:5px; border:1px solid #c4d5e0;}
+.tab-section .tab-btn{height:21px; background: url(../img/bg.gif) repeat-x 0 -38px;}
+.tab-section .tab-btn li a{COLOR: #15428B!important;}
+.tab-section .tab-btn li{BORDER-RIGHT: #c4d5e0 1px solid; DISPLAY: block;   CURSOR: pointer; COLOR: #808080; line-height: 20px; TEXT-ALIGN: left; height:21px; width:80px; float:left; text-align:center; font-size:12px; list-style:none;}
+.tab-section .tab-btn li.curr{border-bottom:none; background:#fff; color:#15428B; font-weight:bold;} 
+.tab-section .tabcontent{}
+.tab-section .tabc{display:none}
+/*---特价机票---*/
+.specialoffer{background:url(../img/bg.gif) no-repeat 0 -180px; padding-left:72px;  background-color:#e0e9f9;}
+.specialoffer-table td{ padding:3px; border-left:1px solid #c4d5e0; text-align:center; background-color:#fff}
+
+/*--高级搜索---*/
+.search_up, .search_down{
+float: right;
+display:block; height:15px; line-height:15px; vertical-align:middle;
+padding-right: 15px;
+text-decoration: none;
+background: url(../img/arrow.gif) no-repeat right -365px;
+}
+.search_down{ background-position:right -395px;}
+/*---首页弹出TIP---*/
+.tip{position:absolute; width:500px; display:none}
+.tip .bg{position:absolute; background-color:#ccc; left:4px; top:12px;}
+.tip .border{position:absolute; background-color:#fff; border:1px solid #b7ac94; left:0; top:9px; padding:1px;}
+.tip .borderbg{background:url(../img/tip-bg.gif) repeat-x; background-color:#fdf6bd;  text-align:center}
+.tip .arrowtop{position:absolute; height:10px; width:15px; background:url(../img/bg_32x32.gif) no-repeat 0 -220px; left:20px; top:0;}
+.tip .close{position:absolute; height:8px; width:8px; top:13px; display:block; cursor:pointer}
+.tip .close a{height:8px; width:8px; background:url(../img/icon.gif) no-repeat 0 -605px; display:block;}
+.tip .close a:hover{height:8px; width:8px; background:url(../img/icon.gif) no-repeat 0 -641px; display:block;}
+.tip .content{padding:20px 15px;}
+/*---首页弹出TIP---*/
+/*---loader---*/
+#loader{position:absolute; z-index:11; border:1px solid #333; background-color:#fff; padding:1px; display:none;}
+#loader div{padding:20px;background:url(../img/tip-bg.gif) repeat-x;}
+/*---loader---*/
+/*---機票預訂前一頁後一頁---*/
+.arrowleft,.arrowright{ background:url(../img/arrow.gif) no-repeat;}
+.arrowleft{background-position:-3px -256px; padding-left:15px;}
+.arrowright{background-position:right -275px; padding-right:18px}
+.unclick-l,.unclick-r{cursor:default; background-position:-152px -112px; color:#ccc; padding-left:15px;}
+.unclick-r{ background-position:right -171px;padding-right:15px}
+.unclick-l:hover,.unclick-r:hover{color:#ccc; text-decoration:none}
+/*---機票預訂前一頁後一頁---*/
+
+/*---FAQ---*/
+.faq{ border-bottom:1px dotted #ccc;}
+.faq a{width:100%; display:block; padding:10px; }
+.faq p{  padding:10px; display:none}
+/*---FAQ---*/
+
+/*---新增结束---*/
